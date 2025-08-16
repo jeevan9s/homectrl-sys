@@ -13,10 +13,8 @@ export default function Overview() {
   const [shadesOpen, setShadesOpen] = useState(true);
 
   return (
-
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-
-      <Card className="sm:col-span-1">
+    <div className="grid grid-cols-1 gap-4 mt-4">
+      <Card>
         <CardHeader>
           <CardTitle>shades</CardTitle>
           <CardDescription>control blinds</CardDescription>
@@ -27,25 +25,27 @@ export default function Overview() {
         </CardContent>
       </Card>
 
-      <Card className="sm:col-span-2 lg:col-span-1">
-        <CardHeader>
-          <CardTitle>soil moisture</CardTitle>
-          <CardDescription>current soil moisture level</CardDescription>
-        </CardHeader>
-        <CardContent className="text-2xl font-semibold text-center">
-          62%
-        </CardContent>
-      </Card>
+      <div className="grid grid-cols-2 gap-4">
+        <Card>
+          <CardHeader>
+            <CardTitle>soil moisture</CardTitle>
+            <CardDescription>current soil moisture level</CardDescription>
+          </CardHeader>
+          <CardContent className="text-2xl font-semibold text-center">
+            62%
+          </CardContent>
+        </Card>
 
-      <Card className="sm:col-span-1">
-        <CardHeader>
-          <CardTitle>last watering</CardTitle>
-          <CardDescription>ost recent irrigation time</CardDescription>
-        </CardHeader>
-        <CardContent className="text-2xl font-semibold text-center">
-          2 hr ago
-        </CardContent>
-      </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle>last watering</CardTitle>
+            <CardDescription>most recent irrigation time</CardDescription>
+          </CardHeader>
+          <CardContent className="text-2xl font-semibold text-center">
+            2 hr ago
+          </CardContent>
+        </Card>
+      </div>
     </div>
   );
 }
