@@ -51,7 +51,7 @@ export default function Irrigation() {
           </CardHeader>
           <CardContent className="h-64">
             <MoistureGraph />
-          </CardContent>
+          </CardContent> 
         </Card>
       </div>
 
