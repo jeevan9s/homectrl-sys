@@ -25,14 +25,14 @@
 #define IRRIG_AUTO_THRESHOLD_PCT 35 // default threshold 
 
 // --- MQTT TOPICS --- 
-#define IRRIG_MQTT_BASE              "homeauto/irrigation"
-#define IRRIG_TOPIC_MOISTURE         IRRIG_MQTT_BASE "/moisture"          
-#define IRRIG_TOPIC_PUMP_CMD         IRRIG_MQTT_BASE "/pump/cmd"          
-#define IRRIG_TOPIC_PUMP_STATE       IRRIG_MQTT_BASE "/pump/state"        
-#define IRRIG_TOPIC_LAST_WATERING    IRRIG_MQTT_BASE "/watering/last"     
-#define IRRIG_TOPIC_SETTINGS         IRRIG_MQTT_BASE "/settings"          
-#define IRRIG_TOPIC_TELEM_REQ        IRRIG_MQTT_BASE "/telemetry/request" 
-#define IRRIG_TOPIC_TELEM_RESP       IRRIG_MQTT_BASE "/telemetry"         
+#define IRRIG_MQTT_BASE              "home/irrigation"
+#define IRRIG_TOPIC_MOISTURE         IRRIG_MQTT_BASE "/moisture"        
+#define IRRIG_TOPIC_PUMP_CMD         IRRIG_MQTT_BASE "/pump/cmd"        
+#define IRRIG_TOPIC_PUMP_STATE       IRRIG_MQTT_BASE "/pump/state"      
+#define IRRIG_TOPIC_LAST_WATERING    IRRIG_MQTT_BASE "/last"            
+#define IRRIG_TOPIC_SETTINGS         IRRIG_MQTT_BASE "/settings"        
+#define IRRIG_TOPIC_TELEM_REQ        IRRIG_MQTT_BASE "/telemetry/request"
+#define IRRIG_TOPIC_TELEM_RESP       IRRIG_MQTT_BASE "/telemetry"     
 
 // --- CONTROLS ---
 void setupIrrigation();

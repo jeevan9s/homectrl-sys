@@ -1,30 +1,35 @@
-import mqtt, { MqttClient} from "mqtt";
-
 /* main MQTT script */
-export let client: MqttClient | null = null
+import mqtt, { MqttClient } from "mqtt";
 
-export function connectMQTT(brokerURL:string, brokerOptions?: mqtt.IClientOptions) {
-    if (!client){
-     client = mqtt.connect(brokerURL, brokerOptions)
-    }
-    return client 
+export let client: MqttClient | null = null;
+const topicCallbacks: Record<string, ((msg: string) => void)[]> = {};
+
+export function connectMQTT(brokerURL: string, brokerOptions?: mqtt.IClientOptions) {
+  if (!client) {
+    client = mqtt.connect(brokerURL, brokerOptions);
+    client.on("message", (topic, msg) => {
+      const callbacks = topicCallbacks[topic];
+      if (callbacks) callbacks.forEach(cb => cb(msg.toString()));
+    });
+  }
+  return client;
 }
 
 export function subscribe(topic: string, callback: (message: string) => void) {
-  if (!client) return
-  client.subscribe(topic)
-  client.on("message", (t, msg) => {
-    if (t === topic) callback(msg.toString());
-  })
+  if (!client) return;
+  if (!topicCallbacks[topic]) topicCallbacks[topic] = [];
+  topicCallbacks[topic].push(callback);
+  client.subscribe(topic);
 }
 
-export function publish(topic: string, message: string) {
-  if (!client) return
-  client.publish(topic, message)
+export function publish(topic: string, message: string, retain = false) {
+  if (!client) return;
+  client.publish(topic, message, { qos: 1, retain });
 }
 
 export function disconnect() {
-  if (!client) return
-  client.end()
-  client = null
+  if (!client) return;
+  client.end();
+  client = null;
 }
+
