@@ -10,7 +10,7 @@ let shadesCallback: Callback<{open:boolean; percent:number;}> | null = null
 export function subscribeESP() {
   if (!client) return
 
-  client.on("message", (topic, message) => {
+  client.on("message", (topic:string, message:string) => {
     const msg = message.toString()
 
     switch (topic) {
