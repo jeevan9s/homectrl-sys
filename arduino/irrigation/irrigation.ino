@@ -3,6 +3,7 @@
 
 #include "irrigation.h"
 #include "wifi/wifi_mqtt.ino"
+#include "wifi/wifi_mqtt.h"
 
 // timing vars 
 unsigned long lastPublishMs = 0;
@@ -53,7 +54,12 @@ void setupIrrigation() {
       if (msg == "moisture") mqttPublish(IRRIG_TOPIC_MOISTURE, String(irrigationGetMoisturePct()).c_str());
       if (msg == "last") mqttPublish(IRRIG_TOPIC_LAST_WATERING, String(irrigationGetLastWaterStartMs()).c_str());
   });
+
+  addAlexaSoilMoisture();
+  addAlexaLastWatered();
+
 }
+
 
 // mode switching
 void pumpOnHandler(bool isManual = true) {
@@ -128,8 +134,44 @@ void checkAutoWatering() {
     }
 }
 
+// --- SINRIC PRO ---
+void addAlexaSoilMoisture() {
+    sinricAddCustomDevice(SWITCH_ID_SENSOR
+        [](const String& deviceId, const String& action, const String& value, String& response) -> bool {
+            if (action == "getSoilMoisture") {
+                uint8_t pct = irrigationGetMoisturePct();
+                response = String(pct) + " percent";
+                Serial.print("SINRIC soil moisture: ");
+                Serial.println(response);
+                return true;
+            }
+            return false;
+        }
+    );
+}
+
+void addAlexaLastWatered() {
+    sinricAddCustomDevice(SWITCH_ID_PUMP,
+        [](const String& deviceId, const String& action, const String& value, String& response) -> bool {
+            if (action == "getLastWatered") {
+                unsigned long elapsedMs = millis() - irrigationGetLastWaterStartMs();
+                if (elapsedMs < 60000)
+                    response = String(elapsedMs / 1000) + " seconds ago";
+                else if (elapsedMs < 3600000)
+                    response = String(elapsedMs / 60000) + " minutes ago";
+                else
+                    response = String(elapsedMs / 3600000) + " hours ago";
+
+                Serial.print("SINRIC last watering: ");
+                Serial.println(response);
+                return true;
+            }
+            return false;
+        }
+    );
+}
+
 void irrigationLoop() {
-  mqttLoop();    
   readSoilSensor();      
   publishMoisture();      
   checkAutoWatering();    

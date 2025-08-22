@@ -101,3 +101,6 @@ void sinricAddSwitch(const char* deviceId, std::function<bool(const String&, boo
   sw.onPowerState(callback);  
 }
 
+void sinricAddCustomDevice(const char* deviceId, std::function<bool(const String&, const String&, const String&, String&)> callback);
+
+

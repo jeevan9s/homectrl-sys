@@ -12,9 +12,9 @@ const char* WIFI_PASS = "";
 // SINRICPRO CREDENTIALS
 #define APP_KEY  ""
 #define APP_SECRET ""
-#define SWITCH_ID_1  "" // RELAY
-#define SWITCH_ID_2 "" // SENSOR
-#define SWITCH_ID_3  "" // MOTOR
+#define SWITCH_ID_RELAY  "" // RELAY
+#define SWITCH_ID_SENSOR "" // SENSOR
+#define SWITCH_ID_PUMP  "" // MOTOR
 
 // INCLUDES & FUNCTIN DEFINITIONS
 #include <WiFi.h>
