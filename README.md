@@ -154,7 +154,7 @@ git clone https://github.com/jeevan9s/homectrl.git
 cd homectrl
 ```
 
-# Contact 
+## Contact 
 [`email`](mailto:jeevansanchez42@gmail.com)&nbsp;&nbsp;&nbsp; [``LinkedIn``](https://linkedin.com/in/jeevansanchez)
 
 
