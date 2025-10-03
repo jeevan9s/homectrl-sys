@@ -7,8 +7,8 @@
 
 - [overview](#overview)
 - [architecture](#architecture)
-  - [firmware example](#firmware)
-  - [dashboard example](#hardware)
+  - [firmware](#firmware)
+  - [hardware](#hardware)
 - [prerequisites / installation](#prerequisites--installation)
 - [contact](#contact)
 
