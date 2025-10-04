@@ -62,7 +62,7 @@ The system's main functions include irrigation (plant-watering) and motorized sh
 </table>
 </div>
 
-The **left column** represents the overall workflow, with the esp32 as the central controller connecting to **irrigation** (top right) and **shading** (bottom right) modules. Communication is handled over wi-fi, using **SinricPro** for alexa voice control. the **Next.js dashboard** interfaces with the esp32 via **Websockets** for real-time monitoring and control.
+  The **left column** represents the overall workflow, with the ESP32 as the central controller connecting to **irrigation** (top right) and **shading** (bottom right) modules. Communication is handled over WiFi, using **SinricPro** for Alexa voice control. the **Next.js dashboard** interfaces with the ESP32 via **Websockets** for real-time monitoring and control.
 
 ## Firmware 
 Controller was written in C++/Arduino and UI was written with Next.js. 
