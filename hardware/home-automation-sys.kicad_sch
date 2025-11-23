@@ -9969,7 +9969,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 158.242 63.246 90)
+			(at 158.496 62.992 90)
 			(effects
 				(font
 					(size 1.27 1.27)
