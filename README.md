@@ -31,7 +31,7 @@
   </tr>
 </table>
 
-I designed **homectrl** as a modular home automation controller to smooth out the "moving-in" process into my first apartment.
+I designed **homectrl** as a modular home automation controller to smooth out the moving-in process into my first apartment.
 
 The system's main functions include irrigation (plant-watering) and motorized shading (controlled blinds) which are managed via WiFi, utilizing a web-app interface and Alexa for monitoring and control. The controller's firmware was coded in C++ with Arduino, and the board was designed with KiCad. 
 
