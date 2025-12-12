@@ -16,6 +16,7 @@ The prototyping experience was smooth with great service and communication; look
   - [firmware](#firmware)
   - [hardware](#hardware)
 - [prerequisites / installation](#prerequisites--installation)
+- [acknowledgements](#acknowledgements)
 - [contact](#contact)
 
 </details>
