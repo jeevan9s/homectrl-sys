@@ -21,11 +21,21 @@ The prototyping experience was smooth with great service and communication; look
 </details>
 
 # Overview
-<p align="center">
-  <img src="./media/homectrl-schematic.png" width="30%" style="margin: 5px;">
-  <img src="./media/homectrl-3d-f.png" width="30%" style="margin: 5px;">
-  <img src="./media/homectrl-webapp-dash.png" width="30%" style="margin: 5px;">
-</p>
+<table width="100%" cellspacing="0" cellpadding="5">
+  <tr>
+    <td align="center" width="33%">
+      <img src="./media/homectrl-f1.jpg" style="width: 200%; height: auto;">
+    </td>
+    <td align="center" width="33%">
+      <img src="./media/homectrl-s1.jpg" style="width: 100%; height: auto;">
+    </td>
+    <td align="center" width="33%">
+      <img src="./media/homectrl-webapp-dash.png" style="width: 100%; height: auto;">
+    </td>
+  </tr>
+</table>
+
+
 
 
 
@@ -159,6 +169,9 @@ cd homectrl
 ## Acknowledgements
 Thanks again to **[PCBWay]([url](https://www.pcbway.com/))** for supporting this project.  
 Their workflow and quality made prototyping straightforward and reliable, and I’ll definitely be using their service for future PCB projects.
+
+
+<img src="./media/homectrl-f2.jpg" width="30%" style="margin: 5px;">
 
 
 ## Contact 
