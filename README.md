@@ -1,6 +1,12 @@
-# homectrl 
-> Smart home controller powered by ESP32 and Next.js
+# homectrl
+> Smart home automation controller designed in KiCad; dashboard built with Next.js, firmware in Arduino C/C++.
 
+**Huge thanks to PCBWay for sponsoring this project.**<br>
+The prototyping experience was smooth with great service and communication; looking forward to more projects with their service!
+
+<hr>
+
+**REV B arriving January 2026**: tighter layout, SMD-first design, and more features/integration.<br>
 
 <details>
 <summary>Contents</summary>
@@ -15,25 +21,18 @@
 </details>
 
 # Overview
-<table width="100%" cellspacing="0" cellpadding="0">
-  <tr>
-    <td rowspan="2" width="66%">
-      <img src="./media/homectrl-schematic.png" width="100%" height="100%">
-    </td>
-    <td width="34%">
-      <img src="./media/homectrl-3d-f.png" width="100%">
-    </td>
-  </tr>
-  <tr>
-    <td width="34%">
-      <img src="./media/homectrl-webapp-dash.png" width="100%">
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="./media/homectrl-schematic.png" width="30%" style="margin: 5px;">
+  <img src="./media/homectrl-3d-f.png" width="30%" style="margin: 5px;">
+  <img src="./media/homectrl-webapp-dash.png" width="30%" style="margin: 5px;">
+</p>
 
-I designed **homectrl** as a modular home automation controller to smooth out the moving-in process into my first apartment.
 
-The system's main functions include irrigation (plant-watering) and motorized shading (controlled blinds) which are managed via WiFi, utilizing a web-app interface and Alexa for monitoring and control. The controller's firmware was coded in C++ with Arduino, and the board was designed with KiCad. 
+
+I built **homectrl** to modularize and automate my first apartment.
+
+The system automates irrigation (plant-watering) and shading (motorized blinds). 
+- WIFI integration through dashboard & Alexa
 
 ## Built With
 - ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
@@ -115,6 +114,9 @@ void loop() {
 </details>
 
 ## Hardware 
+**Changing with REV B (Jan 2026)** - less modules/breakout boards and more SMD components for improved space efficiency.
+
+
 The controller's hardware consists of a PCB built around an ESP32 Devkit, including an **A4988 stepper motor driver** and **NEMA 17 stepper motor** for shading, a **relay module** for DC pump control, power management components such as a buck converter and decoupling capacitors, and signal devices like LEDs.
 
 The board is also split up into several modules:
@@ -141,7 +143,7 @@ Each module has a respective <b>LED</b> for status and action indication. Two se
 ## Prerequisites / Installation
 
 ### Prerequisites
-- <b>Hardware:</b> ESP32 Devkit, stepper motors, relay modules, DC pump, sensors, LEDs, PCB component (see <a href="hardware/homectrl-bom.csv">BOM<a/>)
+- <b>Hardware:</b> **Changing with REV B (Jan 2026)** ESP32 Devkit, stepper motors, relay modules, DC pump, sensors, LEDs, PCB component (see <a href="hardware/homectrl-bom.csv">BOM<a/>) 
 - <b>Software:</b> Arduino IDE (with Espressif ESP32 board support)
 - <b>Libraries:</b> PubSubClient, SinricPro, WebSockets, and any other dependencies listed in firmware
 - <b>Node.js:</b> v18+ (for Next.js dashboard)
@@ -153,6 +155,11 @@ Each module has a respective <b>LED</b> for status and action indication. Two se
 git clone https://github.com/jeevan9s/homectrl.git
 cd homectrl
 ```
+
+## Acknowledgements
+Thanks again to **[PCBWay]([url](https://www.pcbway.com/))** for supporting this project.  
+Their workflow and quality made prototyping straightforward and reliable, and I’ll definitely be using their service for future PCB projects.
+
 
 ## Contact 
 [`email`](mailto:jeevansanchez42@gmail.com)&nbsp;&nbsp;&nbsp; [``LinkedIn``](https://linkedin.com/in/jeevansanchez)
