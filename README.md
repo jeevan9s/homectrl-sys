@@ -177,7 +177,17 @@ Thanks again to **[PCBWay]([url](https://www.pcbway.com/))** for supporting this
 Their workflow and quality made prototyping straightforward and reliable, and I’ll definitely be using their service for future PCB projects.
 
 
-<img src="./media/homectrl-f2.jpg" width="30%" style="margin: 5px;">
+<table width="100%" cellspacing="0" cellpadding="5">
+  <tr>
+    <td align="center" width="50%">
+      <img src="./media/homectrl-f2.jpg" style="width: 100%; height: auto;">
+    </td>
+    <td align="center" width="50%">
+      <img src="./media/homectrl-fs.png" style="width: 100%; height: auto;">
+    </td>
+  </tr>
+</table>
+
 
 
 ## Contact 
