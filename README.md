@@ -23,17 +23,23 @@ The prototyping experience was smooth with great service and communication; look
 # Overview
 <table width="100%" cellspacing="0" cellpadding="5">
   <tr>
-    <td align="center" width="33%">
-      <img src="./media/homectrl-f1.jpg" style="width: 200%; height: auto;">
+    <td align="center" width="50%">
+      <img src="./media/homectrl-f1.jpg" style="width: 100%; height: auto;">
     </td>
-    <td align="center" width="33%">
+    <td align="center" width="50%">
       <img src="./media/homectrl-s1.jpg" style="width: 100%; height: auto;">
     </td>
-    <td align="center" width="33%">
+  </tr>
+</table>
+
+<table width="100%" cellspacing="0" cellpadding="5">
+    <tr>
+    <td align="center" width="100%">
       <img src="./media/homectrl-webapp-dash.png" style="width: 100%; height: auto;">
     </td>
   </tr>
 </table>
+
 
 
 
