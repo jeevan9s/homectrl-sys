@@ -1,0 +1,12 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "8715bf36-c564-4341-9778-619c2b6b7a86")
+	(paper "A4")
+	(title_block
+		(title "Sensor Module")
+		(company "Jeevan Sanchez")
+	)
+	(lib_symbols)
+)

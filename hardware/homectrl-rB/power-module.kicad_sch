@@ -1,0 +1,12 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "6930348d-4dce-408a-90c0-dda7205c4a05")
+	(paper "A4")
+	(title_block
+		(title "Power Module")
+		(company "Jeevan Sanchez")
+	)
+	(lib_symbols)
+)

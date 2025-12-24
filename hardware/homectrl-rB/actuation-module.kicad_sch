@@ -1,0 +1,12 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "e5127666-1fc0-4715-abba-63e8cc6c03f8")
+	(paper "A4")
+	(title_block
+		(title "Actuation Module")
+		(company "Jeevan Sanchez")
+	)
+	(lib_symbols)
+)

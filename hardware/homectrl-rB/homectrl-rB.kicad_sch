@@ -1,5 +1,170 @@
-(kicad_sch (version 20231120) (generator "eeschema") (generator_version "8.0")
-  (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "57d8224d-b57c-478b-b5c0-8f7e53702df5")
+	(paper "A4")
+	(title_block
+		(title "homectrl")
+		(rev "B")
+		(company "Jeevan Sanchez")
+	)
+	(lib_symbols)
+	(sheet
+		(at 62.23 101.6)
+		(size 40.64 34.29)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "28c740ea-6dad-4b5c-aec8-d0c78cfb8c06")
+		(property "Sheetname" "Actuation Module"
+			(at 62.23 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "actuation-module.kicad_sch"
+			(at 62.23 136.4746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "homectrl-rB"
+				(path "/57d8224d-b57c-478b-b5c0-8f7e53702df5"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 62.23 54.61)
+		(size 40.64 31.75)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4b70b9a3-190f-44ea-bb19-025867d50bda")
+		(property "Sheetname" "ESP32-S3 Breakout"
+			(at 62.23 53.8984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ESP-breakout.kicad_sch"
+			(at 62.23 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "homectrl-rB"
+				(path "/57d8224d-b57c-478b-b5c0-8f7e53702df5"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 140.97 54.61)
+		(size 41.91 31.75)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a7202e01-4821-45f4-aebc-1eab7149461c")
+		(property "Sheetname" "Sensor Module"
+			(at 140.97 53.8984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensor-module.kicad_sch"
+			(at 140.97 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "homectrl-rB"
+				(path "/57d8224d-b57c-478b-b5c0-8f7e53702df5"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 140.97 101.6)
+		(size 41.91 34.29)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c83a7989-d1c5-453e-9ef8-069559a5a4f1")
+		(property "Sheetname" "Power Module"
+			(at 140.97 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power-module.kicad_sch"
+			(at 140.97 136.4746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "homectrl-rB"
+				(path "/57d8224d-b57c-478b-b5c0-8f7e53702df5"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )

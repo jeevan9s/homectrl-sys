@@ -382,6 +382,27 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "57d8224d-b57c-478b-b5c0-8f7e53702df5",
+      "Root"
+    ],
+    [
+      "4b70b9a3-190f-44ea-bb19-025867d50bda",
+      "ESP32-S3 Breakout"
+    ],
+    [
+      "a7202e01-4821-45f4-aebc-1eab7149461c",
+      "Sensor Module"
+    ],
+    [
+      "28c740ea-6dad-4b5c-aec8-d0c78cfb8c06",
+      "Actuation Module"
+    ],
+    [
+      "c83a7989-d1c5-453e-9ef8-069559a5a4f1",
+      "Power Module"
+    ]
+  ],
   "text_variables": {}
 }
