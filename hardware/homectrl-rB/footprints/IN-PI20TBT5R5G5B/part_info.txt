@@ -1,0 +1,9 @@
+Manufacturer=Inolux
+PartNumber=IN-PI20TBT5R5G5B
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=6
+Version=1.3
+Released=2022-01-25 07:08:22
+Downloaded=2025-12-31 20:49:30
+3D=Y
