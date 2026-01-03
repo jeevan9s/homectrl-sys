@@ -537,12 +537,24 @@
 				)
 			)
 		)
-		(symbol "IN-PI20TBT5R5G5B:IN-PI20TBT5R5G5B"
+		(symbol "LED:WS2812B"
+			(pin_names
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "IC"
-				(at 24.13 7.62 0)
+			(property "Reference" "D"
+				(at 5.08 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right bottom)
+				)
+			)
+			(property "Value" "WS2812B"
+				(at 1.27 -5.715 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -550,27 +562,8 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "IN-PI20TBT5R5G5B"
-				(at 24.13 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "INPI20TBT5R5G5B"
-				(at 24.13 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.inolux-corp.com/datasheet/SMDLED/Addressable%20LED/IN-PI20TBT5R5G5B_v1.0.pdf"
-				(at 24.13 -194.92 0)
+			(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+				(at 1.27 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -579,7 +572,17 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Addressable Lighting series 3 LED Discrete - Red, Green, Blue (RGB) 2.00mm L x 2.00mm W, package 2020 "
+			(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+				(at 2.54 -9.525 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
 				(at 0 0 0)
 				(effects
 					(font
@@ -588,80 +591,122 @@
 					(hide yes)
 				)
 			)
-			(property "Height" "0.75"
-				(at 24.13 -394.92 0)
+			(property "ki_keywords" "RGB LED NeoPixel addressable"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Inolux"
-				(at 24.13 -494.92 0)
+			(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "IN-PI20TBT5R5G5B"
-				(at 24.13 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "WS2812B_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
 					)
-					(justify left top)
-					(hide yes)
 				)
 			)
-			(property "Mouser Part Number" "743-IN-PI20TBT5R5G5B"
-				(at 24.13 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "WS2812B_0_1"
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
 					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Inolux/IN-PI20TBT5R5G5B?qs=stqOd1AaK79awpI9A9n10A%3D%3D"
-				(at 24.13 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+					(stroke
+						(width 0)
+						(type default)
 					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" ""
-				(at 24.13 -894.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+					(fill
+						(type none)
 					)
-					(justify left top)
-					(hide yes)
 				)
-			)
-			(property "Arrow Price/Stock" ""
-				(at 24.13 -994.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
 					)
-					(justify left top)
-					(hide yes)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
 				)
-			)
-			(symbol "IN-PI20TBT5R5G5B_1_1"
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
-					(start 5.08 2.54)
-					(end 22.86 -7.62)
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -670,10 +715,12 @@
 						(type background)
 					)
 				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "DIN1"
+			)
+			(symbol "WS2812B_1_1"
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -688,10 +735,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "GND"
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -706,10 +753,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "DIN2"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -724,10 +771,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 27.94 -5.08 180)
-					(length 5.08)
-					(name "NC"
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "DIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -735,42 +782,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 27.94 -2.54 180)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 27.94 0 180)
-					(length 5.08)
-					(name "DOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2826,12 +2837,6 @@
 		(uuid "7cbb83e2-9e1a-4a0d-ad68-e1c2404a118b")
 	)
 	(junction
-		(at 72.39 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "85e24286-cdce-4b8f-bd0c-83bf13974863")
-	)
-	(junction
 		(at 152.4 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2850,10 +2855,10 @@
 		(uuid "b40e9652-4332-4dee-9e72-12515b4fbf42")
 	)
 	(junction
-		(at 30.48 121.92)
+		(at 49.53 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b7babb43-a1c9-4d05-a646-2b130c3158fd")
+		(uuid "bbd0617d-9c24-4ff4-9b0e-fc55011d9d9e")
 	)
 	(junction
 		(at 233.68 73.66)
@@ -2897,6 +2902,12 @@
 		(color 0 0 0 0)
 		(uuid "e375d2d3-4bbf-4799-8809-aa7633743b25")
 	)
+	(junction
+		(at 54.61 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eff6a6cf-108e-4e0d-886b-f3d128dcfac5")
+	)
 	(no_connect
 		(at 163.83 106.68)
 		(uuid "1255903a-e338-4114-8e1c-3e1a409aa8cb")
@@ -2926,7 +2937,7 @@
 		(uuid "a1e73cc8-a37c-44a5-a9bf-28f65bcda612")
 	)
 	(no_connect
-		(at 67.31 121.92)
+		(at 57.15 124.46)
 		(uuid "b3546180-4c24-4f14-81b4-e2b2c6f52132")
 	)
 	(no_connect
@@ -2971,16 +2982,6 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 121.92) (xy 39.37 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13927219-30ea-4231-855a-6885ae1d5708")
-	)
-	(wire
-		(pts
 			(xy 256.54 55.88) (xy 254 55.88)
 		)
 		(stroke
@@ -3008,6 +3009,16 @@
 			(type default)
 		)
 		(uuid "224405cd-143a-4c4a-97cb-e0cb7157c344")
+	)
+	(wire
+		(pts
+			(xy 33.02 124.46) (xy 41.91 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27dcd0d0-4a14-46f7-93f3-df0c880e9cf9")
 	)
 	(wire
 		(pts
@@ -3071,16 +3082,6 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 127) (xy 30.48 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c097abe-b386-4174-992d-3906a4a335ff")
-	)
-	(wire
-		(pts
 			(xy 128.27 68.58) (xy 133.35 68.58)
 		)
 		(stroke
@@ -3108,6 +3109,16 @@
 			(type default)
 		)
 		(uuid "62f5ff64-402c-459b-be06-3a90d9c665c2")
+	)
+	(wire
+		(pts
+			(xy 54.61 116.84) (xy 63.5 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6883c394-fcc5-4e7e-8a16-cad45ac0f331")
 	)
 	(wire
 		(pts
@@ -3188,16 +3199,6 @@
 			(type default)
 		)
 		(uuid "8a739271-6189-49f2-9b54-7f07ed384fff")
-	)
-	(wire
-		(pts
-			(xy 30.48 113.03) (xy 30.48 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91a677b0-a2be-4d43-b4ab-cfbe3dd7980e")
 	)
 	(wire
 		(pts
@@ -3321,17 +3322,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 127) (xy 30.48 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3ba96fd-8192-4cf0-a5cc-96fcf823b613")
-	)
-	(wire
-		(pts
-			(xy 67.31 124.46) (xy 72.39 124.46)
+			(xy 49.53 116.84) (xy 54.61 116.84)
 		)
 		(stroke
 			(width 0)
@@ -3628,7 +3619,7 @@
 		(uuid "58b13ae6-77f9-4f16-8694-a0c4ef54202b")
 	)
 	(label "GPIO_14"
-		(at 38.1 113.03 0)
+		(at 33.02 116.84 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4410,7 +4401,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 252.222 59.69 90)
 			(effects
 				(font
@@ -4454,7 +4445,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 72.39 116.84 180)
+		(at 63.5 109.22 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4462,7 +4453,7 @@
 		(dnp no)
 		(uuid "05a02dbf-ab89-4ff4-a83d-22323a3b8966")
 		(property "Reference" "#PWR097"
-			(at 72.39 110.49 0)
+			(at 63.5 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4471,7 +4462,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 72.39 111.76 0)
+			(at 63.5 104.902 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4479,7 +4470,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 116.84 0)
+			(at 63.5 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4488,7 +4479,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 116.84 0)
+			(at 63.5 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4497,7 +4488,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 72.39 116.84 0)
+			(at 63.5 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4590,6 +4581,71 @@
 			(project "homectrl-rB"
 				(path "/57d8224d-b57c-478b-b5c0-8f7e53702df5/4b70b9a3-190f-44ea-bb19-025867d50bda"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 54.61 109.22 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "08141a94-8a59-4ac0-9029-44b991103cc0")
+		(property "Reference" "#PWR034"
+			(at 54.61 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 54.61 104.902 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 54.61 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14e96f03-7d73-4aff-9d8c-0f15a63ef45a")
+		)
+		(instances
+			(project "homectrl-rB"
+				(path "/57d8224d-b57c-478b-b5c0-8f7e53702df5/4b70b9a3-190f-44ea-bb19-025867d50bda"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -4997,7 +5053,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 72.39 120.65 0)
+		(at 63.5 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5005,7 +5061,7 @@
 		(dnp no)
 		(uuid "26d160e8-bb72-4148-a7ba-d4b984a4b20e")
 		(property "Reference" "C36"
-			(at 61.976 115.062 0)
+			(at 65.786 117.094 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5014,7 +5070,7 @@
 			)
 		)
 		(property "Value" "0.1uF 12V"
-			(at 61.976 117.602 0)
+			(at 65.786 119.634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5023,7 +5079,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 73.3552 124.46 0)
+			(at 64.4652 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5032,7 +5088,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 72.39 120.65 0)
+			(at 63.5 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5041,7 +5097,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 72.39 120.65 0)
+			(at 63.5 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5237,7 +5293,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 254 67.31 0)
 			(effects
 				(font
@@ -5339,158 +5395,6 @@
 			(project "homectrl-rB"
 				(path "/57d8224d-b57c-478b-b5c0-8f7e53702df5/4b70b9a3-190f-44ea-bb19-025867d50bda"
 					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "IN-PI20TBT5R5G5B:IN-PI20TBT5R5G5B")
-		(at 39.37 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6022dc33-ffe8-4973-a21e-16cda06b5293")
-		(property "Reference" "IC1"
-			(at 53.34 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SYS-LED"
-			(at 53.34 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "IN-PI20TBT5R5G5B:INPI20TBT5R5G5B"
-			(at 63.5 216.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.inolux-corp.com/datasheet/SMDLED/Addressable%20LED/IN-PI20TBT5R5G5B_v1.0.pdf"
-			(at 63.5 316.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Addressable Lighting series 3 LED Discrete - Red, Green, Blue (RGB) 2.00mm L x 2.00mm W, package 2020"
-			(at 39.37 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.75"
-			(at 63.5 516.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Inolux"
-			(at 63.5 616.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "IN-PI20TBT5R5G5B"
-			(at 63.5 716.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "743-IN-PI20TBT5R5G5B"
-			(at 63.5 816.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Inolux/IN-PI20TBT5R5G5B?qs=stqOd1AaK79awpI9A9n10A%3D%3D"
-			(at 63.5 916.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 63.5 1016.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 63.5 1116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "b3bf5f8b-5b21-40d4-b3e0-8d2234decf06")
-		)
-		(pin "1"
-			(uuid "eaf19232-8363-44e8-93dc-5b0f437ec791")
-		)
-		(pin "5"
-			(uuid "16cc9d9e-b7b4-4b3f-af77-d3a396e3620b")
-		)
-		(pin "2"
-			(uuid "4ada1940-9203-4360-beb7-19c857faccc3")
-		)
-		(pin "6"
-			(uuid "9e7f3547-7b41-4473-8d94-9bde17586311")
-		)
-		(pin "4"
-			(uuid "52dbc253-9c02-4464-90f5-e6d7033a77fc")
-		)
-		(instances
-			(project ""
-				(path "/57d8224d-b57c-478b-b5c0-8f7e53702df5/4b70b9a3-190f-44ea-bb19-025867d50bda"
-					(reference "IC1")
 					(unit 1)
 				)
 			)
@@ -5680,7 +5584,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 59.69 91.44 0)
 			(effects
 				(font
@@ -5724,7 +5628,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 39.37 124.46 270)
+		(at 49.53 132.08 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5732,7 +5636,7 @@
 		(dnp no)
 		(uuid "7890f6c8-ca76-4a0b-b787-c4445187be77")
 		(property "Reference" "#PWR033"
-			(at 33.02 124.46 0)
+			(at 55.88 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5741,7 +5645,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 34.29 124.46 0)
+			(at 54.61 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5749,7 +5653,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 124.46 0)
+			(at 49.53 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5758,7 +5662,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 124.46 0)
+			(at 49.53 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5767,7 +5671,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 39.37 124.46 0)
+			(at 49.53 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5917,6 +5821,90 @@
 			(project ""
 				(path "/57d8224d-b57c-478b-b5c0-8f7e53702df5/4b70b9a3-190f-44ea-bb19-025867d50bda"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 49.53 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "82f9effe-5597-47dc-8473-e6f9be49ccb9")
+		(property "Reference" "D7"
+			(at 38.608 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SYS-LED"
+			(at 38.608 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 50.8 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 52.07 133.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Adressable RGB LED"
+			(at 49.53 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "1568-COM-16347CT-ND"
+			(at 49.53 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f9d58ab-3371-4d4e-9bc6-7c7f7fdb337d")
+		)
+		(pin "2"
+			(uuid "c8b37b26-5fa3-450f-a61e-01ed1dcae245")
+		)
+		(pin "3"
+			(uuid "5721bef9-70be-4bca-9cb6-b5a50370c1e2")
+		)
+		(pin "4"
+			(uuid "8fcd1932-b842-427e-83ba-d6c7c54f74f2")
+		)
+		(instances
+			(project "homectrl-rB"
+				(path "/57d8224d-b57c-478b-b5c0-8f7e53702df5/4b70b9a3-190f-44ea-bb19-025867d50bda"
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -6546,7 +6534,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 40.64 91.44 0)
 			(effects
 				(font
@@ -7144,6 +7132,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 54.61 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d069febd-dc19-4d83-9b6b-56573b8a17cf")
+		(property "Reference" "C37"
+			(at 65.532 122.174 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100uF 12V"
+			(at 65.532 124.714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 55.5752 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 54.61 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "597fa5eb-2dac-4f48-8119-8af66917f769")
+		)
+		(pin "1"
+			(uuid "9ad62c38-1d1b-4e2c-9521-c141a287332d")
+		)
+		(instances
+			(project "homectrl-rB"
+				(path "/57d8224d-b57c-478b-b5c0-8f7e53702df5/4b70b9a3-190f-44ea-bb19-025867d50bda"
+					(reference "C37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 40.64 95.25 0)
 		(unit 1)
@@ -7210,7 +7267,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 34.29 113.03 90)
+		(at 33.02 120.65 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7218,7 +7275,7 @@
 		(dnp no)
 		(uuid "d92e550e-5a0c-4d04-bd0e-0fb40edd8fe2")
 		(property "Reference" "R30"
-			(at 34.29 108.204 90)
+			(at 29.718 119.126 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7226,7 +7283,7 @@
 			)
 		)
 		(property "Value" "330"
-			(at 34.29 110.744 90)
+			(at 29.718 121.158 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7234,7 +7291,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 34.29 114.808 90)
+			(at 34.798 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7243,7 +7300,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 34.29 113.03 0)
+			(at 33.02 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7252,7 +7309,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 34.29 113.03 0)
+			(at 33.02 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7344,16 +7401,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 72.39 124.46 180)
+		(at 49.53 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f8413741-c29a-4200-8c91-ca4474faf72f")
-		(property "Reference" "#PWR034"
-			(at 72.39 120.65 0)
+		(uuid "f23eaab3-77d5-46fd-8c3d-bcdb8f169638")
+		(property "Reference" "#PWR098"
+			(at 49.53 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7362,7 +7419,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 72.39 129.54 0)
+			(at 49.53 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7370,7 +7427,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 124.46 0)
+			(at 49.53 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7379,7 +7436,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 124.46 0)
+			(at 49.53 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7388,7 +7445,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 72.39 124.46 0)
+			(at 49.53 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7397,12 +7454,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "02d37bd8-dcd4-490f-9f1b-a9a5ebd627cb")
+			(uuid "e25882c2-be89-4be4-bf40-45ad1c1a41d0")
 		)
 		(instances
-			(project ""
+			(project "homectrl-rB"
 				(path "/57d8224d-b57c-478b-b5c0-8f7e53702df5/4b70b9a3-190f-44ea-bb19-025867d50bda"
-					(reference "#PWR034")
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)

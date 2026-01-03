@@ -3934,7 +3934,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "IRLZ44N:TO254P1054X469X1930-3"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 48.26 60.96 0)
 			(effects
 				(font
@@ -4687,7 +4687,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 51.7652 129.54 0)
 			(effects
 				(font
@@ -5165,7 +5165,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "IRLZ44N:TO254P1054X469X1930-3"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 93.98 60.96 0)
 			(effects
 				(font

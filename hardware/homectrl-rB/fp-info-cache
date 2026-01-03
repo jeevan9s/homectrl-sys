@@ -1,4 +1,4 @@
-24242318304717717
+24249389997770822
 1210L110_16WR
 FUSC3226X125N
 1210L110/16WR
@@ -56832,6 +56832,13 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
+ESP32-S3-WROOM-1-N16R2
+XCVR_ESP32-S3-WROOM-1-N16R2
+
+
+0
+61
+61
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -65337,6 +65344,13 @@ VREG_LM3940IMP-3.3_NOPB
 0
 4
 4
+LM66100
+SC-70-6
+SC70-6
+SC70-6
+0
+6
+6
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -97315,6 +97329,20 @@ igbt diode module
 25
 US1M
 DIOM4325X250N
+
+
+0
+2
+2
+USBC-CONN
+USB_C_DB-108PWB
+https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121730_HDGC-TYPE-C-DB-108PWB_C2936184.pdf
+USB C Type-C Receptacle Female USB2.0
+0
+20
+17
+VLS3015CX-220M-1
+IND_VLS3015CX-220M-1
 
 
 0
