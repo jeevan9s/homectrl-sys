@@ -148,6 +148,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 193.04 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
+			(at 193.04 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "homectrl-rB"
 				(path "/57d8224d-b57c-478b-b5c0-8f7e53702df5"
@@ -204,6 +222,24 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 193.04 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 193.04 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
 			(at 193.04 57.15 0)
 			(effects
 				(font

@@ -3484,6 +3484,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 39.37 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
+			(at 39.37 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2beb4492-c2e1-4e43-bb1c-1eac3e0025dd")
 		)
@@ -3619,6 +3637,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 87.63 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
+			(at 87.63 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f581d9d3-bbdd-4858-b637-6bcca1dcf708")
 		)
@@ -3679,6 +3715,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 41.91 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 41.91 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
 			(at 41.91 63.5 0)
 			(effects
 				(font
@@ -3822,6 +3876,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 120.65 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
+			(at 120.65 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2d25cf2f-23b8-407b-8fbe-cbbe846dc731")
 		)
@@ -3883,6 +3955,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 154.94 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 154.94 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
 			(at 154.94 118.11 0)
 			(effects
 				(font
@@ -4082,6 +4172,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 48.26 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
+			(at 48.26 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c60e5085-6970-42d2-b3c5-8b2a166b8910")
 		)
@@ -4146,6 +4254,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 41.91 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 41.91 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
 			(at 41.91 69.85 0)
 			(effects
 				(font
@@ -4223,6 +4349,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 57.15 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
+			(at 57.15 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "66c83dc8-614f-486c-b135-c56f6f723912")
 		)
@@ -4284,6 +4428,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 144.78 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 144.78 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
 			(at 144.78 118.11 0)
 			(effects
 				(font
@@ -4436,6 +4598,24 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 71.12 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 71.12 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
 			(at 71.12 41.91 0)
 			(effects
 				(font
@@ -4645,6 +4825,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 87.63 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
+			(at 87.63 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "42e5eaa6-8df8-4465-b0e6-e22a58a54eff")
 		)
@@ -4706,6 +4904,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 50.8 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 50.8 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
 			(at 50.8 125.73 0)
 			(effects
 				(font
@@ -4776,6 +4992,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 69.85 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 69.85 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "No"
 			(at 69.85 27.94 0)
 			(effects
 				(font
@@ -5116,6 +5350,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 101.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "No"
+			(at 101.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "88e87779-9d94-4fb4-8434-a48e4d336624")
 		)
@@ -5313,6 +5565,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 93.98 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
+			(at 93.98 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ed53629f-7069-4d27-b9e0-8fd02f6e21ab")
 		)
@@ -5452,6 +5722,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 165.1 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
+			(at 165.1 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "99697cd5-5147-4570-a713-b9cd351d204e")
 		)
@@ -5513,6 +5801,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 46.99 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 46.99 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
 			(at 46.99 113.03 0)
 			(effects
 				(font
@@ -5789,6 +6095,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 38.1 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "No"
+			(at 38.1 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "841268bc-4998-449b-a14d-6908f82fadcd")
 		)
@@ -5851,6 +6175,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 69.85 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 69.85 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
 			(at 69.85 104.14 0)
 			(effects
 				(font
@@ -6066,6 +6408,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 124.46 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 124.46 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
 			(at 124.46 119.38 0)
 			(effects
 				(font
@@ -6410,6 +6770,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 60.96 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
+			(at 60.96 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0ba136c8-2a92-4572-ac8b-f69a96c4e7cf")
 		)
@@ -6546,6 +6924,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 57.15 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
+			(at 57.15 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "99080e90-064c-43b3-b384-c88aa2684f5c")
 		)
@@ -6605,6 +7001,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 124.46 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 124.46 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
 			(at 124.46 109.22 0)
 			(effects
 				(font

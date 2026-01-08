@@ -4470,6 +4470,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 254 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
+			(at 254 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "350eb926-b10c-4651-af55-f2fc6aa6969c")
 		)
@@ -4613,6 +4631,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 163.83 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
+			(at 163.83 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bb360dce-36da-4d24-9b93-773cf889cb32")
 		)
@@ -4748,6 +4784,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 40.64 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
+			(at 40.64 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "404c5621-3f38-4a6d-958e-b05aacaff61f")
 		)
@@ -4874,6 +4928,24 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 233.68 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 233.68 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
 			(at 233.68 55.88 0)
 			(effects
 				(font
@@ -5147,6 +5219,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 63.5 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
+			(at 63.5 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bc90efe0-933e-46ce-8f06-8f846c056326")
 		)
@@ -5218,6 +5308,24 @@
 		)
 		(property "LCSC" "C23186"
 			(at 233.68 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 233.68 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
+			(at 233.68 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5354,6 +5462,24 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 254 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 254 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
 			(at 254 67.31 0)
 			(effects
 				(font
@@ -5505,6 +5631,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 128.27 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
+			(at 128.27 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4ae3485a-8d0d-4d39-96fb-25ed5d0794ea")
 		)
@@ -5583,6 +5727,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 49.53 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
+			(at 49.53 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e9a1ea46-29fc-4103-883a-1e0b7433ff67")
 		)
@@ -5645,6 +5807,24 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 59.69 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 59.69 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
 			(at 59.69 91.44 0)
 			(effects
 				(font
@@ -5786,6 +5966,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 77.47 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
+			(at 77.47 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5d498d2e-d838-448b-b61a-dbb7837d2fe3")
 		)
@@ -5845,6 +6043,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 237.49 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 237.49 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
 			(at 237.49 78.74 0)
 			(effects
 				(font
@@ -5923,6 +6139,24 @@
 			)
 		)
 		(property "Digikey" "1568-COM-16347CT-ND"
+			(at 49.53 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 49.53 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
 			(at 49.53 124.46 0)
 			(effects
 				(font
@@ -6073,6 +6307,24 @@
 			)
 		)
 		(property "LCSC" "C14663"
+			(at 152.4 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 152.4 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
 			(at 152.4 55.88 0)
 			(effects
 				(font
@@ -6349,6 +6601,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 181.61 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
+			(at 181.61 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6941940c-de25-4e9b-acda-e6708616d863")
 		)
@@ -6488,6 +6758,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 214.63 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
+			(at 214.63 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "A1"
 			(uuid "08370720-0bad-4385-94be-8f231408765e")
 		)
@@ -6603,6 +6891,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 40.64 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
+			(at 40.64 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2d00fbf7-705c-4cd8-af47-00ea882ff05b")
 		)
@@ -6681,6 +6987,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 82.55 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
+			(at 82.55 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b70fb4fd-6f4a-44f9-902d-8730d49d962d")
 		)
@@ -6741,6 +7065,24 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 44.45 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 44.45 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
 			(at 44.45 55.88 0)
 			(effects
 				(font
@@ -6827,6 +7169,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 233.68 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
+			(at 233.68 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b9e27c29-07b5-48a2-aa4d-ec94aa6f05fc")
 		)
@@ -6888,6 +7248,24 @@
 			)
 		)
 		(property "Description" "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD"
+			(at 148.59 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 148.59 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
 			(at 148.59 91.44 0)
 			(effects
 				(font
@@ -7091,6 +7469,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 121.92 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
+			(at 121.92 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8f59a436-3664-4c38-93b8-7a5e3182a82e")
 		)
@@ -7161,6 +7557,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 173.99 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
+			(at 173.99 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9cd10125-377f-43eb-bd40-5defa68d081f")
 		)
@@ -7219,6 +7633,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 54.61 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 54.61 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "Yes"
 			(at 54.61 113.03 0)
 			(effects
 				(font
@@ -7351,6 +7783,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 33.02 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 33.02 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
 			(at 33.02 120.65 0)
 			(effects
 				(font
@@ -7554,6 +8004,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 59.69 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 59.69 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "N/A"
 			(at 59.69 83.82 0)
 			(effects
 				(font
