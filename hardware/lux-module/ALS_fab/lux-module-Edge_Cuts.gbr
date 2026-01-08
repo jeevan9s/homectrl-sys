@@ -1,0 +1,28 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,8.0.3*%
+%TF.CreationDate,2026-01-07T02:22:38-05:00*%
+%TF.ProjectId,lux-module,6c75782d-6d6f-4647-956c-652e6b696361,A*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 8.0.3) date 2026-01-07 02:22:38*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.050000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X142362863Y-54110000D02*
+G75*
+G02*
+X124109093Y-54110000I-9126885J0D01*
+G01*
+X124109093Y-54110000D02*
+G75*
+G02*
+X142362863Y-54110000I9126885J0D01*
+G01*
+M02*

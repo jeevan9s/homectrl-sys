@@ -86,21 +86,7 @@
         "clearance|85690000|89660000|0cf8c7cb-47ec-487a-ab5b-b09d32a5ad6f|db9ad255-fc18-4e9e-a3f6-0f737dca0d30",
         "clearance|85690000|90910000|db9ad255-fc18-4e9e-a3f6-0f737dca0d30|7b64b59f-bec2-4270-96fa-2bb60bfd5cf7",
         "clearance|85945900|80541900|1997c66e-c44a-4b66-9981-c3f409d90fbe|d6180216-376a-4a9e-967f-7a5adf8052f1",
-        "clearance|85945900|81791900|d6180216-376a-4a9e-967f-7a5adf8052f1|6f54b5eb-65cc-4c2d-97c9-6c0dc1de4588",
-        "drill_out_of_range|120820000|117730000|2591ce14-9cc7-49a3-a555-b02efe2fb74f|00000000-0000-0000-0000-000000000000",
-        "drill_out_of_range|121520000|117030000|6f70717b-eb30-4bb0-831f-52e7e5127be1|00000000-0000-0000-0000-000000000000",
-        "drill_out_of_range|121520000|118430000|b2ddbeaa-ba02-42dc-aac0-d2e06e48ee28|00000000-0000-0000-0000-000000000000",
-        "drill_out_of_range|121520000|119830000|eaed709e-1fda-4384-a44d-8c73134a6b8b|00000000-0000-0000-0000-000000000000",
-        "drill_out_of_range|122220000|117730000|4ca8a0d6-1dd0-4017-9846-f78a0ac00f2f|00000000-0000-0000-0000-000000000000",
-        "drill_out_of_range|122220000|119130000|09177d68-df32-4b26-8675-63bdb4ddd94f|00000000-0000-0000-0000-000000000000",
-        "hole_clearance|135920000|120080000|320fde0d-3d91-4a12-af81-a13144680097|dcce5332-0597-4b34-b6b1-24f48ea35840",
-        "hole_clearance|135920000|120080000|3699aea1-655b-46c0-93e6-fe1cc907baed|dcce5332-0597-4b34-b6b1-24f48ea35840",
-        "hole_clearance|136120000|120080000|d485c7a0-bef9-48cb-803c-b6edf2cd3452|dcce5332-0597-4b34-b6b1-24f48ea35840",
-        "hole_clearance|136120000|120080000|e4d51024-4ef4-45f8-ac8e-286f083bcff3|dcce5332-0597-4b34-b6b1-24f48ea35840",
-        "hole_clearance|141520000|120080000|2bf1f4dc-1246-4d02-b991-ee7a6a69e117|726d463f-3397-4295-b319-dc82a2d6cc4c",
-        "hole_clearance|141520000|120080000|4ff5f6a8-431f-4e1c-a11d-13e473eb1b7f|726d463f-3397-4295-b319-dc82a2d6cc4c",
-        "hole_clearance|141720000|120080000|33cea7ed-1541-438d-acd1-a9df20e7bb46|726d463f-3397-4295-b319-dc82a2d6cc4c",
-        "hole_clearance|141720000|120080000|c539d998-c8e5-4520-925b-25d8a54f3ecb|726d463f-3397-4295-b319-dc82a2d6cc4c"
+        "clearance|85945900|81791900|d6180216-376a-4a9e-967f-7a5adf8052f1|6f54b5eb-65cc-4c2d-97c9-6c0dc1de4588"
       ],
       "meta": {
         "version": 2
@@ -586,10 +572,10 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -715,13 +701,13 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "MPN",
           "name": "MPN",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -734,7 +720,7 @@
       "group_symbols": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Purchase"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {

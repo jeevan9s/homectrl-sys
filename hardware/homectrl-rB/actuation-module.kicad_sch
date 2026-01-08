@@ -3646,7 +3646,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 87.63 63.5 0)
 			(effects
 				(font
@@ -3732,7 +3732,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 41.91 63.5 0)
 			(effects
 				(font
@@ -4271,7 +4271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 41.91 69.85 0)
 			(effects
 				(font
@@ -4834,7 +4834,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 87.63 69.85 0)
 			(effects
 				(font
@@ -5000,7 +5000,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "N/A"
 			(at 69.85 27.94 0)
 			(effects
 				(font
@@ -5350,7 +5350,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "N/A"
 			(at 101.6 27.94 0)
 			(effects
 				(font
@@ -5686,7 +5686,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF 50V"
+		(property "Value" "220uF 35V"
 			(at 168.656 119.38 0)
 			(effects
 				(font
@@ -5695,7 +5695,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
+		(property "Footprint" "EEE_FK1V101P:CAP_EEEFK1V101P"
 			(at 166.0652 121.92 0)
 			(effects
 				(font
@@ -5722,7 +5722,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "EEE-FK1V221P"
 			(at 165.1 118.11 0)
 			(effects
 				(font
@@ -6095,7 +6095,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "N/A"
 			(at 38.1 27.94 0)
 			(effects
 				(font
@@ -6183,7 +6183,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "TMC2209-LA-T"
 			(at 69.85 104.14 0)
 			(effects
 				(font
@@ -6425,7 +6425,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 124.46 119.38 0)
 			(effects
 				(font
@@ -6779,7 +6779,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 60.96 140.97 0)
 			(effects
 				(font
@@ -7018,7 +7018,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 124.46 109.22 0)
 			(effects
 				(font

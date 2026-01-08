@@ -3040,7 +3040,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 54.61 142.24 0)
 			(effects
 				(font
@@ -3191,7 +3191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 58.42 114.3 0)
 			(effects
 				(font
@@ -3625,7 +3625,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 172.72 134.62 0)
 			(effects
 				(font
@@ -3923,7 +3923,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "N/A"
 			(at 55.88 55.88 0)
 			(effects
 				(font
@@ -4020,7 +4020,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 172.72 132.08 0)
 			(effects
 				(font
@@ -4252,7 +4252,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ADS1115IDGSR"
 			(at 194.31 134.62 0)
 			(effects
 				(font
@@ -4561,7 +4561,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "SMAJ15A"
 			(at 92.71 68.58 0)
 			(effects
 				(font
@@ -4964,7 +4964,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 220.98 130.81 0)
 			(effects
 				(font
@@ -5204,7 +5204,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 208.28 125.73 0)
 			(effects
 				(font
@@ -5456,7 +5456,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "SMAJ15A"
 			(at 59.69 69.85 0)
 			(effects
 				(font
@@ -5553,7 +5553,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 220.98 140.97 0)
 			(effects
 				(font
@@ -5761,7 +5761,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "N/A"
 			(at 123.19 55.88 0)
 			(effects
 				(font
@@ -5861,7 +5861,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 58.42 138.43 0)
 			(effects
 				(font
@@ -5940,7 +5940,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "SI2301CDS-T1-GE3"
 			(at 62.23 138.43 0)
 			(effects
 				(font
@@ -6118,7 +6118,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "SI2301CDS-T1-GE3"
 			(at 62.23 114.3 0)
 			(effects
 				(font
@@ -6407,7 +6407,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "N/A"
 			(at 88.9 55.88 0)
 			(effects
 				(font
@@ -6637,7 +6637,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 54.61 118.11 0)
 			(effects
 				(font

@@ -4479,7 +4479,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 254 59.69 0)
 			(effects
 				(font
@@ -4793,7 +4793,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 40.64 83.82 0)
 			(effects
 				(font
@@ -4936,7 +4936,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "N/A"
 			(at 233.68 55.88 0)
 			(effects
 				(font
@@ -5324,7 +5324,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 233.68 59.69 0)
 			(effects
 				(font
@@ -5948,7 +5948,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=Tactile_Switches&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=1825910-6"
 			(at 77.47 50.8 0)
 			(effects
 				(font
@@ -5966,7 +5966,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "1825910-6"
 			(at 77.47 55.88 0)
 			(effects
 				(font
@@ -6060,7 +6060,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 237.49 78.74 0)
 			(effects
 				(font
@@ -6147,7 +6147,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "COM-24837"
 			(at 49.53 124.46 0)
 			(effects
 				(font
@@ -6601,7 +6601,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "N/A"
 			(at 181.61 68.58 0)
 			(effects
 				(font
@@ -6758,7 +6758,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "USB4105-GF-A-120"
 			(at 214.63 72.39 0)
 			(effects
 				(font
@@ -7055,7 +7055,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=Tactile_Switches&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=1825910-6"
 			(at 44.45 50.8 0)
 			(effects
 				(font
@@ -7073,7 +7073,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "1825910-6"
 			(at 44.45 55.88 0)
 			(effects
 				(font
@@ -7178,7 +7178,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 233.68 62.23 0)
 			(effects
 				(font
@@ -7478,7 +7478,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 121.92 64.77 0)
 			(effects
 				(font
@@ -7557,7 +7557,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "N/A"
 			(at 173.99 68.58 0)
 			(effects
 				(font
@@ -7800,7 +7800,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 33.02 120.65 0)
 			(effects
 				(font
@@ -8021,7 +8021,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 59.69 83.82 0)
 			(effects
 				(font

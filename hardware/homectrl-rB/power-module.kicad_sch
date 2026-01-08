@@ -729,6 +729,152 @@
 				)
 			)
 		)
+		(symbol "Device:FerriteBead"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FB"
+				(at -3.81 0.635 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "FerriteBead"
+				(at 3.81 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ferrite bead"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FerriteBead_0_1"
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.2192)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:L"
 			(pin_numbers hide)
 			(pin_names
@@ -3486,6 +3632,17 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 52.07) (xy 106.68 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 194 0 0 1)
+		)
+		(uuid "222d200f-63b9-4a71-ab1c-1eabf213e045")
+	)
+	(wire
+		(pts
 			(xy 58.42 52.07) (xy 64.77 52.07)
 		)
 		(stroke
@@ -3690,7 +3847,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 52.07) (xy 106.68 52.07)
+			(xy 88.9 52.07) (xy 93.98 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4431,7 +4588,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "N/A"
 			(at 148.59 45.72 0)
 			(effects
 				(font
@@ -4797,7 +4954,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "LM3940IMP-3.3/NOPB"
 			(at 143.51 107.95 0)
 			(effects
 				(font
@@ -4891,7 +5048,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "SMAJ15A"
 			(at 49.53 55.88 0)
 			(effects
 				(font
@@ -4998,7 +5155,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "37063cdc-8c4f-4e25-8bcd-0f6f7e77c50f")
 		(property "Reference" "J1"
 			(at 33.02 45.72 0)
@@ -5043,7 +5200,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "N/A"
 			(at 33.02 54.61 0)
 			(effects
 				(font
@@ -5904,7 +6061,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "SS14"
 			(at 64.77 139.7 0)
 			(effects
 				(font
@@ -6456,7 +6613,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "LM66100DCKR"
 			(at 233.68 60.96 0)
 			(effects
 				(font
@@ -6777,7 +6934,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "TPS5405DR"
 			(at 72.39 115.57 0)
 			(effects
 				(font
@@ -6957,7 +7114,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "LM66100DCKR"
 			(at 233.68 41.91 0)
 			(effects
 				(font
@@ -7012,7 +7169,7 @@
 		(dnp no)
 		(uuid "7a47c271-515e-4a9e-ae7b-f64a939a6a9c")
 		(property "Reference" "C2"
-			(at 110.236 46.228 0)
+			(at 110.236 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7021,7 +7178,7 @@
 			)
 		)
 		(property "Value" "10uF 24V"
-			(at 110.236 48.768 0)
+			(at 110.236 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7084,6 +7241,82 @@
 			(project ""
 				(path "/57d8224d-b57c-478b-b5c0-8f7e53702df5/c83a7989-d1c5-453e-9ef8-069559a5a4f1"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead")
+		(at 97.79 52.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7f11086e-bddf-45c3-a107-fc710e4efdde")
+		(property "Reference" "FB1"
+			(at 97.028 56.642 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FerriteBead"
+			(at 97.028 59.182 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MPZ2012S221AT000:BEADC2012X105N"
+			(at 97.79 53.848 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/emc/emc/beads/catalog/beads_commercial_power_mpz2012_en.pdf"
+			(at 97.79 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead"
+			(at 97.79 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MPZ2012S221AT000"
+			(at 97.79 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "87cf306e-4840-443e-a1fc-69944ea58e8d")
+		)
+		(pin "2"
+			(uuid "6f460deb-8a89-4630-9d51-21f449e44fa1")
+		)
+		(instances
+			(project ""
+				(path "/57d8224d-b57c-478b-b5c0-8f7e53702df5/c83a7989-d1c5-453e-9ef8-069559a5a4f1"
+					(reference "FB1")
 					(unit 1)
 				)
 			)
@@ -7472,7 +7705,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "N/A"
 			(at 172.72 45.72 0)
 			(effects
 				(font
@@ -8092,7 +8325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "N/A"
+		(property "Purchase" "Yes"
 			(at 167.64 49.53 0)
 			(effects
 				(font
@@ -8543,7 +8776,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "N/A"
 			(at 113.03 111.76 0)
 			(effects
 				(font
@@ -8649,7 +8882,7 @@
 		(dnp no)
 		(uuid "c8e96d75-d243-4d8b-99d7-a8cd8114694a")
 		(property "Reference" "C1"
-			(at 92.202 46.228 0)
+			(at 92.202 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8657,8 +8890,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100uF 24V"
-			(at 92.202 48.768 0)
+		(property "Value" "100uF 35V"
+			(at 92.202 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8666,7 +8899,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
+		(property "Footprint" "EEE_FK1V101P:CAP_EEEFK1V101P"
 			(at 87.9348 44.45 0)
 			(effects
 				(font
@@ -8693,7 +8926,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "EEE-FK1V101P"
 			(at 88.9 48.26 0)
 			(effects
 				(font
@@ -8866,7 +9099,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d0e0fabd-7c3b-4136-8c4d-9543d5284794")
 		(property "Reference" "F1"
 			(at 44.45 45.72 90)
@@ -8912,7 +9144,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "1210L110/16WR"
 			(at 44.45 52.07 0)
 			(effects
 				(font
@@ -9000,7 +9232,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "DMP6023LE-13"
 			(at 69.85 54.61 0)
 			(effects
 				(font
