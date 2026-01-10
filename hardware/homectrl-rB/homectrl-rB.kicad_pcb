@@ -1135,7 +1135,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61A476ME15-01.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1161,7 +1161,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "GRM21BR61A476ME15L"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3918,7 +3918,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "us/1105/CL21B105KAFNNNE_Spec.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3944,7 +3944,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL21B105KAFNNNE"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22088,7 +22088,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "us/1105/CL21B105KAFNNNE_Spec.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22114,7 +22114,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL21B105KAFNNNE"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25193,7 +25193,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61A476ME15-01.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25219,7 +25219,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "GRM21BR61A476ME15L"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32156,7 +32156,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/150060GS75000.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32182,7 +32182,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "150060GS75000"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32418,7 +32418,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32444,7 +32444,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERJ-3EKF4701V"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
