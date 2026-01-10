@@ -1,9 +1,0 @@
-Manufacturer=LITTELFUSE
-PartNumber=1210L110/16WR
-PartCategory=Fuse
-PackageCategory=Fuses Chip
-PinCount=2
-Version=1.1
-Released=2019-06-19 03:39:59
-Downloaded=2025-12-29 21:54:20
-3D=Y

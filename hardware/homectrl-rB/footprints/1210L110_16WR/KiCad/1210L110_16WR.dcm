@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP 1210L110_16WR
-D Littelfuse 1.1A Resettable Surface Mount Fuse, 16V dc
-K
-F https://www.littelfuse.com/~/media/electronics/datasheets/resettable_ptcs/littelfuse_ptc_1210l_datasheet.pdf.pdf
-$ENDCMP
-#
-#End Doc Library
