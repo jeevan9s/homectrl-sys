@@ -2277,7 +2277,7 @@
 				)
 			)
 		)
-		(property "Footprint" "530480410:MOLEX_530480410"
+		(property "Footprint" "S04B_PASK_2:CONN4_S04B-PASK_JST"
 			(at 102.87 91.44 0)
 			(effects
 				(font

@@ -80,11 +80,7 @@
         "clearance|149514700|105693001|b269ee68-7569-4785-a0e0-661a5b58fdc5|beccb8c7-5a2e-40db-a9ff-55d68358c6c6",
         "clearance|149514700|106692999|eb5dd8e8-700a-4f4d-8ccf-91603ef64544|beccb8c7-5a2e-40db-a9ff-55d68358c6c6",
         "clearance|149514700|107193001|39dd2afe-302c-47bc-ba37-1e95658ba6f7|beccb8c7-5a2e-40db-a9ff-55d68358c6c6",
-        "clearance|149514700|107693000|80e5921f-3b22-4953-95eb-1980b6057f5d|beccb8c7-5a2e-40db-a9ff-55d68358c6c6",
-        "clearance|85690000|89660000|0cf8c7cb-47ec-487a-ab5b-b09d32a5ad6f|db9ad255-fc18-4e9e-a3f6-0f737dca0d30",
-        "clearance|85690000|90910000|db9ad255-fc18-4e9e-a3f6-0f737dca0d30|7b64b59f-bec2-4270-96fa-2bb60bfd5cf7",
-        "clearance|85945900|80541900|1997c66e-c44a-4b66-9981-c3f409d90fbe|d6180216-376a-4a9e-967f-7a5adf8052f1",
-        "clearance|85945900|81791900|d6180216-376a-4a9e-967f-7a5adf8052f1|6f54b5eb-65cc-4c2d-97c9-6c0dc1de4588"
+        "clearance|149514700|107693000|80e5921f-3b22-4953-95eb-1980b6057f5d|beccb8c7-5a2e-40db-a9ff-55d68358c6c6"
       ],
       "meta": {
         "version": 2
@@ -712,6 +708,18 @@
           "label": "Purchase",
           "name": "Purchase",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey_Part_Number",
+          "name": "DigiKey_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Comments",
+          "name": "Comments",
+          "show": false
         }
       ],
       "filter_string": "",

@@ -4345,6 +4345,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 254 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "350eb926-b10c-4651-af55-f2fc6aa6969c")
 		)
@@ -4443,7 +4452,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 12V"
+		(property "Value" "10uF "
 			(at 167.64 59.1819 0)
 			(effects
 				(font
@@ -4498,6 +4507,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 163.83 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 163.83 55.88 0)
 			(effects
 				(font
@@ -4659,6 +4677,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 39.37 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "404c5621-3f38-4a6d-958e-b05aacaff61f")
 		)
@@ -4803,6 +4830,15 @@
 			)
 		)
 		(property "Purchase" "N/A"
+			(at 233.68 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 233.68 55.88 0)
 			(effects
 				(font
@@ -5040,7 +5076,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF 12V"
+		(property "Value" "0.1uF "
 			(at 64.516 123.444 0)
 			(effects
 				(font
@@ -5086,6 +5122,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 62.23 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 62.23 116.84 0)
 			(effects
 				(font
@@ -5190,6 +5235,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 233.68 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "aa1068a4-7006-42c7-bcfc-b6398af4a299")
 		)
@@ -5270,6 +5324,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 254 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 254 67.31 0)
 			(effects
 				(font
@@ -5376,7 +5439,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF 12V"
+		(property "Value" "0.1uF "
 			(at 140.97 62.23 0)
 			(effects
 				(font
@@ -5431,6 +5494,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 128.27 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 128.27 64.77 0)
 			(effects
 				(font
@@ -5519,6 +5591,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 58.42 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 58.42 95.25 0)
 			(effects
 				(font
@@ -5678,6 +5759,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 77.47 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5d498d2e-d838-448b-b61a-dbb7837d2fe3")
 		)
@@ -5766,6 +5856,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 48.26 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 48.26 128.27 0)
 			(effects
 				(font
@@ -5879,7 +5978,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF 50V"
+		(property "Value" "0.1uF"
 			(at 167.64 55.1181 0)
 			(effects
 				(font
@@ -5934,6 +6033,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 152.4 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 152.4 55.88 0)
 			(effects
 				(font
@@ -6228,6 +6336,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 181.61 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6941940c-de25-4e9b-acda-e6708616d863")
 		)
@@ -6387,6 +6504,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 119.38 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5eaf74e5-d6a2-4618-8258-e2b08edfdc8e")
 		)
@@ -6473,6 +6599,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 214.63 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 214.63 72.39 0)
 			(effects
 				(font
@@ -6614,6 +6749,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 39.37 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2d00fbf7-705c-4cd8-af47-00ea882ff05b")
 		)
@@ -6692,6 +6836,15 @@
 			)
 		)
 		(property "Purchase" "N/A"
+			(at 44.45 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 44.45 55.88 0)
 			(effects
 				(font
@@ -6796,6 +6949,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 233.68 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b9e27c29-07b5-48a2-aa4d-ec94aa6f05fc")
 		)
@@ -6875,6 +7037,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 148.59 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 148.59 91.44 0)
 			(effects
 				(font
@@ -7096,6 +7267,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 121.92 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8f59a436-3664-4c38-93b8-7a5e3182a82e")
 		)
@@ -7184,6 +7364,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 173.99 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9cd10125-377f-43eb-bd40-5defa68d081f")
 		)
@@ -7214,7 +7403,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 50V"
+		(property "Value" "10uF "
 			(at 64.262 128.524 0)
 			(effects
 				(font
@@ -7260,6 +7449,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 53.34 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 53.34 116.84 0)
 			(effects
 				(font
@@ -7410,6 +7608,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 31.75 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 31.75 124.46 0)
 			(effects
 				(font
@@ -7697,6 +7904,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 58.42 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 58.42 87.63 0)
 			(effects
 				(font

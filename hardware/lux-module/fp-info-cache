@@ -1,4 +1,4 @@
-23677437468620454
+23684511392294435
 0ZCG0260BF2B
 FUSER_0ZCG0260BF2B
 
@@ -64714,6 +64714,13 @@ Yellow 5381 Series LED
 0
 2
 2
+LIB_S03B-PASK-2_LF__SN_
+S03BPASK2LFSN
+S03B-PASK-2(LF)(SN)-2
+Connector
+0
+3
+3
 LM66100
 SC-70-6
 SC70-6
@@ -88962,6 +88969,20 @@ rotary encoder illuminated switch vertical
 0
 9
 8
+S02B_PASK_2
+CONN2_S02B-PASK-2_JST
+
+S02B-PASK-2 
+0
+2
+2
+S04B_PASK_2
+CONN4_S04B-PASK_JST
+
+S04B-PASK-2 
+0
+4
+4
 SMA6L30A
 SMASeries_LTF
 
@@ -90656,6 +90677,13 @@ Logo WEEE
 0
 0
 0
+TPD2E001DRLR
+SOT50P160X60-5N
+
+
+0
+5
+5
 TerminalBlock
 TerminalBlock_Altech_AK300-2_P5.00mm
 Altech AK300 terminal block, pitch 5.0mm, 45 degree angled, see http://www.mouser.com/ds/2/16/PCBMETRC-24178.pdf

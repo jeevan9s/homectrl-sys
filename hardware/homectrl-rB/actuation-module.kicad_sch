@@ -3630,6 +3630,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" "onsemi"
+			(at 87.63 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2beb4492-c2e1-4e43-bb1c-1eac3e0025dd")
 		)
@@ -3698,7 +3707,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
+		(property "MPN" "ERJ-3EKF1001V"
 			(at 165.1 67.31 0)
 			(effects
 				(font
@@ -3708,6 +3717,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 165.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 165.1 67.31 0)
 			(effects
 				(font
@@ -3794,6 +3812,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 120.65 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 120.65 67.31 0)
 			(effects
 				(font
@@ -3901,7 +3928,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF 50V"
+		(property "Value" "0.1uF"
 			(at 182.372 146.812 0)
 			(effects
 				(font
@@ -3955,6 +3982,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 168.91 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2d25cf2f-23b8-407b-8fbe-cbbe846dc731")
 		)
@@ -3988,7 +4024,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF 50V"
+		(property "Value" "0.1uF"
 			(at 202.184 127.254 0)
 			(effects
 				(font
@@ -4034,6 +4070,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 203.2 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 203.2 119.38 0)
 			(effects
 				(font
@@ -4243,6 +4288,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 127 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" "Confirmed AO3400A  , brand:AOS,package:SOT-23-3L"
 			(at 127 64.77 0)
 			(effects
 				(font
@@ -4472,6 +4526,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 124.46 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9716b12c-b62f-4c31-a807-b6b3dd27f943")
 		)
@@ -4505,7 +4568,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22nF 50V"
+		(property "Value" "22nF "
 			(at 99.314 108.458 0)
 			(effects
 				(font
@@ -4559,6 +4622,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 105.41 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "66c83dc8-614f-486c-b135-c56f6f723912")
 		)
@@ -4592,7 +4664,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF 50V"
+		(property "Value" "0.1uF"
 			(at 191.008 127.254 0)
 			(effects
 				(font
@@ -4638,6 +4710,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 193.04 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 193.04 119.38 0)
 			(effects
 				(font
@@ -4808,6 +4889,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 119.38 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" "onsemi"
 			(at 119.38 41.91 0)
 			(effects
 				(font
@@ -5035,6 +5125,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 168.91 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "42e5eaa6-8df8-4465-b0e6-e22a58a54eff")
 		)
@@ -5068,7 +5167,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2uF 35V"
+		(property "Value" "2.2uF "
 			(at 85.598 127.508 0)
 			(effects
 				(font
@@ -5122,6 +5221,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 99.06 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9e4e8725-deb9-41dd-8a03-debbd3685f7c")
 		)
@@ -5165,7 +5273,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "530480210:MOLEX_530480210"
+		(property "Footprint" "S02B_PASK_2:CONN2_S02B-PASK-2_JST"
 			(at 118.11 27.94 0)
 			(effects
 				(font
@@ -5210,6 +5318,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "abbb019b-ff34-4cd2-9a29-34195f2f6027")
 		)
@@ -5243,7 +5360,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF 50V"
+		(property "Value" "0.1uF"
 			(at 189.23 34.798 0)
 			(effects
 				(font
@@ -5280,6 +5397,15 @@
 			)
 		)
 		(property "MPN" "CC0603KRX7R9BB104"
+			(at 185.42 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 185.42 34.29 0)
 			(effects
 				(font
@@ -5726,7 +5852,7 @@
 				)
 			)
 		)
-		(property "Footprint" "530480410:MOLEX_530480410"
+		(property "Footprint" "S04B_PASK_2:CONN4_S04B-PASK_JST"
 			(at 207.01 27.94 0)
 			(effects
 				(font
@@ -5763,6 +5889,15 @@
 			)
 		)
 		(property "Purchase" "No"
+			(at 207.01 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 207.01 27.94 0)
 			(effects
 				(font
@@ -5986,6 +6121,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" "Confirmed AO3400A  , brand:AOS,package:SOT-23-3L"
+			(at 171.45 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ed53629f-7069-4d27-b9e0-8fd02f6e21ab")
 		)
@@ -6023,7 +6167,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF 35V"
+		(property "Value" "100uF "
 			(at 151.13 34.6709 0)
 			(effects
 				(font
@@ -6059,7 +6203,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "UWT1V101MCL1GS"
+		(property "MPN" "EEH-ZK1V101XP"
+			(at 147.32 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 147.32 34.29 0)
 			(effects
 				(font
@@ -6233,7 +6386,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220uF 35V"
+		(property "Value" "220uF "
 			(at 215.392 116.332 0)
 			(effects
 				(font
@@ -6260,7 +6413,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "Polarized capacitor, EEE-FK1V221P i"
 			(at 213.36 119.38 0)
 			(effects
 				(font
@@ -6279,6 +6432,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 213.36 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" "EEE-FK1V221P is the correct MPN even though the footprint has a different MPN."
 			(at 213.36 119.38 0)
 			(effects
 				(font
@@ -6320,7 +6482,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF 50V"
+		(property "Value" "0.1uF"
 			(at 81.788 114.808 0)
 			(effects
 				(font
@@ -6366,6 +6528,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 95.25 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 95.25 114.3 0)
 			(effects
 				(font
@@ -6615,7 +6786,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "530480210:MOLEX_530480210"
+		(property "Footprint" "S02B_PASK_2:CONN2_S02B-PASK-2_JST"
 			(at 86.36 27.94 0)
 			(effects
 				(font
@@ -6652,6 +6823,15 @@
 			)
 		)
 		(property "Purchase" "No"
+			(at 86.36 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 86.36 27.94 0)
 			(effects
 				(font
@@ -6740,6 +6920,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 118.11 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 118.11 105.41 0)
 			(effects
 				(font
@@ -7112,6 +7301,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 172.72 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "815ebc34-aa2f-484a-9795-099320dbb589")
 		)
@@ -7466,6 +7664,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" ""
+			(at 118.11 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0ba136c8-2a92-4572-ac8b-f69a96c4e7cf")
 		)
@@ -7499,7 +7706,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF 50V"
+		(property "Value" "0.1uF"
 			(at 170.688 34.798 0)
 			(effects
 				(font
@@ -7536,6 +7743,15 @@
 			)
 		)
 		(property "MPN" "CC0603KRX7R9BB104"
+			(at 166.37 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 166.37 34.29 0)
 			(effects
 				(font
@@ -7644,7 +7860,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF 50V"
+		(property "Value" "4.7uF "
 			(at 85.344 132.842 0)
 			(effects
 				(font
@@ -7690,6 +7906,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 105.41 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 105.41 127 0)
 			(effects
 				(font
@@ -7775,6 +8000,15 @@
 			)
 		)
 		(property "Purchase" "Yes"
+			(at 172.72 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Comments" ""
 			(at 172.72 110.49 0)
 			(effects
 				(font
