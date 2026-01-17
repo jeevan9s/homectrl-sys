@@ -1459,17 +1459,6 @@
 		(uuid "004d53f4-0007-466d-ab5b-fef36a7f2b1c")
 	)
 	(label "SDA"
-		(at 102.87 96.52 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "10113704-8d80-438d-9266-ea755ec173b6")
-	)
-	(label "SDA"
 		(at 163.83 87.63 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1480,7 +1469,7 @@
 		)
 		(uuid "23123387-1d95-43a1-80ca-6674f68793eb")
 	)
-	(label "SCL"
+	(label "SDA"
 		(at 105.41 96.52 270)
 		(fields_autoplaced yes)
 		(effects
@@ -1489,7 +1478,18 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "74331905-e2d8-47a0-bd51-74c999be6f1b")
+		(uuid "5956e602-5908-407e-a385-911bb89f84ab")
+	)
+	(label "SCL"
+		(at 102.87 96.52 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6f314788-272c-4cb1-bf34-e1d31b82c984")
 	)
 	(label "SCL"
 		(at 123.19 87.63 180)
@@ -2304,7 +2304,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "N/A"
+		(property "MPN" "S04B-PASK-2"
 			(at 102.87 91.44 0)
 			(effects
 				(font
@@ -2313,7 +2313,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "No"
+		(property "Purchase" "Yes"
 			(at 102.87 91.44 0)
 			(effects
 				(font
