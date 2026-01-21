@@ -4220,7 +4220,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "N/A"
+		(property "MPN" "  S03B-PASK-2"
 			(at 55.88 55.88 0)
 			(effects
 				(font
@@ -4229,7 +4229,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "No"
+		(property "Purchase" "Yes"
 			(at 55.88 55.88 0)
 			(effects
 				(font
@@ -6146,7 +6146,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "N/A"
+		(property "MPN" "S04B-PASK-2"
 			(at 114.3 53.34 0)
 			(effects
 				(font
@@ -6155,7 +6155,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "No"
+		(property "Purchase" "Yes"
 			(at 114.3 53.34 0)
 			(effects
 				(font
@@ -6903,7 +6903,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "N/A"
+		(property "MPN" "  S03B-PASK-2"
 			(at 81.28 55.88 0)
 			(effects
 				(font
@@ -6912,7 +6912,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "No"
+		(property "Purchase" "Yes"
 			(at 81.28 55.88 0)
 			(effects
 				(font

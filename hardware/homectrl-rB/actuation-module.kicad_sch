@@ -4296,7 +4296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Comments" "Confirmed AO3400A  , brand:AOS,package:SOT-23-3L"
+		(property "Comments" "Confirmed AO3400A  , brand:AOS,package:SOT-23-3L, and brand AOS"
 			(at 127 64.77 0)
 			(effects
 				(font
@@ -5300,7 +5300,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "N/A"
+		(property "MPN" "S02B-PASK-2"
 			(at 118.11 27.94 0)
 			(effects
 				(font
@@ -5309,7 +5309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "No"
+		(property "Purchase" "Yes, Do Not Assemble"
 			(at 118.11 27.94 0)
 			(effects
 				(font
@@ -5879,7 +5879,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "N/A"
+		(property "MPN" "S04B-PASK-2"
 			(at 207.01 27.94 0)
 			(effects
 				(font
@@ -5888,7 +5888,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "No"
+		(property "Purchase" "Yes"
 			(at 207.01 27.94 0)
 			(effects
 				(font
@@ -6121,7 +6121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Comments" "Confirmed AO3400A  , brand:AOS,package:SOT-23-3L"
+		(property "Comments" "Confirmed AO3400A  , brand:AOS,package:SOT-23-3L, and brand AOS"
 			(at 171.45 64.77 0)
 			(effects
 				(font
@@ -6813,7 +6813,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "N/A"
+		(property "MPN" "S02B-PASK-2"
 			(at 86.36 27.94 0)
 			(effects
 				(font
@@ -6822,7 +6822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "No"
+		(property "Purchase" "Yes, Do Not Assemble"
 			(at 86.36 27.94 0)
 			(effects
 				(font

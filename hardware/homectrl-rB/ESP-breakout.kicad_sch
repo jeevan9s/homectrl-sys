@@ -6749,7 +6749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Comments" ""
+		(property "Comments" "Brand: Wurth Elektronik"
 			(at 39.37 95.25 0)
 			(effects
 				(font
@@ -7045,7 +7045,7 @@
 				(hide yes)
 			)
 		)
-		(property "Comments" ""
+		(property "Comments" "Confirmed part number is ESP32-S3-WROOM-1-n16R8, different from, not WROOM-1-n16R2"
 			(at 148.59 91.44 0)
 			(effects
 				(font
