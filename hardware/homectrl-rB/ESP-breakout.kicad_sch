@@ -4452,7 +4452,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF "
+		(property "Value" "10uF"
 			(at 167.64 59.1819 0)
 			(effects
 				(font
@@ -5076,7 +5076,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF "
+		(property "Value" "0.1uF"
 			(at 64.516 123.444 0)
 			(effects
 				(font
@@ -5439,7 +5439,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF "
+		(property "Value" "0.1uF"
 			(at 140.97 62.23 0)
 			(effects
 				(font
@@ -6749,7 +6749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Comments" ""
+		(property "Comments" "Brand: Wurth Elektronik"
 			(at 39.37 95.25 0)
 			(effects
 				(font
@@ -7045,7 +7045,7 @@
 				(hide yes)
 			)
 		)
-		(property "Comments" ""
+		(property "Comments" "Confirmed part number is ESP32-S3-WROOM-1-n16R8, different from, not WROOM-1-n16R2"
 			(at 148.59 91.44 0)
 			(effects
 				(font
@@ -7403,7 +7403,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF "
+		(property "Value" "10uF"
 			(at 64.262 128.524 0)
 			(effects
 				(font

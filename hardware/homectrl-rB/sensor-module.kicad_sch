@@ -2791,7 +2791,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF "
+		(property "Value" "0.1uF"
 			(at 170.688 141.732 0)
 			(effects
 				(font
@@ -3832,7 +3832,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF "
+		(property "Value" "0.1uF"
 			(at 43.942 68.834 90)
 			(effects
 				(font
@@ -4088,7 +4088,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF "
+		(property "Value" "10uF"
 			(at 99.314 75.438 0)
 			(effects
 				(font
@@ -4220,7 +4220,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "N/A"
+		(property "MPN" "  S03B-PASK-2"
 			(at 55.88 55.88 0)
 			(effects
 				(font
@@ -4229,7 +4229,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "No"
+		(property "Purchase" "Yes"
 			(at 55.88 55.88 0)
 			(effects
 				(font
@@ -4444,7 +4444,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF "
+		(property "Value" "10uF"
 			(at 117.348 148.844 90)
 			(effects
 				(font
@@ -4858,7 +4858,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF "
+		(property "Value" "0.1uF"
 			(at 69.342 69.088 90)
 			(effects
 				(font
@@ -5086,7 +5086,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF "
+		(property "Value" "0.1uF"
 			(at 170.942 127.254 0)
 			(effects
 				(font
@@ -5345,7 +5345,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF "
+		(property "Value" "10uF"
 			(at 178.562 114.808 0)
 			(effects
 				(font
@@ -5537,7 +5537,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF "
+		(property "Value" "0.1uF"
 			(at 179.324 108.712 0)
 			(effects
 				(font
@@ -5633,7 +5633,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF "
+		(property "Value" "0.1uF"
 			(at 121.666 75.692 0)
 			(effects
 				(font
@@ -6146,7 +6146,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "N/A"
+		(property "MPN" "  S04B-PASK-2"
 			(at 114.3 53.34 0)
 			(effects
 				(font
@@ -6155,7 +6155,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "No"
+		(property "Purchase" "Yes"
 			(at 114.3 53.34 0)
 			(effects
 				(font
@@ -6473,7 +6473,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF "
+		(property "Value" "10uF"
 			(at 116.078 122.174 90)
 			(effects
 				(font
@@ -6903,7 +6903,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "N/A"
+		(property "MPN" "  S03B-PASK-2"
 			(at 81.28 55.88 0)
 			(effects
 				(font
@@ -6912,7 +6912,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "No"
+		(property "Purchase" "Yes"
 			(at 81.28 55.88 0)
 			(effects
 				(font

@@ -4423,7 +4423,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF "
+		(property "Value" "22uF"
 			(at 144.526 94.742 0)
 			(effects
 				(font
@@ -4520,7 +4520,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47uF "
+		(property "Value" "47uF"
 			(at 82.55 140.9699 0)
 			(effects
 				(font
@@ -5426,7 +5426,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47nF "
+		(property "Value" "47nF"
 			(at 24.638 102.108 0)
 			(effects
 				(font
@@ -5523,7 +5523,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47uF "
+		(property "Value" "47uF"
 			(at 267.97 64.7699 0)
 			(effects
 				(font
@@ -6342,7 +6342,7 @@
 				)
 			)
 		)
-		(property "Value" "3.3nF "
+		(property "Value" "3.3nF"
 			(at 101.092 101.346 90)
 			(effects
 				(font
@@ -7367,7 +7367,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF "
+		(property "Value" "10uF"
 			(at 116.586 50.8 0)
 			(effects
 				(font
@@ -7644,7 +7644,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF "
+		(property "Value" "1uF"
 			(at 186.182 69.088 0)
 			(effects
 				(font
@@ -8588,7 +8588,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF "
+		(property "Value" "10uF"
 			(at 126.492 94.996 0)
 			(effects
 				(font
@@ -8846,7 +8846,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF "
+		(property "Value" "0.1uF"
 			(at 144.272 100.076 0)
 			(effects
 				(font
@@ -8942,7 +8942,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF "
+		(property "Value" "1uF"
 			(at 186.182 50.292 0)
 			(effects
 				(font
@@ -9509,7 +9509,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100uF "
+		(property "Value" "100uF"
 			(at 90.932 53.34 90)
 			(effects
 				(font
@@ -9997,7 +9997,7 @@
 				)
 			)
 		)
-		(property "Value" "47 nF "
+		(property "Value" "47 nF"
 			(at 35.814 118.364 90)
 			(effects
 				(font
@@ -10254,7 +10254,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.47uF "
+		(property "Value" "0.47uF"
 			(at 126.492 99.822 0)
 			(effects
 				(font
