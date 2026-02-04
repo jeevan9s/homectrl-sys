@@ -7,6 +7,7 @@
 <hr>
 
 **REV B Updates**: 
+* The board is currently being fabbed!
 * Main controller has a tighter layout, with an SMD-first layout, and mixed-signal design (4L). 
 * Designed a standalone [ALS](https://github.com/jeevan9s/homectrl-sys/tree/rev-B/hardware/lux-module) (Ambient-Light-Sensor) breakout module for further automation capability.
 * All IC breakout circuitry was custom desgined, no breakout-boards were used. 
