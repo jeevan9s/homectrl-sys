@@ -1,4 +1,4 @@
-23693350858740181
+23681027820487573
 0ZCG0260BF2B
 FUSER_0ZCG0260BF2B
 
@@ -6,41 +6,6 @@ FUSER_0ZCG0260BF2B
 0
 2
 2
-0679L0250-05
-FUSC6125X279N
-
-
-0
-2
-2
-53048-0310
-53048-0310
-<b>HEADER</b>
-
-0
-3
-3
-282834-3
-TE_282834-3
-
-
-0
-3
-3
-530480210
-MOLEX_530480210
-
-
-0
-2
-2
-ADS131M04IPWR
-SOP65P640X120-20N
-
-
-0
-20
-20
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -55,6 +20,13 @@ audio belton reverb
 0
 7
 7
+B04B_PASK_JST
+CONN_B04B-PASK_JST
+
+B04B-PASK LFSN 
+0
+4
+4
 Battery
 BatteryClip_Keystone_54_D16-19mm
 Battery clip for batteries with a diameter between 16-19 mm: https://www.keyelco.com/product.cfm/product_id/826
@@ -2589,6 +2561,27 @@ speaker CUI
 0
 2
 2
+CP2102N_A02_GQFN20
+QFN20_CP2102N_SIL
+
+CP2102N-A02-GQFN20 
+0
+21
+21
+CP2102N_A02_GQFN20
+QFN20_CP2102N_SIL-L
+
+CP2102N-A02-GQFN20 
+0
+21
+21
+CP2102N_A02_GQFN20
+QFN20_CP2102N_SIL-M
+
+CP2102N-A02-GQFN20 
+0
+21
+21
 Calibration_Scale
 Gauge_10mm_Type1_CopperTop
 Gauge, Massstab, 10mm, CopperTop, Type 1,
@@ -56692,13 +56685,6 @@ CAP_EEHZK1V101XP
 0
 2
 2
-ESP32-S3-WROOM-1-N16R2
-XCVR_ESP32-S3-WROOM-1-N16R2
-
-
-0
-61
-61
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -64721,13 +64707,6 @@ Yellow 5381 Series LED
 0
 2
 2
-LM66100
-SC-70-6
-SC70-6
-SC70-6
-0
-6
-6
 MPZ2012S221AT000
 BEADC2012X105N
 
@@ -88976,13 +88955,6 @@ S02B-PASK-2
 0
 2
 2
-S02B_PASK_2-C
-CONN2_S02B-PASK-2_JST
-
-S02B-PASK-2 
-0
-2
-2
 S04B_PASK_2
 CONN4_S04B-PASK_JST
 
@@ -88990,7 +88962,7 @@ S04B-PASK-2
 0
 4
 4
-S04B_PASK_2-C
+S04B_PASK_2-P
 CONN4_S04B-PASK_JST
 
 S04B-PASK-2 
@@ -95983,13 +95955,6 @@ igbt diode module
 0
 25
 25
-VO1400AEFTR
-SOIC254P695X242-4N
-
-
-0
-4
-4
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins
@@ -96774,24 +96739,10 @@ Varistor VF
 0
 2
 2
-ul_ISO1044BDR
-SOIC_1044BDR_TEX
+ul_B02B-PASK-1
+CONN_B02B-PASK-1_JST
 
-ISO1044BDR 
+B02B-PASK-1 
 0
-8
-8
-ul_ISO1044BDR
-SOIC_1044BDR_TEX-L
-
-ISO1044BDR 
-0
-8
-8
-ul_ISO1044BDR
-SOIC_1044BDR_TEX-M
-
-ISO1044BDR 
-0
-8
-8
+3
+3
