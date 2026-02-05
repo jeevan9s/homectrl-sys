@@ -60847,8 +60847,8 @@
 		(net 2)
 		(net_name "GND")
 		(layers "In1.Cu" "In2.Cu")
-		(uuid "988d7b28-ae6e-44bb-981c-6850c4d34c7c")
-		(name "GMD")
+		(uuid "d39ee2e2-cc64-4968-8a2c-e5d3215102d7")
+		(name "GND")
 		(hatch edge 0.5)
 		(priority 4)
 		(connect_pads
@@ -60862,30 +60862,7 @@
 		)
 		(polygon
 			(pts
-				(xy 77.14 43.82) (xy 166.19 43.82) (xy 166.19 135.46) (xy 77.14 135.46)
-			)
-		)
-	)
-	(zone
-		(net 2)
-		(net_name "GND")
-		(layers "In1.Cu" "In2.Cu")
-		(uuid "9930df2f-48fc-4d68-91d3-e10b31757971")
-		(name "GND")
-		(hatch edge 0.5)
-		(priority 5)
-		(connect_pads
-			(clearance 0.5)
-		)
-		(min_thickness 0.25)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-		)
-		(polygon
-			(pts
-				(xy 77.14 43.82) (xy 166.19 43.82) (xy 166.19 135.46) (xy 77.14 135.46)
+				(xy 77.4 43.8) (xy 166.2 44) (xy 166 135.4) (xy 77 135.4)
 			)
 		)
 		(filled_polygon

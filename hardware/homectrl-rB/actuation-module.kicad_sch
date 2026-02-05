@@ -4568,7 +4568,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22nF "
+		(property "Value" "22nF"
 			(at 99.314 108.458 0)
 			(effects
 				(font
@@ -5167,7 +5167,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2uF "
+		(property "Value" "2.2uF"
 			(at 85.598 127.508 0)
 			(effects
 				(font
@@ -5300,7 +5300,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "S02B-PASK-2"
+		(property "MPN" "  S02B-PASK-2"
 			(at 118.11 27.94 0)
 			(effects
 				(font
@@ -5309,7 +5309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "Yes, Do Not Assemble"
+		(property "Purchase" "Yes"
 			(at 118.11 27.94 0)
 			(effects
 				(font
@@ -5879,7 +5879,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "S04B-PASK-2"
+		(property "MPN" "  S04B-PASK-2"
 			(at 207.01 27.94 0)
 			(effects
 				(font
@@ -6167,7 +6167,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF "
+		(property "Value" "100uF"
 			(at 151.13 34.6709 0)
 			(effects
 				(font
@@ -6213,6 +6213,15 @@
 			)
 		)
 		(property "Comments" ""
+			(at 147.32 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase" "YES"
 			(at 147.32 34.29 0)
 			(effects
 				(font
@@ -6386,7 +6395,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220uF "
+		(property "Value" "220uF"
 			(at 215.392 116.332 0)
 			(effects
 				(font
@@ -6813,7 +6822,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "S02B-PASK-2"
+		(property "MPN" "  S02B-PASK-2"
 			(at 86.36 27.94 0)
 			(effects
 				(font
@@ -6822,7 +6831,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase" "Yes, Do Not Assemble"
+		(property "Purchase" "Yes"
 			(at 86.36 27.94 0)
 			(effects
 				(font
@@ -7860,7 +7869,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF "
+		(property "Value" "4.7uF"
 			(at 85.344 132.842 0)
 			(effects
 				(font
