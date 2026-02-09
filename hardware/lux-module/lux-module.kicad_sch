@@ -1606,7 +1606,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 75.8952 100.33 0)
 			(effects
 				(font
@@ -1633,7 +1633,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL10A106KP8NNNC"
+		(property "MPN" "CL21B106KOQNNNE"
 			(at 74.93 96.52 0)
 			(effects
 				(font
@@ -1761,7 +1761,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 172.4152 105.41 0)
 			(effects
 				(font
@@ -1788,7 +1788,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KP5NNNC"
+		(property "MPN" "C0805C104K5RACTU"
 			(at 171.45 101.6 0)
 			(effects
 				(font
@@ -2096,7 +2096,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 83.5152 100.33 0)
 			(effects
 				(font
@@ -2123,7 +2123,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CC0603KRX7R9BB104"
+		(property "MPN" "CL21B104KBCNNNC"
 			(at 82.55 96.52 0)
 			(effects
 				(font
