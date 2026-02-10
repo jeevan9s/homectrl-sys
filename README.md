@@ -1,25 +1,24 @@
 # homectrl
 > Smart home automation controller designed in KiCad; dashboard built with Next.js, firmware in Arduino C/C++.
 
-**Huge thanks to PCBWay for sponsoring this project's first revision.**<br>
-[Check out **REV A**](https://github.com/jeevan9s/homectrl-sys/tree/rev-A)
+**huge thanks to PCBWay for sponsoring this project's first revision.**<br>
+[check out **REV A**](https://github.com/jeevan9s/homectrl-sys/tree/rev-A)
 
 <hr>
 
 **REV B Updates**: 
-* The board is currently being fabbed!
-* Main controller has a tighter layout, with an SMD-first layout, and mixed-signal design (4L). 
-* Designed a standalone [ALS](https://github.com/jeevan9s/homectrl-sys/tree/rev-B/hardware/lux-module) (Ambient-Light-Sensor) breakout module for further automation capability.
-* All IC breakout circuitry was custom desgined, no breakout-boards were used. 
-* Onboard ADC, and motor control (MOSFET, Stepper Driver) were implemented. 
+* board is currently out for fab. 
+* main controller features a much more compact layout, 4L mixed-signal design, SMD-first component selection. 
+* onboard ADC, stepper motor driver, power management. 
+* all IC breakout circuitry was custom desgined, no breakout-boards were used. 
+* designed a standalone [ALS](https://github.com/jeevan9s/homectrl-sys/tree/rev-B/hardware/lux-module) (ambient-light-sensor) breakout module for further automation capability.
+
 
 <details>
 <summary>Contents</summary>
 
 - [overview](#overview)
 - [architecture](#architecture)
-  - [firmware](#firmware)
-  - [hardware](#hardware)
 - [prerequisites / installation](#prerequisites--installation)
 - [acknowledgements](#acknowledgements)
 - [contact](#contact)
