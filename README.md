@@ -1,5 +1,5 @@
 # homectrl
-> Smart home automation controller designed in KiCad; dashboard built with Next.js, firmware in Arduino C/C++.
+> system for general home automation. (custom PCBs in KiCad, firmware in C/C++, web-app in Next.js)
 
 **huge thanks to PCBWay for sponsoring this project's first revision.**<br>
 [check out **REV A**](https://github.com/jeevan9s/homectrl-sys/tree/rev-A)
