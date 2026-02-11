@@ -45,6 +45,17 @@
   </tr>
 </table>
 
+<table width="100%" cellspacing="0" cellpadding="5">
+  <tr>
+    <td align="center" width="50%">
+      <img src="./media/ALS-frontview.png" style="width: 100%; height: auto;">
+    </td>
+    <td align="center" width="50%">
+      <img src="./media/ALS-backview.png" style="width: 100%; height: auto;">
+    </td>
+  </tr>
+</table>
+
 
 
 
