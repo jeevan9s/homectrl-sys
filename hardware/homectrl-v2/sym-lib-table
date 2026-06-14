@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "TMC2209")(type "KiCad")(uri "${KIPRJMOD}/symbols/TMC2209.kicad_sym")(options "")(descr ""))
   (lib (name "TPS5405DR")(type "KiCad")(uri "${KIPRJMOD}/symbols/TPS5405DR.kicad_sym")(options "")(descr ""))
+  (lib (name "TPD4E001DRLR")(type "KiCad")(uri "${KIPRJMOD}/symbols/TPD4E001DRLR.kicad_sym")(options "")(descr ""))
 )
