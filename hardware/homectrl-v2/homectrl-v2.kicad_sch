@@ -8592,12 +8592,6 @@
 		(uuid "267f39c0-355c-4aca-a0c7-75b1474af8c7")
 	)
 	(junction
-		(at 383.54 146.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "280221ae-5c63-4e68-983f-5b5bd2842f8f")
-	)
-	(junction
 		(at 82.55 377.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8676,12 +8670,6 @@
 		(uuid "5dd2dfa8-37e8-461f-9e56-8f970f6dd993")
 	)
 	(junction
-		(at 383.54 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "604019a2-54c7-4f44-8003-76574eb92b6d")
-	)
-	(junction
 		(at 322.58 204.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8722,12 +8710,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e088a3d-4ea4-4ee6-95a4-922afcee0feb")
-	)
-	(junction
-		(at 351.79 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6e8c84e7-2765-47c1-950b-682b7d156cd8")
 	)
 	(junction
 		(at 321.31 341.63)
@@ -8958,12 +8940,6 @@
 		(uuid "bee6dd4c-20bf-44b3-8ab9-e8236c59fc55")
 	)
 	(junction
-		(at 394.97 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bfe92e06-3a5c-4d76-9040-ff4fa1c36db0")
-	)
-	(junction
 		(at 100.33 205.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9153,16 +9129,6 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 62.23) (xy 351.79 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "029c97df-3fbd-428a-ac09-183db5fe6f94")
-	)
-	(wire
-		(pts
 			(xy 189.23 251.46) (xy 207.01 251.46)
 		)
 		(stroke
@@ -9313,16 +9279,6 @@
 	)
 	(wire
 		(pts
-			(xy 391.16 142.24) (xy 391.16 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "156de914-4d3e-462b-8cb1-05657aded352")
-	)
-	(wire
-		(pts
 			(xy 323.85 275.59) (xy 327.66 275.59)
 		)
 		(stroke
@@ -9360,16 +9316,6 @@
 			(type default)
 		)
 		(uuid "19b675e5-8aee-406f-8c29-e483e7bcad35")
-	)
-	(wire
-		(pts
-			(xy 394.97 62.23) (xy 394.97 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b4262e5-bb06-4fe2-b2c0-338256aef257")
 	)
 	(wire
 		(pts
@@ -10461,16 +10407,6 @@
 			(type default)
 		)
 		(uuid "9bd41782-44f6-4cf1-937c-79d5c1e52b3d")
-	)
-	(wire
-		(pts
-			(xy 391.16 115.57) (xy 391.16 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f4e3ef8-5f78-47ad-aacb-1554a16108b6")
 	)
 	(wire
 		(pts
@@ -12794,28 +12730,6 @@
 			)
 		)
 	)
-	(global_label "PUMP1_P"
-		(shape input)
-		(at 391.16 115.57 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "548bfb5e-6f61-406e-9eec-fd73341d2678")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 402.9142 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "5V_USB"
 		(shape input)
 		(at 132.08 264.16 270)
@@ -12860,28 +12774,6 @@
 			)
 		)
 	)
-	(global_label "VPMP"
-		(shape input)
-		(at 391.16 146.05 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "65cee415-39d2-4872-9fe8-78a081a68838")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 399.2252 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "USB_N"
 		(shape input)
 		(at 132.08 384.81 0)
@@ -12904,28 +12796,6 @@
 			)
 		)
 	)
-	(global_label "PUMP2_P"
-		(shape input)
-		(at 394.97 62.23 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6c4cf0c3-2c92-4d8b-b60e-249e6180fc7b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 383.2158 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "FSW2_SIG"
 		(shape input)
 		(at 355.6 358.14 270)
@@ -12944,28 +12814,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PUMP2_P"
-		(shape input)
-		(at 391.16 142.24 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6e1b4f5f-5315-477b-8420-3e2dafcfc3d4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 402.9142 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -13124,28 +12972,6 @@
 			)
 		)
 	)
-	(global_label "PUMP1_P"
-		(shape input)
-		(at 351.79 62.23 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8321d3a5-77f1-49d0-8517-48ca7cc35728")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 340.0358 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "PUMP1_N"
 		(shape input)
 		(at 359.41 62.23 0)
@@ -13170,22 +12996,22 @@
 	)
 	(global_label "VPMP"
 		(shape input)
-		(at 391.16 119.38 0)
+		(at 351.79 62.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "848583cd-b047-41a4-a6a7-d82a5f6457e4")
+		(uuid "84a1dff8-8973-4757-90f8-80e71f34f0bc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 399.2252 119.38 0)
+			(at 343.7248 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -13687,6 +13513,28 @@
 		(uuid "cc9af854-faae-4863-adad-862d08f88112")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 460.2625 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VPMP"
+		(shape input)
+		(at 394.97 62.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d09392dc-5dc9-45f9-bac6-bbccc737d474")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 386.9048 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24150,73 +23998,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 387.35 119.38 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "816b3b5d-2b30-4efc-affe-59ca478e0779")
-		(property "Reference" "C22"
-			(at 387.096 112.268 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 387.096 114.808 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 383.54 120.3452 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 387.35 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 387.35 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "34ac7356-2d1d-4c69-a781-789d1037e52b")
-		)
-		(pin "2"
-			(uuid "3c81294e-1433-44e2-98b8-afe5fbb8e694")
-		)
-		(instances
-			(project "homectrl-v2"
-				(path "/b68484f3-279c-4a19-afd1-e5b6591f7b52"
-					(reference "C22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 505.46 120.65 90)
 		(unit 1)
@@ -24996,73 +24777,6 @@
 			(project ""
 				(path "/b68484f3-279c-4a19-afd1-e5b6591f7b52"
 					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 387.35 146.05 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9124d091-2f55-4d6f-907a-e8c3cc734fbb")
-		(property "Reference" "C23"
-			(at 387.096 138.938 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 387.096 141.478 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 383.54 147.0152 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 387.35 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 387.35 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4f1310d8-3c96-4adf-8580-102fc0f5af4c")
-		)
-		(pin "2"
-			(uuid "977f260d-a0c7-4d8b-8c56-5e20beeceb3a")
-		)
-		(instances
-			(project "homectrl-v2"
-				(path "/b68484f3-279c-4a19-afd1-e5b6591f7b52"
-					(reference "C23")
 					(unit 1)
 				)
 			)
