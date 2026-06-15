@@ -8604,6 +8604,12 @@
 		(uuid "2f49a4ba-786c-49d8-9b56-170610a3024a")
 	)
 	(junction
+		(at 483.87 300.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32ccdacb-f9ff-4720-97f1-b67cf283046a")
+	)
+	(junction
 		(at 157.48 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8872,6 +8878,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a75125f8-2647-4966-93b6-2d69a12568a5")
+	)
+	(junction
+		(at 426.72 285.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a780b045-1b1b-41bb-8898-1f7eeb51a16e")
 	)
 	(junction
 		(at 171.45 198.12)
@@ -12334,28 +12346,6 @@
 			)
 		)
 	)
-	(global_label "USB_N"
-		(shape input)
-		(at 259.08 205.74 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "19fa0764-62b4-4b21-a814-3aa145ca11b9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 249.9867 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "VMOT"
 		(shape input)
 		(at 110.49 264.16 270)
@@ -12752,6 +12742,28 @@
 			)
 		)
 	)
+	(global_label "SMS2_DATA"
+		(shape input)
+		(at 370.84 293.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6082acaf-11da-438c-8b8b-cc66aea3f823")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 357.3925 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VPLUG_SENSE"
 		(shape output)
 		(at 204.47 289.56 0)
@@ -12796,6 +12808,28 @@
 			)
 		)
 	)
+	(global_label "USB_P"
+		(shape input)
+		(at 259.08 213.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6ae4563a-42cc-4caa-b4d1-bdc5015a8fd7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.0472 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "FSW2_SIG"
 		(shape input)
 		(at 355.6 358.14 270)
@@ -12809,28 +12843,6 @@
 		(uuid "6e0312b5-7670-442a-9c53-4ece1499ef67")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 355.6 370.1361 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SMS2_DATA"
-		(shape input)
-		(at 370.84 295.91 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6e5a9770-26d4-4836-8a19-6ef871b3961e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 357.3925 295.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13016,6 +13028,50 @@
 			)
 		)
 	)
+	(global_label "I2C_DTA"
+		(shape input)
+		(at 426.72 295.91 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9691568a-47ac-4b3d-887a-fcd09c0fd91c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 437.0833 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C_CLK"
+		(shape input)
+		(at 426.72 298.45 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "99862f02-7011-4fce-bb94-062ee1a0ae9e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 437.3252 298.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "STEP_ENN"
 		(shape input)
 		(at 439.42 107.95 180)
@@ -13139,28 +13195,6 @@
 		(uuid "a3f260db-c6a4-4888-aafd-0f3a1d4eb887")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 325.12 290.3075 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SMS1_DATA"
-		(shape input)
-		(at 370.84 293.37 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a412797e-4edf-43e7-8465-6fdbb7961a2f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 357.3925 293.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13390,28 +13424,6 @@
 			)
 		)
 	)
-	(global_label "USB_P"
-		(shape input)
-		(at 259.08 208.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bfd9ce67-5cd0-4136-a7fc-9ee84a792f81")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 250.0472 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "VPLUG"
 		(shape input)
 		(at 29.21 109.22 180)
@@ -13478,28 +13490,6 @@
 			)
 		)
 	)
-	(global_label "I2C_CLK"
-		(shape input)
-		(at 426.72 295.91 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c829807c-e0b0-489f-9ff1-6b1b9d79c8a5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 437.3252 295.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SMS1_DATA"
 		(shape input)
 		(at 473.71 285.75 180)
@@ -13513,6 +13503,28 @@
 		(uuid "cc9af854-faae-4863-adad-862d08f88112")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 460.2625 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USB_N"
+		(shape input)
+		(at 259.08 210.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cdff8b4e-0eba-41a2-839f-cd71eaec6089")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 249.9867 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13540,28 +13552,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "I2C_DTA"
-		(shape input)
-		(at 426.72 298.45 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d0d06b2f-27d9-4511-be4f-c6f037014ffa")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 437.0833 298.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -13782,6 +13772,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SMS1_DATA"
+		(shape input)
+		(at 370.84 295.91 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f237c27b-187d-401b-8ffe-b11b167179d3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 357.3925 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -14095,7 +14107,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 329.8952 204.47 0)
 			(effects
 				(font
@@ -14229,7 +14241,7 @@
 				)
 			)
 		)
-		(property "Footprint" "S04B_PASK_2:CONN4_S04B-PASK_JST"
+		(property "Footprint" "JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 351.79 270.51 0)
 			(effects
 				(font
@@ -15598,7 +15610,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TPD2E001DRLR:SOT50P160X60-5N"
+		(property "Footprint" "Package_TO_SOT_SMD:Texas_R-PDSO-N6_DRL-6"
 			(at 370.84 293.37 0)
 			(effects
 				(font
@@ -16669,7 +16681,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "S02B_PASK_2:CONN2_S02B-PASK-2_JST"
+		(property "Footprint" "JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 354.33 36.83 0)
 			(effects
 				(font
@@ -17771,6 +17783,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 426.72 285.75 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "330d6b0c-41e5-435c-9958-c1acc2086e0c")
+		(property "Reference" "#PWR074"
+			(at 422.91 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 430.53 285.7499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 426.72 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 426.72 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 426.72 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cda4e0b6-e529-434b-93e4-485b1ecfda0a")
+		)
+		(instances
+			(project "homectrl-v2"
+				(path "/b68484f3-279c-4a19-afd1-e5b6591f7b52"
+					(reference "#PWR074")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 132.08 264.16 0)
 		(unit 1)
@@ -18546,6 +18625,72 @@
 			(project "homectrl-v2"
 				(path "/b68484f3-279c-4a19-afd1-e5b6591f7b52"
 					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 483.87 300.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41690f45-b3e5-498f-89fd-ec14c6a4b6be")
+		(property "Reference" "#PWR075"
+			(at 483.87 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 483.87 306.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 483.87 300.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 483.87 300.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 483.87 300.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "86ee215f-9447-4b42-9399-a887fbee2a32")
+		)
+		(instances
+			(project ""
+				(path "/b68484f3-279c-4a19-afd1-e5b6591f7b52"
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -20546,7 +20691,7 @@
 				)
 			)
 		)
-		(property "Footprint" "S04B_PASK_2:CONN4_S04B-PASK_JST"
+		(property "Footprint" "JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 439.42 36.83 0)
 			(effects
 				(font
@@ -22012,7 +22157,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "S02B_PASK_2:CONN2_S02B-PASK-2_JST"
+		(property "Footprint" "JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 397.51 36.83 0)
 			(effects
 				(font
@@ -23363,7 +23508,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "${KIPRJMOD}/../../Datasheets/LED_WS2812B_DS.pdf"
@@ -24508,7 +24652,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 524.8148 284.48 0)
 			(effects
 				(font
@@ -24669,7 +24813,7 @@
 				)
 			)
 		)
-		(property "Footprint" "S04B_PASK_2:CONN4_S04B-PASK_JST"
+		(property "Footprint" "JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 318.77 270.51 0)
 			(effects
 				(font
@@ -27449,7 +27593,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "S02B_PASK_2:CONN2_S02B-PASK-2_JST"
+		(property "Footprint" "JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 353.06 336.55 0)
 			(effects
 				(font
@@ -28147,7 +28291,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "S02B_PASK_2:CONN2_S02B-PASK-2_JST"
+		(property "Footprint" "JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 321.31 336.55 0)
 			(effects
 				(font
@@ -30207,75 +30351,6 @@
 			(project ""
 				(path "/b68484f3-279c-4a19-afd1-e5b6591f7b52"
 					(reference "U9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 855.98 170.18 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c5282fa8-a9f8-454f-9dcd-6a3c4dd39948")
-		(property "Reference" "C45"
-			(at 863.346 169.164 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100uF"
-			(at 863.346 171.704 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "EEH_ZK1V101XP:CAP_EEHZK1V101XP"
-			(at 855.0148 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 855.98 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 855.98 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "29899f63-7bfb-4bef-9ed0-45838b2bfc15")
-		)
-		(pin "1"
-			(uuid "96da00cb-ec55-42b2-abf6-3d390e51968a")
-		)
-		(instances
-			(project "homectrl-v2"
-				(path "/b68484f3-279c-4a19-afd1-e5b6591f7b52"
-					(reference "C45")
 					(unit 1)
 				)
 			)
