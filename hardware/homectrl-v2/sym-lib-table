@@ -3,6 +3,6 @@
   (lib (name "TMC2209")(type "KiCad")(uri "${KIPRJMOD}/symbols/TMC2209.kicad_sym")(options "")(descr ""))
   (lib (name "TPS5405DR")(type "KiCad")(uri "${KIPRJMOD}/symbols/TPS5405DR.kicad_sym")(options "")(descr ""))
   (lib (name "TPD4E001DRLR")(type "KiCad")(uri "${KIPRJMOD}/symbols/TPD4E001DRLR.kicad_sym")(options "")(descr ""))
-  (lib (name "DMN3032LE-13")(type "KiCad")(uri "${KIPRJMOD}/symbols/DMN3032LE-13.kicad_sym")(options "")(descr ""))
   (lib (name "Si2347DS")(type "KiCad")(uri "${KIPRJMOD}/symbols/Si2347DS.kicad_sym")(options "")(descr ""))
+  (lib (name "ZXMN3A01ZTA")(type "KiCad")(uri "${KIPRJMOD}/symbols/ZXMN3A01ZTA.kicad_sym")(options "")(descr ""))
 )

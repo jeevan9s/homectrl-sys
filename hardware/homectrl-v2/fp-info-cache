@@ -1,4 +1,4 @@
-23679322307706638
+23679322509062558
 0ZCG0260BF2B
 FUSER_0ZCG0260BF2B
 
@@ -54641,13 +54641,6 @@ SMD SMT ceramic resonator filter filter hand-soldering
 0
 3
 3
-DMN3032LE-13
-SOT230P700X180-4N
-DMN3032LE-13
-MOSFET (N-Channel)
-0
-4
-4
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
@@ -96718,6 +96711,13 @@ Varistor VF
 0
 2
 2
+ZXMN3A01ZTA
+ZXMN3_DIO
+
+ZXMN3A01ZTA 
+0
+3
+3
 ul_TMC2209
 QFN28_5X5_TRI
 
