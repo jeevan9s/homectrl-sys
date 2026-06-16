@@ -33668,7 +33668,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "ZXMN3_DIO"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
 			(at 358.14 106.68 0)
 			(effects
 				(font
@@ -33888,7 +33888,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "ZXMN3_DIO"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
 			(at 359.41 133.35 0)
 			(effects
 				(font
