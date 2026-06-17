@@ -12585,6 +12585,28 @@
 			)
 		)
 	)
+	(global_label "VPMP_EN"
+		(shape input)
+		(at 259.08 236.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1f31c1ad-bec3-41dd-a272-c24811a45bba")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 247.5677 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VMOT"
 		(shape input)
 		(at 110.49 264.16 270)
@@ -12620,28 +12642,6 @@
 		(uuid "25a11718-e0f4-421b-9980-17e0e23ed86e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 29.3091 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VPLUG_SENSE"
-		(shape output)
-		(at 259.08 208.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "26c54cb7-bf41-4cc7-8666-30e4aecafb0e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 243.0925 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12893,6 +12893,28 @@
 			)
 		)
 	)
+	(global_label "SMS2_DATA"
+		(shape input)
+		(at 259.08 210.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "46beaefa-8e5b-4330-9fff-a6d4f9599ae7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 245.6325 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VPLUG"
 		(shape input)
 		(at 525.78 107.95 0)
@@ -12977,6 +12999,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PUMP2_EN"
+		(shape input)
+		(at 259.08 213.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "51e4b764-c83e-42aa-9239-cedcad8c049f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 246.1163 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -13113,7 +13157,7 @@
 			)
 		)
 	)
-	(global_label "PUMP2_GATE"
+	(global_label "PUMP2_EN"
 		(shape input)
 		(at 340.36 133.35 180)
 		(fields_autoplaced yes)
@@ -13125,7 +13169,7 @@
 		)
 		(uuid "70b3e682-80d9-48f7-adae-4eb4ed56d403")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 325.4006 133.35 0)
+			(at 327.3963 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13289,6 +13333,28 @@
 			)
 		)
 	)
+	(global_label "SMS1_DATA"
+		(shape input)
+		(at 259.08 208.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "89260313-94bb-4da0-8f99-303f95734aaf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 245.6325 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "I2C_DTA"
 		(shape input)
 		(at 426.72 295.91 0)
@@ -13311,6 +13377,28 @@
 			)
 		)
 	)
+	(global_label "VPLUG_SENSE"
+		(shape output)
+		(at 259.08 205.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9735fb5e-31a7-4f1d-9b04-5df3bdb760fb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.0925 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "STEP_2A"
 		(shape input)
 		(at 436.88 41.91 270)
@@ -13324,6 +13412,28 @@
 		(uuid "975a3e34-bca8-4ae1-b101-51fc3f2f34ab")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 436.88 52.757 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PUMP1_EN"
+		(shape input)
+		(at 259.08 233.68 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9841fd5a-5750-4761-9979-b9a22eea4dc1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 246.1163 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13483,28 +13593,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SMS1_DATA"
-		(shape input)
-		(at 259.08 213.36 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a50c82db-df4a-4f97-989f-415c888a287b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 245.6325 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -13905,7 +13993,7 @@
 			)
 		)
 	)
-	(global_label "PUMP1_GATE"
+	(global_label "PUMP1_EN"
 		(shape input)
 		(at 337.82 106.68 180)
 		(fields_autoplaced yes)
@@ -13917,7 +14005,7 @@
 		)
 		(uuid "e31cf210-acc3-4cc3-b757-55825f74edd7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 322.8606 106.68 0)
+			(at 324.8563 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14028,28 +14116,6 @@
 		(uuid "ebcdb2d3-96c5-4302-a82a-8e1cdc1fd60c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 177.8 274.4023 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SMS1_DATA"
-		(shape input)
-		(at 259.08 210.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ecad08f9-a7fa-4056-83f4-b8fe1941131b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 245.6325 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
