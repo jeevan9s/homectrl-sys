@@ -12,4 +12,5 @@
   (lib (name "ul_TMC2209")(type "KiCad")(uri "${KIPRJMOD}/footprints/ul_TMC2209")(options "")(descr ""))
   (lib (name "TPD2E001DRLR")(type "KiCad")(uri "${KIPRJMOD}/footprints/TPD2E001DRLR")(options "")(descr ""))
   (lib (name "ZXMN3A01ZTA")(type "KiCad")(uri "${KIPRJMOD}/footprints/ZXMN3A01ZTA")(options "")(descr ""))
+  (lib (name "CMT_0525_75_SMT_TR")(type "KiCad")(uri "${KIPRJMOD}/footprints/CMT_0525_75_SMT_TR")(options "")(descr ""))
 )
