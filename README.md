@@ -25,7 +25,8 @@ Home-automation controller with a Next.js dashboard.
     - [Pump Drivers](#pump-drivers)
     - [Peripheral Devices](#peripheral-devices)
   - [Mechanical](#mechanical-1)
-    - [Chassis](#chassis)
+    - [Container](#container)
+    - [Lid](#lid)
   - [Firmware](#firmware)
   - [Web-App](#web-app)
   - [Repository Structure](#repository-structure)
@@ -104,12 +105,12 @@ All electronics were designed with **KiCad**.
   <img src="/media/images/circuits/pwr/power_entry.png" width="500">
 </p>
 
-The 7.4V battery power enters through a Molex Micro-Fit (3mm Pitch) header, where it is then met with a 12V 7A fuse for over-current protection. A PTC resettable fuse was selected for durability. 
+The 12V 2A power enters through a barrel jack connector, where it is then met with a 24V 3A fuse for over-current protection. A PTC resettable fuse was selected for durability. 
 
-The positive battery line is then protected from voltage spikes with a Transient Voltage Supression (TVS) diode placed in paralell for clamping. 
-- The diode's standoff @ `9V`
-- Breakdown @ `10V`
-- Clamps @ `15.4V`
+The positive plug line `VPLUG` is then protected from voltage spikes with a Transient Voltage Supression (TVS) diode placed in paralell for clamping. 
+- The diode's standoff @ `14V`
+- Breakdown @ `15.3V`
+- Clamps @ `23.2V`
 
 The positive line then goes through a Reverse Polarity Protection (RPP) circuit, using a P-Channel MOSFET for lossless efficiency (lower V drop than standard diodes). 
 
@@ -120,15 +121,15 @@ A bulk electrolytic (100μF) capacitor, ferrite bead, and high-frequency (0.1μF
 
 The ferrite bead was primariy selected for its saturation current and DCR. 
 
-The approximate current draw with safety margin $I_{net}$ is 5A.
+The approximate current draw with safety margin $I_{net}$ is 2A.
 
-$I_{\mathrm{sat}} = 1.5 \times I_{\mathrm{net}} \approx 10 A$
+$I_{\mathrm{sat}} = 1.5 \times I_{\mathrm{net}} \approx 3 A$
 
 Minimize heat dissipation. 
 
-$DCR$ is 10Ω
+$DCR$ is 20Ω
 
-$P_{heat} = DCR \times I_{\mathrm{sat}} \approx 0.25 W$
+$P_{heat} = DCR \times I_{\mathrm{sat}} \approx 0.06 W$
 
 **Voltage Regulation (I)**
 <p align="center">
@@ -137,7 +138,7 @@ $P_{heat} = DCR \times I_{\mathrm{sat}} \approx 0.25 W$
 
 The controller uses a cascade regulation system, starting with the `TPS5405DR` buck converter. 
 
-The input voltage is `VBATT` (7.4V), after the protection and filtering circuitry, and the output is 5V. 
+The input voltage is `VPLUG` (12V), after the protection and filtering circuitry, and the output is 5V. 
 
 The $R_{osc}$ value will determine the switching frequency of the converter. 
 
@@ -177,7 +178,7 @@ L=
 10\,\mathrm{\mu H}
 $$
 
-The Schottky diode is rated for the `2A` output current and `8.4V`
+The Schottky diode is rated for the `2A` output current and `12V`
 
 **5V ORing**
 <p align="center">
@@ -193,7 +194,7 @@ In this configuration, the outputs of both `LM66100` ideal diode controllers are
   <img src="/media/images/circuits/pwr/ldo.png" width="500">
 </p>
 
-The second stage of voltage regulation involes a Low-Dropout Regulator (LDO), the `AMS1117`
+The second stage of voltage regulation involes a Low-Dropout Regulator (LDO), the `MCP1826S`
 
 It is fed the combined `5V` rail from the OR-ing circuit to produce the controller's logic-level voltage: `3V3`
 
@@ -205,7 +206,6 @@ It is fed the combined `5V` rail from the OR-ing circuit to produce the controll
 The power for the pumps is controlled using a complementary-MOSFET (CMOS) setup, driven by a digital `HIGH` from the S3.
 
 - When the control signal is low or floating, the N-channel MOSFET remains off and a pull-up resistor holds the gate of the P-channel MOSFET at the supply voltage, keeping it disabled and disconnecting the load rail.
-
 - When the control signal is driven high, the N-channel MOSFET turns on and pulls the P-channel gate low, creating sufficient gate-source voltage to enable conduction and connect the supply to the load.
 
 **Voltage Sensing**
@@ -221,9 +221,8 @@ R_2 = \frac{R_1 \cdot V_{out}}{V_{batt} - V_{out}}
 $$
 
 $$
-R_2 = \frac{100\,000 \cdot 2.8}{7.4 - 2.8}
-= 50\,\mathrm{k\Omega}
-\approx 47\,\mathrm{k\Omega}
+R_2 = \frac{100\,000 \cdot 2}{12 - 2}
+= 20\,\mathrm{k\Omega}
 $$
 
 ### Microcontroller
@@ -279,16 +278,9 @@ This section provides insight on the mechanical components of homectrl: the cont
 
 I used Fusion360 to design everything.   
 
-### Chassis 
-The chassis consists of several components attatched with pegs and magnets.
+### Container
 
-<p align="center">
-  <img src="/media/images/penguin_body_front_3D.png" width="500">
-</p>
-
-**Container**
-
-**Lid**
+### Lid 
 
 ## Firmware
 
