@@ -38,10 +38,10 @@ I built homectrl because I wanted to automate my first apartment.
 <table> 
   <tr> 
     <td width="50%"> 
-      <img src="/media/images/controller_f_3D.png" width="600"> 
+      <img src="/media/images/controller_f_3D.png" width="800"> 
     </td> 
     <td width="50%"> 
-      <img src="/media/images/controller_b_3D.png" width="600"> 
+      <img src="/media/images/controller_b_3D.png" width="800"> 
     </td> 
   </tr> 
 </table>
