@@ -35,16 +35,17 @@ Home-automation controller with a Next.js dashboard.
 
 I built homectrl because I wanted to automate my first apartment. 
 
-<table>
-  <tr>
-    <td width="50%">
-      <img src="/media/images/controller_f_3D.png">
-    </td>
-    <td width="50%">
-      <img src="/media/images/controller_b_3D.png">
-    </td>
-  </tr>
+<table> 
+  <tr> 
+    <td width="50%"> 
+      <img src="/media/images/controller_f_3D.png" width="100%"> 
+    </td> 
+    <td width="50%"> 
+      <img src="/media/images/controller_b_3D.png" width="100%"> 
+    </td> 
+  </tr> 
 </table>
+
 
 ## Overview
 
