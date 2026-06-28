@@ -15,7 +15,7 @@ Home-automation controller with a Next.js dashboard.
   - [Overview](#overview)
   - [Features](#features)
     - [Controller](#controller)
-  - [Below is a list of features from power circuits to various peripherals.](#below-is-a-list-of-features-from-power-circuits-to-various-peripherals)
+    - [App](#app)
     - [Mechanical](#mechanical)
   - [Architecture](#architecture)
     - [Systems](#systems)
@@ -58,12 +58,33 @@ It's now June and the controller is being manufactured while I write docs and fi
 
 ## Features 
 ### Controller
+
 The controller is powered by a 12V 2A adapter and driven by an ESP32-S3.
 
 Below is a list of features from power circuits to various peripherals. 
-- 
+- Power-entry circuitry with OC/OV protetction, RPP, and PI-filter
+- Regulation circuit featuring buck converter, 5V ORing, and LDO for logic power (3V3) 
+- ESP32-S3 breakout circuitry with USB differential routing, S3 boot mode selection and reset toggle. 
+- Controlled power delivery via CMOS for main pump and moisture sensor power. 
+- Low-side switching for pump control. 
+- Stepper motor driven by TMC2209 with UART for blind control. 
+- Float switches for monitoring irrigation tank. 
+- Analog soil moisture sensor connectors with local RC filters. 
+- ESD protection with TVS diode arrays on all external connections. 
+- Visual and audible indication. 
+
+### App
+
+The controller communicates to a Next.js webapp via Websockets and is also connected to Alexa via SinricPro for voice control, over WiFi/MQTT.
+
+- Next.js dashboard with modern responsive shadCN-tailwindcss UI. 
+- Slider and switch control via UI. 
+- Voice control with Alexa via SinricPro
 
 ### Mechanical 
+- Lightweight container with USB and power ports and slots for cable management.
+- Vents for airflow and audible indication. 
+- Magnetic joints for easy lid removal and secure operation. 
 
 ## Architecture 
 ### Systems 
