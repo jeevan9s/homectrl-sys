@@ -46,12 +46,22 @@ I built homectrl because I wanted to automate my first apartment.
   </tr> 
 </table>
 
-
 ## Overview
+Building practical is a consistent motive when developing. 
+
+As I moved into my first apartment during my first year at Queen's University, I wanted a device capable of smart-control for plants and window blinds -- main components of my studio. 
+
+This pushed me to build **homectrl**, a controller that leverages sensor readings, actuators, and WiFi for home automation. 
+
+The first version was manufactured in October of 2025, and this was my first PCB designed. It was a bit elementary, lots of breakout boards soldered on, an MCU devkit, etc. 
+
+Over the year I designed several other PCBs and learned a lot, which pushed me to produce a second version that I can use reliably for my 2nd year in Kingston. 
+
+It's now June and the controller is being manufactured while I write docs and firmware. 
 
 ## Features 
 ### Controller
-The controller is powered by a 12V 2A adapter and driven by an ESP32-S3 (N4).
+The controller is powered by a 12V 2A adapter and driven by an ESP32-S3.
 
 Below is a list of features from power circuits to various peripherals. 
 - 
@@ -62,6 +72,7 @@ Below is a list of features from power circuits to various peripherals.
 ### Systems 
 
 ## Electrical 
+
 This section provides low-level explanations of the significant circuits of each "module" of the controller.
 
 I encourage you to clone the repo or you use [KiCanvas](https://kicanvas.org/) to look at the schematic and board files. 
