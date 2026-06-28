@@ -65,7 +65,7 @@ Below is a list of features from power circuits to various peripherals.
 - Power-entry circuitry with OC/OV protetction, RPP, and PI-filter
 - Regulation circuit featuring buck converter, 5V ORing, and LDO for logic power (3V3) 
 - ESP32-S3 breakout circuitry with USB differential routing, S3 boot mode selection and reset toggle. 
-- Controlled power delivery via CMOS for main pump and moisture sensor power. 
+- Controlled power delivery via CMOS and PMOS for main pump and moisture sensor power. 
 - Low-side switching for pump control. 
 - Stepper motor driven by TMC2209 with UART for blind control. 
 - Float switches for monitoring irrigation tank. 
