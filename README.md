@@ -22,7 +22,8 @@ Home-automation controller with a Next.js dashboard.
   - [Electrical](#electrical)
     - [Power System](#power-system)
     - [Microcontroller](#microcontroller)
-    - [Pump Drivers](#pump-drivers)
+    - [Pump Interface](#pump-interface)
+    - [Stepper Motor Interface](#stepper-motor-interface)
     - [Peripheral Devices](#peripheral-devices)
   - [Mechanical](#mechanical-1)
     - [Container](#container)
@@ -145,7 +146,7 @@ The $R_{osc}$ value will determine the switching frequency of the converter.
 Switching frequency is governed by the relationship. 
 $$R_{\text{OSC}} (\text{k}\Omega) = 21.82 \cdot f_{\text{SW}}^{-1.167}$$
 
-I chose a value of `100kΩ` for a $f_{SW}$ of approximately `271 kHz`
+I chose a value of `50kΩ` for a $f_{SW}$ of approximately `525 kHz`
 
 For the soft-start capacitor $C_{ss}$ , I chose a value of `10nF` for a soft-start time of `5ms`
 
@@ -168,11 +169,11 @@ L=\frac{V_{out}\left(V_{in}-V_{out}\right)}
 {V_{in}f_{sw}\Delta I_L}
 $$
 
-Using our calculated $f_{sw}$ from above and our voltage requirements (8.4V in, 5V out):
+Using our calculated $f_{sw}$ from above and our voltage requirements (12V in, 5V out):
 $$
 L=
-\frac{(5\,\mathrm{V})(8.4\,\mathrm{V}-5\,\mathrm{V})}
-{(8.4\,\mathrm{V})(525\,\mathrm{kHz})(0.3\,\mathrm{A})}
+\frac{(5\,\mathrm{V})(12\,\mathrm{V}-5\,\mathrm{V})}
+{(12\,\mathrm{V})(490\,\mathrm{kHz})(0.6\,\mathrm{A})}
 
 \approx
 10\,\mathrm{\mu H}
@@ -254,13 +255,25 @@ The S3 can be put into **BOOT** mode and **RESET** with onboard buttons.
 - It is **active-low**: when pulled to **GND** it turns off the chip, and when released, it restarts.
 - The circuit consists of a momentary push-button, a pull-up resistor to ensure the chip is enabled by default, and a `1µF` capacitor to filter out button noise.
 
-### Pump Drivers
-The `N20` wheel hub motors are driven by a `DRV8833` chip, and their encoder signals are routed to digital pins on the `S3`. 
+### Pump Interface
 
-They are connected via 6-Pin Molex Nano-Fit (2.50mm Pitch) headers, and feature decoupling across the motor terminals and on the encoder power supply. 
-<p align="center">
-  <img src="/media/images/circuits/motors/mtr_in.png" width="400">
-</p>
+<table><tr><td width="50%"><img src="/media/images/circuits/actuators/pump_conn.png"></td><td width="50%"><img src="/media/images/circuits/actuators/pump_drivers.png"></td></tr></table>
+
+The controller interfaces with 12V 300mA rated pumps for irrigation. 
+
+These pumps connect via JST-XH vertical headers and are met with flyback diodes for inductive spike protection, and decoupling to filter out noise. 
+
+Each pump is controlled by a low-side switch using an `A03400A` N-channel MOSFET. 
+- The gate of the MOSFET is driven by an S3 GPIO pin and is pulled down to GND for state definition. 
+- The drain is connected to the negative terminal of the pump and the source to GND. 
+
+This will connect the negative pump terminal to GND and effectively turn it `ON` when the gate is `HIGH`. 
+
+### Stepper Motor Interface
+<img src="/media/images/circuits/actuators/tmc.png" width="400">
+
+The controller interfaces with a stepper motor through a `TMC2209` driver for blind control. 
+
 
 ### Peripheral Devices
 
