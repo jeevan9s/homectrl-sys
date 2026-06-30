@@ -257,7 +257,7 @@ The S3 can be put into **BOOT** mode and **RESET** with onboard buttons.
 
 ### Pump Interface
 
-<table><tr><td width="50%"><img src="/media/images/circuits/actuators/pump_conn.png"></td><td width="50%"><img src="/media/images/circuits/actuators/pump_drivers.png"></td></tr></table>
+<table><tr><td width="50%"><img src="/media/images/circuits/actuators/pump_conns.png"></td><td width="50%"><img src="/media/images/circuits/actuators/pump_drivers.png"></td></tr></table>
 
 The controller interfaces with 12V 300mA rated pumps for irrigation. 
 
