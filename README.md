@@ -51,7 +51,7 @@ I built homectrl because I wanted to automate my first apartment.
 ## Overview
 Building practical is a consistent motive when developing. 
 
-As I moved into my first apartment during my first year at Queen's University, I wanted a device capable of smart-control for plants and window blinds -- main components of my studio. This pushed me to build **homectrl**, a controller that leverages sensor readings, actuators, and WiFi for home automation. 
+As I moved into my first apartment during my first year at Queen's University, I wanted a device capable of smart-control for plants and window blinds, which are main components of my studio. This pushed me to build **homectrl**, a controller that leverages sensor readings, actuators, and WiFi for home automation. 
 
 The first version was manufactured in October of 2025, and this was my first PCB designed. It was a bit elementary, lots of breakout boards soldered on, an MCU devkit, etc. 
 Over the year I designed several other PCBs and learned a lot, which pushed me to produce a second version that I can use reliably for my 2nd year in Kingston. 
@@ -190,6 +190,8 @@ The `5V` rails from both USB and the buck converter are combined using an OR-ing
 
 In this configuration, the outputs of both `LM66100` ideal diode controllers are tied together to form the shared `5V` rail. The `CE` pins of each device are also tied to the output rail, ensuring both controllers are only enabled once the rail is present 
 
+This allows for testing over serial with devices that are powered by `VPLUG` (12V). 
+
 **Voltage Regulation (II)**
 <p align="center">
   <img src="/media/images/circuits/pwr/ldo.png" width="500">
@@ -267,19 +269,55 @@ Each pump is controlled by a low-side switch using an `A03400A` N-channel MOSFET
 - The gate of the MOSFET is driven by an S3 GPIO pin and is pulled down to GND for state definition. 
 - The drain is connected to the negative terminal of the pump and the source to GND. 
 
-This will connect the negative pump terminal to GND and effectively turn it `ON` when the gate is `HIGH`. 
+This will bridge the negative pump terminal to GND and effectively turn it `ON` when the gate is `HIGH`. 
 
 ### Stepper Motor Interface
 <img src="/media/images/circuits/actuators/tmc.png" width="400">
 
 The controller interfaces with a stepper motor through a `TMC2209` driver for blind control. 
 
+The `NEMA 17` stepper motor connects via a vertical 4-position JST-XH header. 
+
+The positive and negative terminals of both stepper coils feed the OBX and OAX pins of the driver. 
+
+The driver is powered by `VPLUG` and is decoupled for bulk and high-frequency noise with electrolytic and ceramic capacitors. 
+- The driver is put to sleep by the `ENN` pin to avoid power consumption, which is why I didn't use a CMOS/controlled-power delivery setup.
+
+The main control signals are `STEP` and `DIR`, controlling the speed and direction, respectively. These connect digital pins on the S3. 
+
+The single-wire UART interface was used for advanced chip config, live diagnostics, and features. 
+
+The `BRA` and `BRB` connect to `0.11Ω` sense resistors to monitor and regulate current through the motor coils. 
+
+For addressing, the `MS1_AD01` and `MS2_AD1` pins are pulled low to set the binary address bits to `00` and the UART slave address to `%0`. 
+
+The `CP0` and `CP1` pins are tied together with a 22nF capacitor to generate a boost voltage for the internal charge pump. This boosted voltage switches the internal N-channel MOSFETs fully on. 
 
 ### Peripheral Devices
 
-**Soil-Moisture Sensors**
+**Sensors**
+<img src="/media/images/circuits/periphs/sms.png" width="400">
+
+The controller interfaces with two capactive soil-moisture sensors (SMS) and an Ambient Light Sensor (ALS). 
+
+These connections are made with vertical 4-pin JST-XH headers. 
+
+I designed the ALS breakout board, in the future I'd be interested in designing the moisture sensors. For now I'm using the Adafruit models.
+
+The `3V3` SMS power  is controlled through a simple `A03407A` P-channel mosfet, and the signals are filtered with a resistor-capacitor network at the S3 ADC pins. 
+
+The ALS communicates with the `I2C` protocol and is powered by `3V3`. 
+
+The two analog signals and I2C clock and data signals are ESD-protected by a `TPD43001` TVS diode array.
 
 **Float Switches**
+<img src="/media/images/circuits/periphs/fsw.png" width="400">
+
+The controller interfaces with two float switches. 
+
+These connections are made with a vertical 3-pin JST-XH header. 
+
+The signals are pulled up to 3V3 to establish a defined logic stateand filtered with a resistor-capacitor network at the S3 ADC pins. 
 
 **Indicator Components**
 - RGB LED
@@ -287,13 +325,29 @@ The controller interfaces with a stepper motor through a `TMC2209` driver for bl
 - Buzzer for audible indication
 
 ## Mechanical 
-This section provides insight on the mechanical components of homectrl: the container. 
+This section provides insight on the mechanical components of homectrl. 
 
 I used Fusion360 to design everything.   
 
+<img src="/media/images/cad/assembly.png" width="500">
+
 ### Container
+<img src="/media/images/cad/container.png" width="400">
+
+The container uses a rounded-rectangular exterior to house the board. 
+
+The board is mounted using M2 standoffs designed from the base of the container. 
+
+- It features USB-C and barrel-jack portholes for easy flashing and power connection.
+- The backside has slot cutouts for actuator and sensor cables. 
+- Vent holes were used throughout the container for airflow and weight management (more lightweight).
 
 ### Lid 
+<img src="/media/images/cad/lid.png" width="400">
+
+The lid is mounted magnetically on the outer top face of the container using projected holes for small magnets. 
+- Its design is honestly quite minimal, I did add a small hole for the controller's RGB LED to shine through. 
+
 
 ## Firmware
 
