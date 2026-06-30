@@ -4,7 +4,7 @@ Home-automation controller with a Next.js dashboard.
 
  ### Status
 >- Controller PCB currently being manufactures
->- Firmware and docs development in progress.
+>- Firmware and **docs development** in progress.
 >- Mechanical components currently being printed.
 
 <details>
@@ -272,9 +272,11 @@ Each pump is controlled by a low-side switch using an `A03400A` N-channel MOSFET
 This will bridge the negative pump terminal to GND and effectively turn it `ON` when the gate is `HIGH`. 
 
 ### Stepper Motor Interface
-<img src="/media/images/circuits/actuators/tmc.png" width="400">
+<p align="center">
+  <img src="/media/images/circuits/actuators/tmc.png" width="400">
+</p>
 
-The controller interfaces with a stepper motor through a `TMC2209` driver for blind control. 
+The controller interfaces with a `NEMA 17` stepper motor through a `TMC2209` driver for blind control. 
 
 The `NEMA 17` stepper motor connects via a vertical 4-position JST-XH header. 
 
@@ -296,7 +298,9 @@ The `CP0` and `CP1` pins are tied together with a 22nF capacitor to generate a b
 ### Peripheral Devices
 
 **Sensors**
+<p align="center">
 <img src="/media/images/circuits/periphs/sms.png" width="400">
+</p>
 
 The controller interfaces with two capactive soil-moisture sensors (SMS) and an Ambient Light Sensor (ALS). 
 
@@ -311,7 +315,9 @@ The ALS communicates with the `I2C` protocol and is powered by `3V3`.
 The two analog signals and I2C clock and data signals are ESD-protected by a `TPD43001` TVS diode array.
 
 **Float Switches**
+<p align="center">
 <img src="/media/images/circuits/periphs/fsw.png" width="400">
+</p>
 
 The controller interfaces with two float switches. 
 
@@ -329,10 +335,14 @@ This section provides insight on the mechanical components of homectrl.
 
 I used Fusion360 to design everything.   
 
+<p align="center">
 <img src="/media/images/cad/assembly.png" width="500">
+</p>
 
 ### Container
+<p align="center">
 <img src="/media/images/cad/container.png" width="400">
+</p>
 
 The container uses a rounded-rectangular exterior to house the board. 
 
@@ -343,11 +353,12 @@ The board is mounted using M2 standoffs designed from the base of the container.
 - Vent holes were used throughout the container for airflow and weight management (more lightweight).
 
 ### Lid 
+<p align="center">
 <img src="/media/images/cad/lid.png" width="400">
+</p>
 
 The lid is mounted magnetically on the outer top face of the container using projected holes for small magnets. 
 - Its design is honestly quite minimal, I did add a small hole for the controller's RGB LED to shine through. 
-
 
 ## Firmware
 
@@ -357,6 +368,7 @@ The lid is mounted magnetically on the outer top face of the container using pro
 
 ## Gallery 
 
+---
 **huge thanks to PCBWay for sponsoring this project's first revision.**<br>
 [check out **REV A**](https://github.com/jeevan9s/homectrl-sys/tree/rev-A)
 
