@@ -49,7 +49,7 @@ I built homectrl because I wanted to automate my first apartment.
 </table>
 
 ## Overview
-Building practical is a consistent motive when developing. 
+Practicality is a consistent motive when building. 
 
 As I moved into my first apartment during my first year at Queen's University, I wanted a device capable of smart-control for plants and window blinds, which are main components of my studio. This pushed me to build **homectrl**, a controller that leverages sensor readings, actuators, and WiFi for home automation. 
 
