@@ -34,3 +34,7 @@ void led_startup(void);
 void blinkLED(uint8_t ledPin, int count, int delayMs = 200);
 void scanI2C();
 void blinkP(uint8_t pin, int count);
+
+// buzzer
+const int BUZZER_FREQ = 4000;   // (4kHz resonant frequency)
+const int PWM_RES = 8;  

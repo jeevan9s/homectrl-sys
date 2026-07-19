@@ -10,6 +10,10 @@
 #pragma once
 
 #include <Arduino.h>
+#include <FastLED.h>
 #include "pinouts.hpp"
+#include "config.hpp"
+
+#define NUM_LEDS 1
 
 void run_test_bench(); 

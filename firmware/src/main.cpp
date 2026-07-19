@@ -60,6 +60,13 @@ void setup()
     pinMode(Pins::Indicators::DBG_LED, OUTPUT);
     pinMode(Pins::Indicators::WIFI_LED, OUTPUT);
 
+    ledcAttach(Pins::Indicators::BUZZ_EN, PWM_FREQ, PWM_RES);
+
+    gpio_hold_dis((gpio_num_t)Pins::Indicators::BUZZ_EN);
+    esp_rom_gpio_connect_out_signal(Pins::Indicators::BUZZ_EN, ledc_periph_signal[0].sig_out0, true, false);
+
+    ledcWrite(BUZZER_PIN, 0);
+
     led_startup();
     displayMenu();
 }
