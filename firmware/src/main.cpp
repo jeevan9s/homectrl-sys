@@ -13,7 +13,8 @@
 #include "Dashboard.hpp"
 
 bool menuShown = false;
-HTTPServer http{cameraDriver};
+HTTPServer http;
+Controller currentState;
 bool dashboardRunning = false;
 
 void displayMenu()
@@ -56,8 +57,8 @@ void setup()
     Serial.println("\n==============================");
     Serial.println("homectrl ---initializing");
 
-    mcp.pinMode(Pins::Indicators::DBG_LED, OUTPUT);
-    mcp.pinMode(Pins::Indicators::WIFI_LED, OUTPUT);
+    pinMode(Pins::Indicators::DBG_LED, OUTPUT);
+    pinMode(Pins::Indicators::WIFI_LED, OUTPUT);
 
     led_startup();
     displayMenu();

@@ -28,23 +28,22 @@ namespace Pins
         constexpr uint8_t TMC_ENN = 10;
         constexpr uint8_t TMC_STEP = 17;
         constexpr uint8_t TMC_DIR = 18;
+    }
 
-        namespace Data
-        {
-            constexpr uint8_t SMS1_ADATA = 5;
-            constexpr uint8_t SMS2_ADATA = 6;
-            constexpr uint8_t FSW1_SIG = 41;
-            constexpr uint8_t FSW2_SIG = 42;
-        }
+    namespace Data
+    {
+        constexpr uint8_t SMS1_ADATA = 5;
+        constexpr uint8_t SMS2_ADATA = 6;
+        constexpr uint8_t FSW1_SIG = 41;
+        constexpr uint8_t FSW2_SIG = 42;
+    }
 
-        namespace Indicators
-        {
-            constexpr uint8_t RGB_LED = 11;
-            constexpr uint8_t WIFI_LED = 12;
-            constexpr uint8_t DBG_LED = 13;
-            constexpr uint8_t BUZZ_EN = 47;
-
-        }
+    namespace Indicators
+    {
+        constexpr uint8_t RGB_LED = 11;
+        constexpr uint8_t WIFI_LED = 12;
+        constexpr uint8_t DBG_LED = 13;
+        constexpr uint8_t BUZZ_EN = 47;
 
     }
 

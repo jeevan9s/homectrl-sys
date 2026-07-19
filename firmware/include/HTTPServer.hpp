@@ -11,10 +11,11 @@
 
 #include <ESPAsyncWebServer.h>
 #include "WebSocketServer.hpp"
+#include "Controller.hpp"
 
 class HTTPServer {
 public:
-    HTTPServer(CAMDriver& cam); 
+    HTTPServer();
     void begin();
     void update(Controller &state);
 

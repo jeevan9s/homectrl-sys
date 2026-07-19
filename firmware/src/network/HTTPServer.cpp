@@ -10,21 +10,19 @@
 #include <Arduino.h>
 #include "HTTPServer.hpp"
 
-HTTPServer::HTTPServer(CAMDriver& cam) 
-    : server(80), 
-      websocket(server), 
-      camera_(cam), 
-      cameraStream(server, cam) 
+HTTPServer::HTTPServer()
+    : server(80),
+      websocket(server)
 {
 }
 
-void HTTPServer::begin() { 
-  server.on("/", WebRequestMethod::HTTP_GET, [](AsyncWebServerRequest *request) { 
-    request->send(200, "text/plain", "homectrl --online"); 
-  }); 
-  
-  websocket.begin(); 
-  server.begin(); 
+void HTTPServer::begin() {
+  server.on("/", WebRequestMethod::HTTP_GET, [](AsyncWebServerRequest *request) {
+    request->send(200, "text/plain", "homectrl --online");
+  });
+
+  websocket.begin();
+  server.begin();
 }
 
 void HTTPServer::update(Controller &state) {

@@ -10,41 +10,44 @@
 #include <Arduino.h>
 #include "config.hpp"
 
+const char* ssid = "Your_WiFi_Name";
+const char* pswd = "Your_WiFi_Password";
+
 int blinksRemaining = 0;
 unsigned long lastBlink = 0;
 uint8_t activeBlinkPin = 0;
 int blinkCount = 0;
+Scheduler scheduler;
 
 void led_startup(void) {
-    mcp.digitalWrite(Pins::Indicators::WIFI, HIGH);
+    digitalWrite(Pins::Indicators::WIFI_LED, HIGH);
     delay(400);
-    mcp.digitalWrite(Pins::iNDICA::CAM_LED, LOW);
-    delay(400); 
+    digitalWrite(Pins::Indicators::DBG_LED, LOW);
+    delay(400);
 
-    Indicators.digitalWrite(Pins::Indicators::DBG_LED, HIGH);
+    digitalWrite(Pins::Indicators::WIFI_LED, HIGH);
     delay(300);
-    Indicators.digitalWrite(Pins::Indicators::DBG_LED, LOW);
-    delay(300); 
+    digitalWrite(Pins::Indicators::WIFI_LED, LOW);
+    delay(300);
 
-    Indicators.digitalWrite(Pins::Indicators::CAM_LED, HIGH);
+    digitalWrite(Pins::Indicators::DBG_LED, HIGH);
     delay(200);
-    Indicators.digitalWrite(Pins::Indicators::CAM_LED, LOW);
+    digitalWrite(Pins::Indicators::WIFI_LED, LOW);
     delay(200);
-    Indicators.digitalWrite(Pins::Indicators::DBG_LED, HIGH);
-    delay(200); 
+    digitalWrite(Pins::Indicators::DBG_LED, HIGH);
+    delay(200);
 
-    Indicators.digitalWrite(Pins::Indicators::DBG_LED, LOW);
-    Indicators.digitalWrite(Pins::Indicators::CAM_LED, HIGH);
+    digitalWrite(Pins::Indicators::DBG_LED, LOW);
+    digitalWrite(Pins::Indicators::WIFI_LED, HIGH);
     delay(200);
-    Indicators.digitalWrite(Pins::MCP::CAM_LED, LOW);
-    delay(200); 
+    delay(200);
 }
 
 void blinkLED(uint8_t ledPin, int count, int delayMs) {
     for(int i = 0; i < count; i++) {
-        mcp.digitalWrite(ledPin, HIGH);
+        digitalWrite(ledPin, HIGH);
         delay(delayMs);
-        mcp.digitalWrite(ledPin, LOW);
+        digitalWrite(ledPin, LOW);
         delay(delayMs);
     }
 }
