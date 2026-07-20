@@ -11,6 +11,7 @@
 
 #include <Arduino.h>
 #include <FastLED.h>
+#include <TMCStepper.h>
 #include "pinouts.hpp"
 #include "config.hpp"
 

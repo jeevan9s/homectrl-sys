@@ -36,5 +36,9 @@ void scanI2C();
 void blinkP(uint8_t pin, int count);
 
 // buzzer
-const int BUZZER_FREQ = 4000;   // (4kHz resonant frequency)
+const int PWM_FREQ = 4000;   // (4kHz resonant frequency)
 const int PWM_RES = 8;  
+
+// tmc 
+#define R_SENSE          0.11f 
+#define DRIVER_ADDRESS   0b00   
