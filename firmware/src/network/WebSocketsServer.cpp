@@ -10,7 +10,7 @@
 #include <Arduino.h>
 #include "WebSocketServer.hpp"
 
-WebSocketServer::WebSocketServer(AsyncWebServer &server)
+WebSocketServer::WebSocketServer(AsyncWebServer &server, Controller &state) : systemState(&state)
 {
     server.addHandler(&ws);
 }
@@ -32,7 +32,20 @@ void WebSocketServer::begin()
             blinkCount = 3;
             blinksRemaining = blinkCount * 2;
         }
-    });
+
+        if (type == WS_EVT_DATA) {
+            this->clientConnected = true; 
+            activeBlinkPin = Pins::Indicators::WIFI_LED; 
+            blinkCount = 3;
+            blinksRemaining = blinkCount * 2; 
+
+            AwsFrameInfo* info = (AwsFrameInfo*)arg; 
+            if (info->final && info->index == 0 && info->len == len && info->opcode == WS_TEXT) {
+                data[len] = 0;
+                String message = (char*)data; 
+                this->handleCommand(message); 
+            }
+        } });
 }
 
 void WebSocketServer::update(const Controller &state)
@@ -53,4 +66,47 @@ void WebSocketServer::update(const Controller &state)
     // Serial.println("websocket PAYLOAD: " + payload);
 
     ws.textAll(payload);
+}
+
+void WebSocketServer::handleCommand(const String &payload)
+{
+    if (!systemState)
+        return;
+
+    JsonDocument doc;
+    DeserializationError error = deserializeJson(doc);
+    if (error)
+        return;
+
+    if (doc.containsKey("cmd"))
+    {
+        int rawCmd = doc["cmd"];
+        int val = doc["val"] | 0;
+
+        auto cmd = static_cast<DashboardCommands>(rawCmd);
+
+        switch (cmd)
+        {
+        case DashboardCommands::IRRIGATE_1:
+            systemState->pump1.enable = val;
+            break;
+
+        case DashboardCommands::IRRIGATE_2:
+            systemState->pump2.enable = val;
+            break;
+        }
+
+        case DashboardCommands::SHADE_DEFAULT:
+            systemState->stepMotor.enable = val; 
+            systemState->stepMotor.shadePct = 0;
+            break; 
+
+        case DashboardCommands::SHADE_PCT:
+            systemState->stepMotor.shadePct = constrain(val, 0, 100);
+            systemState->stepMotor.enable = 1;
+            break; 
+
+        default:
+            break;
+    }
 }

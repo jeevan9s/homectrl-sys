@@ -17,14 +17,14 @@
 
 class WebSocketServer {
     public:
-        WebSocketServer(AsyncWebServer &server); 
+        WebSocketServer(AsyncWebServer &server, Controller &state); 
         void begin(); 
         void update(const Controller &state); 
         bool clientConnected;
     private:
         AsyncWebSocket ws{"/ws"}; 
         static void onEvent(AsyncWebSocket *server, AsyncWebSocketClient *client, AwsEventType type, void *arg, uint8_t *data, size_t len);
-
+        void handleCommand(const String &payload);    
         uint32_t lastTelemetryTime = 0; 
 };
 

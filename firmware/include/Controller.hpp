@@ -21,7 +21,5 @@ struct Controller {
     SMSData sms1; 
     SMSData sms2; 
 
-    FSWData fswHI; 
-
-    FSWData fswLO; 
+    FSWData fsw; 
 }; 
