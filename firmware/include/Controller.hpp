@@ -16,8 +16,6 @@ struct Controller {
 
     StepMtrData stepMotor; 
 
-    ALSData als; 
-
     SMSData sms1; 
     SMSData sms2; 
 

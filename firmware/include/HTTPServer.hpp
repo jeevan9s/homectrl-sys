@@ -15,7 +15,7 @@
 
 class HTTPServer {
 public:
-    HTTPServer();
+    HTTPServer(Controller &controller);
     void begin();
     void update(Controller &state);
 

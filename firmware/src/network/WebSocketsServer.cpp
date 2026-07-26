@@ -74,11 +74,11 @@ void WebSocketServer::handleCommand(const String &payload)
         return;
 
     JsonDocument doc;
-    DeserializationError error = deserializeJson(doc);
+    DeserializationError error = deserializeJson(doc, payload);
     if (error)
         return;
 
-    if (doc.containsKey("cmd"))
+    if (!doc["cmd"].isNull()) {
     {
         int rawCmd = doc["cmd"];
         int val = doc["val"] | 0;
@@ -90,23 +90,20 @@ void WebSocketServer::handleCommand(const String &payload)
         case DashboardCommands::IRRIGATE_1:
             systemState->pump1.enable = val;
             break;
-
         case DashboardCommands::IRRIGATE_2:
             systemState->pump2.enable = val;
             break;
-        }
-
         case DashboardCommands::SHADE_DEFAULT:
-            systemState->stepMotor.enable = val; 
+            systemState->stepMotor.enable = val;
             systemState->stepMotor.shadePct = 0;
-            break; 
-
+            break;
         case DashboardCommands::SHADE_PCT:
             systemState->stepMotor.shadePct = constrain(val, 0, 100);
             systemState->stepMotor.enable = 1;
-            break; 
-
+            break;
         default:
             break;
+        }
     }
+}
 }
