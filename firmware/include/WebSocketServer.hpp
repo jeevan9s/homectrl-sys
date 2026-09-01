@@ -26,12 +26,7 @@ class WebSocketServer {
         static void onEvent(AsyncWebSocket *server, AsyncWebSocketClient *client, AwsEventType type, void *arg, uint8_t *data, size_t len);
         void handleCommand(const String &payload);    
         uint32_t lastTelemetryTime = 0; 
-<<<<<<< HEAD
         Controller &state;
-=======
-
-        Controller* systemState;
->>>>>>> 4e62521e1b9c8ca0ba54fcbd538116f5ab588325
 };
 
  

@@ -157,7 +157,6 @@ void test_indicators()
     blinkLED(Pins::Indicators::DBG_LED, 4);
     blinkLED(Pins::Indicators::WIFI_LED, 4);
 
-    FastLED.addLeds<WS2812B, Pins::Indicators::RGB_LED, GRB>(rgb_leds, NUM_LEDS);
     rgb_leds[0] = CRGB::Black;
     FastLED.show();
     uint8_t fluidBrightness = beatsin8(35, 20, 90);

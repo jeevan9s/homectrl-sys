@@ -12,14 +12,11 @@
 #include "test.hpp"
 #include "Dashboard.hpp"
 
+extern CRGB rgb_leds[NUM_LEDS];
+
 bool menuShown = false;
-<<<<<<< HEAD
 Controller state;
 HTTPServer http(state);
-=======
-Controller currentState;
-HTTPServer http(currentState);
->>>>>>> 4e62521e1b9c8ca0ba54fcbd538116f5ab588325
 bool dashboardRunning = false;
 
 void displayMenu()
@@ -52,7 +49,7 @@ void runTaskS()
 
 void setup()
 {
-    Serial.begin(921600);
+    Serial.begin(115200);
 
     while (!Serial && millis() < 4000)
     {
@@ -68,6 +65,11 @@ void setup()
     ledcAttach(Pins::Indicators::BUZZ_EN, PWM_FREQ, PWM_RES);
 
     ledcWrite(Pins::Indicators::BUZZ_EN, 0);
+
+    FastLED.addLeds<WS2812B, Pins::Indicators::RGB_LED, GRB>(rgb_leds, NUM_LEDS);
+    FastLED.setBrightness(64);
+    rgb_leds[0] = CRGB::Green;
+    FastLED.show();
 
     led_startup();
     displayMenu();

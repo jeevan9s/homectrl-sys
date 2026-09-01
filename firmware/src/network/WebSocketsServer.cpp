@@ -63,15 +63,12 @@ void WebSocketServer::update(const Controller &state)
     String payload;
     serializeJson(doc, payload);
 
-    // Serial.println("websocket PAYLOAD: " + payload);
 
     ws.textAll(payload);
 }
 void WebSocketServer::handleCommand(const String &payload)
 {
-    // References can't be null, so you don't need 'if (!state)'
     JsonDocument doc;
-    DeserializationError error = deserializeJson(doc, payload);
     DeserializationError error = deserializeJson(doc, payload);
     if (error)
         return;
@@ -86,7 +83,7 @@ void WebSocketServer::handleCommand(const String &payload)
         switch (cmd)
         {
         case DashboardCommands::IRRIGATE_1:
-            state.pump1.enable = val; // Use '.' instead of '->'
+            state.pump1.enable = val; 
             break;
         case DashboardCommands::IRRIGATE_2:
             state.pump2.enable = val;
@@ -106,4 +103,5 @@ void WebSocketServer::handleCommand(const String &payload)
             break;
         }
     }
+}
 }

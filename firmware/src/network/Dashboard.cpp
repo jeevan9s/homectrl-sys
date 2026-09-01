@@ -18,12 +18,12 @@ void run_dashboard()
     WiFi.mode(WIFI_STA);
     Serial.println("WIFI --connecting");
     WiFi.onEvent([](WiFiEvent_t event) {
-        if (event == IP_EVENT_STA_GOT_IP) {
+        if (event == ARDUINO_EVENT_WIFI_STA_GOT_IP) {
             Serial.println("WIFI --connected");
             activeBlinkPin = Pins::Indicators::WIFI_LED;
             blinkCount = 3;
             blinksRemaining = blinkCount * 2;
-        } else if (event == WIFI_EVENT_STA_DISCONNECTED) {
+        } else if (event == ARDUINO_EVENT_WIFI_STA_DISCONNECTED) {
             Serial.println("WIFI --disconnected");
             activeBlinkPin = Pins::Indicators::DBG_LED;
             blinkCount = 3;
