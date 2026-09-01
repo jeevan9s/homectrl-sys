@@ -10,7 +10,7 @@
 #include <Arduino.h>
 #include "WebSocketServer.hpp"
 
-WebSocketServer::WebSocketServer(AsyncWebServer &server, Controller &state) : systemState(&state)
+WebSocketServer::WebSocketServer(AsyncWebServer &server, Controller &stateRef) : state(stateRef)
 {
     server.addHandler(&ws);
 }
@@ -67,14 +67,11 @@ void WebSocketServer::update(const Controller &state)
 
     ws.textAll(payload);
 }
-
 void WebSocketServer::handleCommand(const String &payload)
 {
-    if (!systemState)
-        return;
-
+    // References can't be null, so you don't need 'if (!state)'
     JsonDocument doc;
-    DeserializationError error = deserializeJson(doc);
+    DeserializationError error = deserializeJson(doc, payload);
     if (error)
         return;
 
@@ -88,25 +85,25 @@ void WebSocketServer::handleCommand(const String &payload)
         switch (cmd)
         {
         case DashboardCommands::IRRIGATE_1:
-            systemState->pump1.enable = val;
+            state.pump1.enable = val; // Use '.' instead of '->'
             break;
 
         case DashboardCommands::IRRIGATE_2:
-            systemState->pump2.enable = val;
+            state.pump2.enable = val;
             break;
-        }
 
         case DashboardCommands::SHADE_DEFAULT:
-            systemState->stepMotor.enable = val; 
-            systemState->stepMotor.shadePct = 0;
-            break; 
+            state.stepMotor.enable = val;
+            state.stepMotor.shadePct = 0;
+            break;
 
         case DashboardCommands::SHADE_PCT:
-            systemState->stepMotor.shadePct = constrain(val, 0, 100);
-            systemState->stepMotor.enable = 1;
-            break; 
+            state.stepMotor.shadePct = constrain(val, 0, 100);
+            state.stepMotor.enable = 1;
+            break;
 
         default:
             break;
+        }
     }
 }

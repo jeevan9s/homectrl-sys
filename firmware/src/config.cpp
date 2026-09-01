@@ -10,8 +10,8 @@
 #include <Arduino.h>
 #include "config.hpp"
 
-const char* ssid = "Your_WiFi_Name";
-const char* pswd = "Your_WiFi_Password";
+const char* ssid = "Health2024";
+const char* pswd = "Rexdale2024";
 
 int blinksRemaining = 0;
 unsigned long lastBlink = 0;

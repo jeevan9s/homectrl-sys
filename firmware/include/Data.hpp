@@ -7,6 +7,14 @@
  * HOMECTRL
  */
 
+enum struct ActuatorState
+{
+    IDLE,
+    ENERGIZING,
+    RUNNING,
+    FAULT
+};
+
 struct PumpData
 {
     ActuatorState state;
@@ -34,14 +42,6 @@ struct SMSData
 struct FSWData
 {
     boolean empty;
-};
-
-enum struct ActuatorState
-{
-    IDLE,
-    ENERGIZING,
-    RUNNING,
-    FAULT
 };
 
 enum struct DashboardCommands {

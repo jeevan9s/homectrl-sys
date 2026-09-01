@@ -13,8 +13,8 @@
 #include "Dashboard.hpp"
 
 bool menuShown = false;
-HTTPServer http;
-Controller currentState;
+Controller state;
+HTTPServer http(state);
 bool dashboardRunning = false;
 
 void displayMenu()
@@ -74,11 +74,11 @@ void loop()
     {
         blinkP(activeBlinkPin, blinkCount);
     }
-    scheduler.update(currentState);
+    scheduler.update(state);
 
     if (dashboardRunning)
     {
-        http.update(currentState);
+        http.update(state);
     }
 
     if (!menuShown && millis() > 5000)

@@ -15,9 +15,9 @@
 
 class HTTPServer {
 public:
-    HTTPServer();
+    HTTPServer(Controller &state); 
     void begin();
-    void update(Controller &state);
+    void update(Controller &controllerRef);
 
 private:
     AsyncWebServer server;
