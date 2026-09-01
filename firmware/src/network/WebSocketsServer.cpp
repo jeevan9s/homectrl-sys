@@ -72,10 +72,11 @@ void WebSocketServer::handleCommand(const String &payload)
     // References can't be null, so you don't need 'if (!state)'
     JsonDocument doc;
     DeserializationError error = deserializeJson(doc, payload);
+    DeserializationError error = deserializeJson(doc, payload);
     if (error)
         return;
 
-    if (doc.containsKey("cmd"))
+    if (!doc["cmd"].isNull()) {
     {
         int rawCmd = doc["cmd"];
         int val = doc["val"] | 0;
@@ -87,7 +88,6 @@ void WebSocketServer::handleCommand(const String &payload)
         case DashboardCommands::IRRIGATE_1:
             state.pump1.enable = val; // Use '.' instead of '->'
             break;
-
         case DashboardCommands::IRRIGATE_2:
             state.pump2.enable = val;
             break;

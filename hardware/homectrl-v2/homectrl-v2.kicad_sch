@@ -12004,9 +12004,9 @@
 		(start 101.6 328.93)
 		(end 148.59 379.73)
 		(stroke
-			(width 0)
+			(width 1.27)
 			(type default)
-			(color 0 0 0 1)
+			(color 175 8 15 1)
 		)
 		(fill
 			(type none)
@@ -12212,9 +12212,9 @@
 		(start 372.11 180.34)
 		(end 426.72 229.87)
 		(stroke
-			(width 0)
+			(width 1.27)
 			(type default)
-			(color 0 0 0 1)
+			(color 175 8 15 1)
 		)
 		(fill
 			(type none)
@@ -12225,9 +12225,9 @@
 		(start 243.84 166.37)
 		(end 314.96 243.84)
 		(stroke
-			(width 0)
+			(width 1.27)
 			(type default)
-			(color 0 0 0 1)
+			(color 175 8 15 1)
 		)
 		(fill
 			(type none)

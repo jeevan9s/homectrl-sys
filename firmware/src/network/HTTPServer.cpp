@@ -10,9 +10,15 @@
 #include <Arduino.h>
 #include "HTTPServer.hpp"
 
+<<<<<<< HEAD
 HTTPServer::HTTPServer(Controller &state)
     : server(80),
       websocket(server, state)
+=======
+HTTPServer::HTTPServer(Controller & controller)
+    : server(80),
+      websocket(server, controller)
+>>>>>>> 4e62521e1b9c8ca0ba54fcbd538116f5ab588325
 {
 }
 

@@ -13,8 +13,13 @@
 #include "Dashboard.hpp"
 
 bool menuShown = false;
+<<<<<<< HEAD
 Controller state;
 HTTPServer http(state);
+=======
+Controller currentState;
+HTTPServer http(currentState);
+>>>>>>> 4e62521e1b9c8ca0ba54fcbd538116f5ab588325
 bool dashboardRunning = false;
 
 void displayMenu()

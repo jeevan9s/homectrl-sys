@@ -15,7 +15,11 @@
 
 class HTTPServer {
 public:
+<<<<<<< HEAD
     HTTPServer(Controller &state); 
+=======
+    HTTPServer(Controller &controller);
+>>>>>>> 4e62521e1b9c8ca0ba54fcbd538116f5ab588325
     void begin();
     void update(Controller &controllerRef);
 

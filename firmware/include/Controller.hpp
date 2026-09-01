@@ -16,8 +16,11 @@ struct Controller {
 
     StepMtrData stepMotor; 
 
+<<<<<<< HEAD
     // ALSData als; 
 
+=======
+>>>>>>> 4e62521e1b9c8ca0ba54fcbd538116f5ab588325
     SMSData sms1; 
     SMSData sms2; 
 

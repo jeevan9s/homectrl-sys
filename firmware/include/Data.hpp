@@ -7,7 +7,11 @@
  * HOMECTRL
  */
 
+<<<<<<< HEAD
 enum struct ActuatorState
+=======
+ enum struct ActuatorState
+>>>>>>> 4e62521e1b9c8ca0ba54fcbd538116f5ab588325
 {
     IDLE,
     ENERGIZING,
@@ -15,6 +19,17 @@ enum struct ActuatorState
     FAULT
 };
 
+<<<<<<< HEAD
+=======
+enum struct DashboardCommands {
+    IRRIGATE_1 = 0,
+    IRRIGATE_2 = 1, 
+    SHADE_DEFAULT = 2, 
+    SHADE_PCT = 3
+};
+
+
+>>>>>>> 4e62521e1b9c8ca0ba54fcbd538116f5ab588325
 struct PumpData
 {
     ActuatorState state;
@@ -44,9 +59,12 @@ struct FSWData
     boolean empty;
 };
 
+<<<<<<< HEAD
 enum struct DashboardCommands {
     IRRIGATE_1 = 0,
     IRRIGATE_2 = 1, 
     SHADE_DEFAULT = 2, 
     SHADE_PCT = 3
 };
+=======
+>>>>>>> 4e62521e1b9c8ca0ba54fcbd538116f5ab588325
