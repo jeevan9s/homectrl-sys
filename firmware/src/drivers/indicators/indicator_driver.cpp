@@ -47,6 +47,13 @@ void IndicatorDriver::ledOff() {
     digitalWrite(_ledPin, LOW);
 }
 
+void IndicatorDriver::void ledBlink(unsigned long intervalMs) {
+_ledInterval = intervalMs;
+_ledState = true;
+
+
+}
+
 void IndicatorDriver::beep(unsigned int frequency, unsigned long durationMs) {
     ledcWriteTone(_buzzerPin, frequency); 
 
