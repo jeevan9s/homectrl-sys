@@ -7,62 +7,69 @@
  * HOMECTRL
  */
 
-#include <Arduion.h>
+#include <Arduino.h>
 #include "indicator_driver.hpp"
 
 IndicatorDriver::IndicatorDriver(uint8_t ledPin, uint8_t buzzerPin, uint8_t buzzerChannel) : _ledPin(ledPin), _buzzerPin(buzzerPin), _buzzerChannel(buzzerChannel), _ledState(false), _lastLedToggle(0), _ledInterval(0), _buzzerActive(false), _buzzerStopTime(0) {}
 
-void IndicatorDriver::begin() {
-    pinMode(_ledPin, OUTPUT); 
-    digitalWrite(_ledPin, LOW); 
+void IndicatorDriver::begin()
+{
+    pinMode(_ledPin, OUTPUT);
+    digitalWrite(_ledPin, LOW);
 
     ledcAttachChannel(_buzzerPin, 2000, 12, _buzzerChannel);
 }
 
-void IndicatorDriver::update() {
+void IndicatorDriver::update()
+{
     unsigned long currMillis = millis();
 
-    if (_ledInterval > 0) {
-        if (currMillis - _lastLedToggle >= _ledInterval) {
-            _lastLedToggle = currMillis; 
+    if (_ledInterval > 0)
+    {
+        if (currMillis - _lastLedToggle >= _ledInterval)
+        {
+            _lastLedToggle = currMillis;
             _ledState = !_ledState;
             digitalWrite(_ledPin, _ledState);
         }
     }
 
-    if (_buzzerActive && (currMillis >= _buzzerStopTime)) {
-        mute(); 
+    if (_buzzerActive && (currMillis >= _buzzerStopTime))
+    {
+        mute();
     }
 }
 
-void IndicatorDriver::ledOn() {
-    _ledInterval = 0; 
-    _ledState = true; 
+void IndicatorDriver::ledOn()
+{
+    _ledInterval = 0;
+    _ledState = true;
     digitalWrite(_ledPin, HIGH);
 }
 
-void IndicatorDriver::ledOff() {
-    _ledInterval = 0; 
-    _ledState = false; 
+void IndicatorDriver::ledOff()
+{
+    _ledInterval = 0;
+    _ledState = false;
     digitalWrite(_ledPin, LOW);
 }
 
-void IndicatorDriver::void ledBlink(unsigned long intervalMs) {
-_ledInterval = intervalMs;
-_ledState = true;
-
-
+void IndicatorDriver::void ledBlink(unsigned long intervalMs)
+{
+    _ledInterval = intervalMs;
+    _ledState = true;
 }
 
-void IndicatorDriver::beep(unsigned int frequency, unsigned long durationMs) {
-    ledcWriteTone(_buzzerPin, frequency); 
+void IndicatorDriver::beep(unsigned int frequency, unsigned long durationMs)
+{
+    ledcWriteTone(_buzzerPin, frequency);
 
-    _buzzerActive = true; 
+    _buzzerActive = true;
     _buzzerStopTime = mills() + durationMs;
 }
 
-void IndicatorDriver::mute() {
+void IndicatorDriver::mute()
+{
     ledcWriteTone(_buzzerPin, 0);
-    _buzzerActive = false; 
+    _buzzerActive = false;
 }
-

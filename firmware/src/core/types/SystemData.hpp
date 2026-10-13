@@ -24,13 +24,13 @@ struct FSWData {
     bool loSwitch;
     bool hiSwitch; 
     bool isFull;
-
 };
 
 struct SensorData {
     SMSData SMS0;
     SMSData SMS1;
     FSWData FSW;  
+    int vPumpSense;
 };
 
 

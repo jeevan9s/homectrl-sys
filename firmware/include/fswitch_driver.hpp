@@ -1,6 +1,6 @@
 /**
  * @file        fswitch_driver.hpp
- * @brief       Class definition for digital float switch sensors. 
+ * @brief       Class definition for digital float switch sensors.
  * @author      Jeevan Sanchez
  * @date        2026-09-09
  *
@@ -12,24 +12,24 @@
 #include <Arduino.h>
 #include "cstdint.h"
 
-class FloatSwitch {
-    public:
-        FloatSwitch(uint8_t pin, bool invert = false); 
-        void begin(); 
-        void update(); 
-        bool isEmpty(); 
-        bool isOK();
+class FloatSwitchDriver
+{
+public:
+    FloatSwitchDriver(uint8_t pin, bool invert = false);
+    void begin();
+    void update();
+    bool isEmpty();
+    bool isOK();
 
-    private:
-        uint8_t _pin; 
-        bool _invert; 
+private:
+    uint8_t _pin;
+    bool _invert;
 
-        bool _stableState;
-        bool _lastRawState; 
+    bool _stableState;
+    bool _lastRawState;
 
-        unsigned long _lastDebounceTime;
-        const unsigned long _debounceDelay = 50; 
+    unsigned long _lastDebounceTime;
+    const unsigned long _debounceDelay = 50;
 
-
-        void debounce(); // dummy debounce with two reads
+    void debounce(); // dummy debounce with two reads
 }
