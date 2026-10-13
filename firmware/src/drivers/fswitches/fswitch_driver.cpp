@@ -7,7 +7,7 @@
  * HOMECTRL
  */
 
-#include <Arduion.h>
+#include <Arduino.h>
 #include "fswitch_driver.hpp"
 
 FloatSwitch::FloatSwitch(uint8_t pin, bool invert) : _pin(pin), _invert(invert) {}
@@ -17,9 +17,9 @@ void FloatSwitch::begin() {
 }
 
 bool FloatSwitch::debounce() {
-    bool first = analogRead(_pin); 
+    bool first = digitalRead(_pin); 
     delay(50); 
-    bool second = analogRead(_pin); 
+    bool second = digitalRead(_pin); 
     return (first == second) ? second : first;
 }
 

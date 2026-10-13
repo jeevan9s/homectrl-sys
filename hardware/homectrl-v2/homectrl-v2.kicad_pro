@@ -497,7 +497,7 @@
       "specctra_dsn": "",
       "step": "../../../../../Downloads/homectrl-v2.step",
       "svg": "",
-      "vrml": ""
+      "vrml": "homectrl.wrl"
     },
     "page_layout_descr_file": ""
   },

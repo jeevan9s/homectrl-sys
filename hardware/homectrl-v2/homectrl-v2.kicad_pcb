@@ -50,6 +50,7 @@
 			)
 			(layer "F.Mask"
 				(type "Top Solder Mask")
+				(color "#050D09D4")
 				(thickness 0.01)
 			)
 			(layer "F.Cu"
@@ -91,6 +92,7 @@
 			)
 			(layer "B.Mask"
 				(type "Bottom Solder Mask")
+				(color "#050D09D4")
 				(thickness 0.01)
 			)
 			(layer "B.Paste"
@@ -99,7 +101,7 @@
 			(layer "B.SilkS"
 				(type "Bottom Silk Screen")
 			)
-			(copper_finish "None")
+			(copper_finish "HAL SnPb")
 			(dielectric_constraints no)
 		)
 		(pad_to_mask_clearance 0)
@@ -30251,6 +30253,17 @@
 			(pintype "power_out")
 			(uuid "217085d9-d37c-4aec-8927-9d7110723a38")
 		)
+		(model "${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -35452,6 +35465,17 @@
 			(pinfunction "3")
 			(pintype "unspecified")
 			(uuid "20adef08-11cd-41d0-8d1e-67a2c11b6cfb")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-3.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 -90)
+			)
 		)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
