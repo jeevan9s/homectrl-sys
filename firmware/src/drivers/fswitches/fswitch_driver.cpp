@@ -7,10 +7,9 @@
  * HOMECTRL
  */
 
-#include <Arduino.h>
 #include "fswitch_driver.hpp"
 
-FloatSwitchDriver::FloatSwitchDriver(uint8_t pin, bool invert) : _pin(pin), _invert(invert), _stableState(false), _lastRawState(false) _lastDebounceTime(0) {}
+FloatSwitchDriver::FloatSwitchDriver(uint8_t pin, bool invert) : _pin(pin), _invert(invert), _stableState(false), _lastRawState(false), _lastDebounceTime(0) {}
 
 void FloatSwitchDriver::begin()
 {
@@ -41,7 +40,7 @@ bool FloatSwitchDriver::update()
 
 bool FloatSwitchDriver::isEmpty()
 {
-    bool state = debounce();
+    update();
     return _invert ? !_stableState : _stableState;
 }
 

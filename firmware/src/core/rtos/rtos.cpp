@@ -2,7 +2,7 @@
  * @file        rtos.cpp
  * @brief       RTOS initialization. 
  * @author      Jeevan Sanchez
- * @date        2026-10-13
+ * @date        2026-10-14
  *
  * HOMECTRL
  */

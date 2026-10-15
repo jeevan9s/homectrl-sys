@@ -7,16 +7,15 @@
  * HOMECTRL
  */
 
-#include <Arduino.h>
 #include "pump_driver.hpp"
 
-PumpDriver::PumpDriver(uint8_t m_pin, uint8_t m_frequency = 5000, uint8_t m_resolution = 8, uint8_t m_maxDuty, bool m_running) : m_pin(pin), m_freqeuncy(frequency), m_resolution(resolution), m_maxDuty((1 << resolution) - 1), m_running(false);
+PumpDriver::PumpDriver(uint8_t pin, uint32_t frequency, uint8_t resolution, uint8_t channel) : m_pin(pin), m_frequency(frequency), m_resolution(resolution), m_channel(channel), m_maxDuty((1UL << resolution) - 1), m_running(false) {}
 
 bool PumpDriver::begin()
 {
     pinMode(m_pin, OUTPUT);
 
-    bool success = ledcAttachChannel(m_pin, m_frequency, m_resolution, 0);
+    bool success = ledcAttachChannel(m_pin, m_frequency, m_resolution, m_channel);
 
     this->stop();
 
@@ -36,7 +35,7 @@ void PumpDriver::stop()
 
 void PumpDriver::setSpeed(float pct)
 {
-    pct = constrain(float, 0.0f, 100.0f);
+    pct = constrain(pct, 0.0f, 100.0f);
 
     if (!isRunning() || pct == 0)
     {
@@ -44,7 +43,7 @@ void PumpDriver::setSpeed(float pct)
         return;
     }
 
-    uint8_t duty = (pct / 100.0f) * m_dutyCycle;
+    uint32_t duty = (pct / 100.0f) * m_maxDuty;
     ledcWrite(m_pin, duty);
 }
 

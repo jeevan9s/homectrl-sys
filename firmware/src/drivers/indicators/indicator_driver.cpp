@@ -7,7 +7,6 @@
  * HOMECTRL
  */
 
-#include <Arduino.h>
 #include "indicator_driver.hpp"
 
 IndicatorDriver::IndicatorDriver(uint8_t ledPin, uint8_t buzzerPin, uint8_t buzzerChannel) : _ledPin(ledPin), _buzzerPin(buzzerPin), _buzzerChannel(buzzerChannel), _ledState(false), _lastLedToggle(0), _ledInterval(0), _buzzerActive(false), _buzzerStopTime(0) {}
@@ -54,10 +53,12 @@ void IndicatorDriver::ledOff()
     digitalWrite(_ledPin, LOW);
 }
 
-void IndicatorDriver::void ledBlink(unsigned long intervalMs)
+void IndicatorDriver::ledBlink(unsigned long intervalMs)
 {
     _ledInterval = intervalMs;
     _ledState = true;
+    _lastLedToggle = millis();
+    digitalWrite(_ledPin, HIGH);
 }
 
 void IndicatorDriver::beep(unsigned int frequency, unsigned long durationMs)
@@ -65,7 +66,7 @@ void IndicatorDriver::beep(unsigned int frequency, unsigned long durationMs)
     ledcWriteTone(_buzzerPin, frequency);
 
     _buzzerActive = true;
-    _buzzerStopTime = mills() + durationMs;
+    _buzzerStopTime = millis() + durationMs;
 }
 
 void IndicatorDriver::mute()

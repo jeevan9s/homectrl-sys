@@ -8,17 +8,16 @@
  * HOMECTRL
  */
 
-#include <Arduino.h>
 #include "nema_driver.hpp"
 
-StepperMotor::StepperMotor(uint8_t stepPin, uint8_t dirPin, uint8_t rxPin, uint8_t txPin, long totalSteps, uint8_t driverAddr, float rsense)
-: _serial(rxPin, txPin), _driver(&_serial, rsense, driverAddr), _stepPin(stepPin), _dirPin(dirPin), _rxPin(rxPin), _txPin(txPin), _totalSteps(totalSteps), _currentStep(0) {}
+StepperMotor::StepperMotor(uint8_t stepPin, uint8_t dirPin, HardwareSerial& serial, uint8_t rxPin, uint8_t txPin, long totalSteps, uint8_t driverAddr, float rsense)
+: _stepPin(stepPin), _dirPin(dirPin), _rxPin(rxPin), _txPin(txPin), _totalSteps(totalSteps), _currentStep(0), _serial(serial), _driver(&serial, rsense, driverAddr) {}
 
-StepperMotor::begin(int currentMa = 800, int microsteps = 16) {
+void StepperMotor::begin(int currentMa, int microsteps) {
     pinMode(_stepPin, OUTPUT); 
     pinMode(_dirPin, OUTPUT); 
 
-    _serial.begin(115200); 
+    _serial.begin(115200, SERIAL_8N1, _rxPin, _txPin); 
     _driver.begin(); 
 
     _driver.toff(5);

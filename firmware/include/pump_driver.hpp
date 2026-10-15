@@ -9,23 +9,23 @@
 
 #pragma once
 #include <Arduino.h>
-#include <cstdint.h>
 
 class PumpDriver {
 
     public:
-        PumpDriver(uint8_t m_pin, uint8_t m_frequency, uint8_t m_resolution, uint8_t m_dutyCycle, bool m_running); 
+        PumpDriver(uint8_t pin, uint32_t frequency = 5000, uint8_t resolution = 8, uint8_t channel = 1); 
 
         bool begin(); 
         void start(); 
         void stop(); 
         void setSpeed(float pct); 
-        void isRunning(); 
+        bool isRunning(); 
 
     private:
         uint8_t m_pin; 
-        uint8_t m_frequency; 
+        uint32_t m_frequency; 
         uint8_t m_resolution; 
-        uint8_t m_dutyCycle; 
+        uint8_t m_channel; 
+        uint32_t m_maxDuty; 
         bool m_running; 
 }; 

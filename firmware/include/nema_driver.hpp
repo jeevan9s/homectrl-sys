@@ -11,12 +11,11 @@
 #pragma once
 
 #include <Arduino.h>
-#include <SoftwareSerial.h>
 #include <TMCStepper.h>
 
 class StepperMotor {
     public:
-        StepperMotor(uint8_t stepPin, uint8_t dirPin, uint8_t rxPin, uint8_t txPin, long totalSteps = 4000, uint8_t driverAddr = 0, , float rsense = 0.11)
+        StepperMotor(uint8_t stepPin, uint8_t dirPin, HardwareSerial& serial, uint8_t rxPin, uint8_t txPin, long totalSteps = 4000, uint8_t driverAddr = 0, float rsense = 0.11f);
         void begin(int currentMa = 800, int microsteps = 16); 
         void setPercentage(int target); 
         int getPercentage(); 
@@ -27,12 +26,9 @@ class StepperMotor {
         uint8_t _dirPin; 
         uint8_t _rxPin; 
         uint8_t _txPin; 
-        float _rsense; 
-        uint8_t _driverAddr; 
-
         long _totalSteps; 
         long _currentStep; 
 
-        SoftwareSerial* _serial; 
-        TMC2209Stepper* _driver; 
-}
+        HardwareSerial& _serial; 
+        TMC2209Stepper _driver; 
+};

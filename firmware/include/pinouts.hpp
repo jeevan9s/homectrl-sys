@@ -22,8 +22,8 @@ namespace Pins
 
     namespace Actuators
     {
-        constexpr uint8_t PUMP2_EN = 7;
-        constexpr uint8_t PUMP1_EN = 15;
+        constexpr uint8_t PUMP1_EN = 7;
+        constexpr uint8_t PUMP0_EN = 15;
         constexpr uint8_t TMC_DIAG = 9;
         constexpr uint8_t TMC_ENN = 10;
         constexpr uint8_t TMC_STEP = 17;

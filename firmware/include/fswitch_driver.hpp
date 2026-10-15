@@ -10,14 +10,13 @@
 #pragma once
 
 #include <Arduino.h>
-#include "cstdint.h"
 
 class FloatSwitchDriver
 {
 public:
     FloatSwitchDriver(uint8_t pin, bool invert = false);
     void begin();
-    void update();
+    bool update();
     bool isEmpty();
     bool isOK();
 
@@ -30,6 +29,4 @@ private:
 
     unsigned long _lastDebounceTime;
     const unsigned long _debounceDelay = 50;
-
-    void debounce(); // dummy debounce with two reads
-}
+};

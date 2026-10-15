@@ -13,7 +13,7 @@
 
 class PowerDriver {
     public:
-        PowerDriver::PowerDriver(uint8_t pEnablePin, uint8_t vSensePin);
+        PowerDriver(uint8_t pEnablePin, uint8_t vSensePin);
         void begin(); 
         void energize(); 
         float monitor(); 
@@ -35,6 +35,4 @@ class PowerDriver {
         uint32_t _energizeStartTime;
         static constexpr uint32_t ENERGIZE_DELAY_MS = 50; 
         static constexpr uint32_t ENERGIZE_TIMEOUT_MS = 5000; 
-
-
-}
+};

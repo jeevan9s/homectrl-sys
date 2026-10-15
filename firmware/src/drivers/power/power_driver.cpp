@@ -7,7 +7,6 @@
  * HOMECTRL
  */
 
-#include <Arduino.h>
 #include "power_driver.hpp"
 
 PowerDriver::PowerDriver(uint8_t pEnablePin, uint8_t vSensePin) : _pEnablePin(pEnablePin), _vSensePin(vSensePin), _isEnergizing(false), _energizeStartTime(0) {}
@@ -41,13 +40,13 @@ float PowerDriver::sample() {
 
 float PowerDriver::monitor() {
     float pinV = (sample() / RES_FACTOR) * REF_VOLTAGE;
-    float invRDFactor = (R1 + R2) / R2;;
+    float invRDFactor =     (R1 + R2) / R2;
     return pinV * invRDFactor;
 }
 
 void PowerDriver::update() {
     if (_isEnergizing) {
-        if (millis() - _energizeStartTime > _ENERGIZE_TIMEOUT_MS) {
+            if (millis() - _energizeStartTime > ENERGIZE_TIMEOUT_MS) {
             digitalWrite(_pEnablePin, LOW);
             _isEnergizing = false;
         }

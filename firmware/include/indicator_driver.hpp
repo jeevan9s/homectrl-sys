@@ -18,14 +18,14 @@ class IndicatorDriver {
         uint8_t _buzzerChannel; 
 
         bool _ledState;
-        bool _lastLedToggle; 
-        unsigned long _ledInterval
+        unsigned long _lastLedToggle; 
+        unsigned long _ledInterval;
 
         bool _buzzerActive; 
         unsigned long _buzzerStopTime; 
 
     public:
-        IndicatorDriver(int ledPin, int buzzerPin, int buzzerChannel = 0); 
+        IndicatorDriver(uint8_t ledPin, uint8_t buzzerPin, uint8_t buzzerChannel = 0); 
         void begin(); 
         void update(); 
 
@@ -35,6 +35,4 @@ class IndicatorDriver {
 
         void beep(unsigned int frequency, unsigned long durationMs); 
         void mute(); 
-
-        
-}
+};
