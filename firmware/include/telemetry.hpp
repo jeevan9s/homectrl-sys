@@ -10,10 +10,10 @@
 #pragma once
 #include <Arduino.h>
 #include <ArduinoJson.h>
-#include "Controller.hpp"
+#include "SystemState.hpp"
 
 class Telemetry
 {
 public:
-    static void serialize(const Controller &state, JsonDocument &doc);
+    static void serialize(const State &state, JsonDocument &doc);
 };

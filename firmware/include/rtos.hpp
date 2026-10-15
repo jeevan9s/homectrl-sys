@@ -13,6 +13,18 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/queue.h"
-#include "types/SystemCommand.hpp"
+#include "SystemCommand.hpp"
+#include "IrrigationTask.hpp"
+#include "SystemState.hpp"
 
 bool initRTOS(); 
+
+struct IrrigationTaskParams {
+    QueueHandle_t commandQueue;
+    QueueHandle_t statusQueue; 
+}
+
+struct ShadingTaskParams {
+    QueueHandle_t commandQueue;
+    QueueHandle_t statusQueue; 
+}

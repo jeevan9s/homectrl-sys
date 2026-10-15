@@ -11,13 +11,13 @@
 
 #include <ESPAsyncWebServer.h>
 #include "WebSocketServer.hpp"
-#include "Controller.hpp"
+#include "SystemState.hpp"
 
 class HTTPServer {
 public:
-    HTTPServer(Controller &state); 
+    HTTPServer(); 
     void begin();
-    void update(Controller &controllerRef);
+    void update(const State &state);
 
 private:
     AsyncWebServer server;

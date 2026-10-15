@@ -10,7 +10,7 @@
 #include <Arduino.h>
 #include "telemetry.hpp"
 
-void Telemetry::serialize(const Controller &state, JsonDocument &doc)
+void Telemetry::serialize(const State &state, JsonDocument &doc)
 {
     doc["timestamp"] = millis();
 
@@ -19,20 +19,26 @@ void Telemetry::serialize(const Controller &state, JsonDocument &doc)
     JsonObject stepper = doc["STEP"].to<JsonObject>();
     JsonObject sms1 = doc["SMS1"].to<JsonObject>();
     JsonObject sms2 = doc["SMS2"].to<JsonObject>();
-    // JsonObject als = doc["ALS1"].to<JsonObject>();
     JsonObject fsw = doc["FSW"].to<JsonObject>();
+    JsonObject sys = doc["SYS"].to<JsonObject>();
 
-    pump1["state"] = static_cast<int>(state.pump1.state);
-    pump2["state"] = static_cast<int>(state.pump2.state);
-    stepper["state"] = static_cast<int>(state.stepMotor.state);
+    // dashboard state codes: 0 = idle, 2 = running
+    pump1["state"] = state.irrigationActive0 ? 2 : 0;
+    pump1["enable"] = state.irrigationActive0;
+    pump2["state"] = state.irrigationActive1 ? 2 : 0;
+    pump2["enable"] = state.irrigationActive1;
 
-    sms1["raw"] = state.sms1.raw;
-    sms1["moisture"] = state.sms1.moisture;
-    sms1["isHydrated"] = state.sms1.hydrated;
+    stepper["state"] = state.shadingActive ? 2 : 0;
+    stepper["enable"] = state.shadingActive;
+    stepper["shadePct"] = state.shadingPct;
 
-    sms2["raw"] = state.sms2.raw;
-    sms2["moisture"] = state.sms2.moisture;
-    sms2["isHydrated"] = state.sms2.hydrated;
+    sms1["moisture"] = state.soilMoisture0;
+    sms2["moisture"] = state.soilMoisture1;
 
-    fsw["tankStatus"] = state.fsw.empty;
+    fsw["tankStatus"] = !state.tankFull;
+
+    sys["wifi"] = state.WiFiConnected;
+    sys["ready"] = state.systemReady;
+    sys["pumpsEnergized"] = state.pumpsEnergized;
+    sys["voltage"] = state.systemVoltage;
 }

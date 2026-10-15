@@ -16,7 +16,7 @@ enum moistureLevel {
 };
 
 struct SMSData {
-    int moisture;
+    float moisture;
     moistureLevel level;
 };
 
@@ -32,5 +32,6 @@ struct SensorData {
     FSWData FSW;  
     int vPumpSense;
 };
+
 
 

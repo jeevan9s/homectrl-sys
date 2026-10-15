@@ -15,8 +15,8 @@
 extern CRGB rgb_leds[NUM_LEDS];
 
 bool menuShown = false;
-Controller state;
-HTTPServer http(state);
+State state;
+HTTPServer http;
 bool dashboardRunning = false;
 
 void displayMenu()

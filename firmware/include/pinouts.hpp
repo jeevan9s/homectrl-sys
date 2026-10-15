@@ -32,8 +32,8 @@ namespace Pins
 
     namespace Data
     {
-        constexpr uint8_t SMS1_ADATA = 5;
-        constexpr uint8_t SMS2_ADATA = 6;
+        constexpr uint8_t SMS0_ADATA = 5;
+        constexpr uint8_t SMS1_ADATA = 6;
         constexpr uint8_t FSW1_SIG = 41;
         constexpr uint8_t FSW2_SIG = 42;
     }

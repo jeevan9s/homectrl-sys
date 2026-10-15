@@ -9,6 +9,8 @@
 
 #pragma once 
 
+#include "IrrigationManager.hpp"
+
 struct State {
     bool WiFiConnected;
     bool pumpsEnergized; 
@@ -26,3 +28,10 @@ struct State {
     int shadingPct; 
 };
 
+struct IrrigationStatus {
+    IrrigationState state; 
+    float moisture0;
+    float moisture1;
+    bool pump0On;
+    bool pump1On;
+};

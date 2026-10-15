@@ -7,6 +7,8 @@
  * HOMECTRL
  */
 
+#pragma once
+
 enum class CommandType {
     WIFI_CONNECT,
     START_IRRIGATION,

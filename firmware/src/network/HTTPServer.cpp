@@ -10,9 +10,9 @@
 #include <Arduino.h>
 #include "HTTPServer.hpp"
 
-HTTPServer::HTTPServer(Controller &state)
+HTTPServer::HTTPServer()
     : server(80),
-      websocket(server, state)
+      websocket(server)
 {
 }
 
@@ -25,7 +25,7 @@ void HTTPServer::begin() {
   server.begin();
 }
 
-void HTTPServer::update(Controller &state) {
+void HTTPServer::update(const State &state) {
     websocket.update(state);
 }
 

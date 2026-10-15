@@ -9,8 +9,9 @@
 
 #include <Arduino.h>
 #include "WebSocketServer.hpp"
+#include "rtos.hpp"
 
-WebSocketServer::WebSocketServer(AsyncWebServer &server, Controller &stateRef) : state(stateRef)
+WebSocketServer::WebSocketServer(AsyncWebServer &server)
 {
     server.addHandler(&ws);
 }
@@ -48,7 +49,7 @@ void WebSocketServer::begin()
         } });
 }
 
-void WebSocketServer::update(const Controller &state)
+void WebSocketServer::update(const State &state)
 {
     ws.cleanupClients();
 
@@ -70,38 +71,39 @@ void WebSocketServer::handleCommand(const String &payload)
 {
     JsonDocument doc;
     DeserializationError error = deserializeJson(doc, payload);
-    if (error)
+    if (error || doc["cmd"].isNull())
         return;
 
-    if (!doc["cmd"].isNull()) {
+    int val = doc["val"] | 0;
+    Command command{};
+    QueueHandle_t queue = nullptr;
+
+    switch (static_cast<DashboardCommand>(doc["cmd"].as<int>()))
     {
-        int rawCmd = doc["cmd"];
-        int val = doc["val"] | 0;
+    // irrigation commands carry the pump index (0 or 1) as their value
+    case DashboardCommand::IRRIGATE_1:
+        command = {val ? CommandType::START_IRRIGATION : CommandType::STOP_IRRIGATION, 0};
+        queue = getIrrigationQueue();
+        break;
+    case DashboardCommand::IRRIGATE_2:
+        command = {val ? CommandType::START_IRRIGATION : CommandType::STOP_IRRIGATION, 1};
+        queue = getIrrigationQueue();
+        break;
 
-        auto cmd = static_cast<DashboardCommands>(rawCmd);
+    case DashboardCommand::SHADE_DEFAULT:
+        command = {val ? CommandType::SET_SHADING_POS : CommandType::STOP_SHADING, 0};
+        queue = getShadingQueue();
+        break;
 
-        switch (cmd)
-        {
-        case DashboardCommands::IRRIGATE_1:
-            state.pump1.enable = val; 
-            break;
-        case DashboardCommands::IRRIGATE_2:
-            state.pump2.enable = val;
-            break;
+    case DashboardCommand::SHADE_PCT:
+        command = {CommandType::SET_SHADING_POS, constrain(val, 0, 100)};
+        queue = getShadingQueue();
+        break;
 
-        case DashboardCommands::SHADE_DEFAULT:
-            state.stepMotor.enable = val;
-            state.stepMotor.shadePct = 0;
-            break;
-
-        case DashboardCommands::SHADE_PCT:
-            state.stepMotor.shadePct = constrain(val, 0, 100);
-            state.stepMotor.enable = 1;
-            break;
-
-        default:
-            break;
-        }
+    default:
+        return;
     }
-}
+
+    if (queue != nullptr)
+        xQueueSend(queue, &command, 0);
 }
