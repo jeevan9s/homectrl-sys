@@ -15,7 +15,7 @@
 #include "sensor_driver.hpp"
 #include "pump_driver.hpp"
 #include "indicator_driver.hpp"
-#include "pinouts.hpp
+#include "pinouts.hpp"
 #include "IrrigationManager.hpp"
 #include "Constants.hpp"
 #include "rtos.hpp"

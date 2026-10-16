@@ -11,6 +11,9 @@
 #include "config.hpp"
 #include "test.hpp"
 #include "Dashboard.hpp"
+#include "indicator_driver.hpp"
+
+IndicatorDriver indicator(Pins::Indicators::DBG_LED, Pins::Indicators::BUZZ_EN);
 
 extern CRGB rgb_leds[NUM_LEDS];
 
@@ -59,12 +62,9 @@ void setup()
     Serial.println("\n==============================");
     Serial.println("homectrl ---initializing");
 
-    pinMode(Pins::Indicators::DBG_LED, OUTPUT);
+    // begin() configures the DBG LED pin and the buzzer PWM
+    indicator.begin();
     pinMode(Pins::Indicators::WIFI_LED, OUTPUT);
-
-    ledcAttach(Pins::Indicators::BUZZ_EN, PWM_FREQ, PWM_RES);
-
-    ledcWrite(Pins::Indicators::BUZZ_EN, 0);
 
     FastLED.addLeds<WS2812B, Pins::Indicators::RGB_LED, GRB>(rgb_leds, NUM_LEDS);
     FastLED.setBrightness(64);
@@ -77,6 +77,8 @@ void setup()
 
 void loop()
 {
+    indicator.update();
+
     if (blinksRemaining > 0)
     {
         blinkP(activeBlinkPin, blinkCount);

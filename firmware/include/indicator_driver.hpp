@@ -36,3 +36,6 @@ class IndicatorDriver {
         void beep(unsigned int frequency, unsigned long durationMs); 
         void mute(); 
 };
+
+// defined and initialized once in main.cpp
+extern IndicatorDriver indicator;

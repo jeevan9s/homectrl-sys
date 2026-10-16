@@ -15,13 +15,13 @@ static PumpDriver pump1(Pins::Actuators::PUMP1_EN, 5000, 8, 0);
 static MoistureSensorDriver sms0(Pins::Sensors::SMS0_ADATA, DRY_THRESHOLD, WET_THRESHOLD);
 static MoistureSensorDriver sms1(Pins::Sensors::SMS1_ADATA, DRY_THRESHOLD, WET_THRESHOLD);
 
+
 void irrigationTask(void *parameter)
 {
-    if (!pump0.begin() || !pump1.begin() ||)
+    if (!pump0.begin() || !pump1.begin())
     {
         pump0.stop();
         pump1.stop();
-
         vTaskDelete(nullptr);
     }
 
@@ -31,18 +31,18 @@ void irrigationTask(void *parameter)
     // receive commands
     auto *params = static_cast<IrrigationTaskParams*>(parameter); 
 
-
     QueueHandle_t commandQueue = params->commandQueue; 
     QueueHandle_t statusQueue = params->statusQueue; 
 
     IrrigationManager irrigation;
     irrigation.begin();
 
+    IrrigationState lastIndicatorState = IrrigationState::FAIL;
     Command command;
 
     for (;;)
     {
-        while (xQueueReceive(queue, &command, 0) == pdTRUE) {
+        while (xQueueReceive(commandQueue, &command, 0) == pdTRUE) {
 
         switch (command.type)
         {
@@ -59,11 +59,32 @@ void irrigationTask(void *parameter)
         }
     }
 
-        moisture0 = sms0.readPCT();
-        moisture1 = sms1.readPCT();
+        float moisture0 = sms0.readPCT();
+        float moisture1 = sms1.readPCT();
         irrigation.update(moisture0, moisture1);
 
-        output = irrigation.getOutput();
+        IrrigationOutput output = irrigation.getOutput();
+        const IrrigationState irrigationState = irrigation.getState();
+
+        if (irrigationState != lastIndicatorState)
+        {
+            switch (irrigationState)
+            {
+            case IrrigationState::ACTIVE:
+                indicator.ledBlink(250);
+                break;
+
+            case IrrigationState::READY:
+                indicator.ledOn();
+                break;
+
+            default:
+                indicator.ledOff();
+                break;
+            }
+
+            lastIndicatorState = irrigationState;
+        }
 
         // drive pumps
         if (output.pump0On && !pump0.isRunning())
@@ -81,11 +102,11 @@ void irrigationTask(void *parameter)
             irrigation.getState(),
             moisture0, 
             moisture1,
-            output.pump1On,
-            output.pump2On
+            output.pump0On,
+            output.pump1On
         };
 
-        xQueueSend(statusQueue, *status);
+        xQueueOverwrite(statusQueue, &status);
 
         vTaskDelay(pdMS_TO_TICKS(100));
     }
